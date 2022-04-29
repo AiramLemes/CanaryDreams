@@ -1,0 +1,263 @@
+body {
+    margin-bottom: 1000px;
+}
+
+
+.containerÂ {
+
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "buscador"
+    "isla"
+    "apartamentos"; 
+
+}
+
+
+h1 {
+
+    font-family: 'Rokkitt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 23px;
+    text-align: center;
+
+
+    color: #FFFFFF;
+
+
+}
+
+
+
+section.buscador {
+
+    grid-area: "buscador"; 
+    grid-auto-columns: 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    height: 500px;
+    width: 100%;
+    background-image: url(../assets/hotel-nayra-adults-only.jpeg);
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+#buscador_home {
+
+    width: 872px;
+    height: 75px;
+    margin: auto;
+    margin-top: 60px;
+
+    background: #FFFFFF;
+    border-radius: 9px;
+}
+
+
+section.islas {
+
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    grid-template-areas: 
+    "titulo1 titulo1 titulo1 titulo1"
+    ". . . ."
+    ". . . ."; 
+    gap: 0px 0px; 
+    height: 400px;
+    margin: auto;
+    margin-top: 150px;
+    width: max-content;
+}
+
+.titulo1 { 
+    grid-area: titulo1; 
+    margin: auto;
+}
+
+
+
+
+p {
+    font-family: 'Rokkitt';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 23px;
+    text-align: center;
+    color: black;
+}
+
+
+
+h3 {
+    position: relative;
+    width: 65%;
+    height: 33px;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 30px;
+    border-radius: 5px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 0.7);
+    top: -90px;
+    left: 20px;
+}
+
+
+.cuadroIsla {
+
+    width: 240px;
+    height: 200px;
+    margin-top: 80px;
+    margin-left: 55px;
+
+}
+
+.fotoIsla {
+    width: 240px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.cuadro_texto_isla {
+
+    width: 100px;
+    height: 33px;
+    margin-top: -80px;
+    margin-left: 10px;
+    background-color: rgba(255, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+
+section.apartamentos {
+
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    grid-template-areas: 
+    "titulo2 titulo2 titulo2"
+    ". . ."
+    ". . ."; 
+    gap: 0px 0px; 
+    height: 400px;
+    margin: auto;
+    margin-top: 150px;
+    width: 1280px;
+}
+
+.titulo2 { 
+    grid-area: titulo2; 
+    margin: auto;
+    margin-top: 250px;
+}
+
+
+
+
+.ApartamentosAB{
+    width: 1250px;
+    height: 1256.72px;
+    margin: 0 auto;
+}
+
+
+
+.CuadroApartAB {
+    width: 368.82px;
+    height: 237px;
+    
+    margin: auto;
+    margin-top: 60px;    
+    border:  2.731px solid #787878;
+    box-sizing: border-box;
+    border-radius: 9.9718px;
+
+    color: #685D5D;
+}
+
+.FotoCuadroApartAB {
+    width: 366.088px;
+    height: 170px;
+    border-radius: 8.2px 8.2px 0px 0px;
+    margin: auto;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+
+.recuadroDatosAB{
+    width: 367.454pxpx;
+    height: 65.568px;
+    margin-left: -1px;
+    
+}
+
+.FondoValApartAB{
+    float: right;
+    width: 34.15px;
+    height: 27.67px;
+    margin-top: 5px;
+    margin-right: 5px;
+
+    background: #2A2867;
+    
+
+}
+
+.ValApartAB {
+    font-size:20px;
+    color: #ffffff;
+    margin:auto;
+    
+
+}
+
+.NombreApartAB{
+    float: left;
+    font-size:22px;
+    margin-top: 0;
+    
+}
+
+.DirApartAB{
+    float: left;
+    font-size:20px;
+    font-weight: normal;
+    margin-top: -12.5px;
+
+}
+
+.DesdeApartAB{
+    float:right;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: -8px;
+    margin-right: 8px;
+    color: #685D5D;
+}
+
+.PrecioApartAB{
+    float:right;
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    margin-right: 8px;
+    margin-top: -8px;
+    
+    color: #2D2B2B;
+}
+
+
+
+
+
+
+

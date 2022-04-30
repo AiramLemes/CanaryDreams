@@ -20,6 +20,11 @@
                 <p>DESCUBRE TU ISLA DESTINO</p>    
             </div>
 
+            <div class = "cuadroIsla" *ngFor="let isla of islas">
+                <img src="" alt="" class="fotoIsla">
+                <h3>{{isla.nombre}}</h3>
+            </div>
+
         </section>
 
 
@@ -39,7 +44,7 @@
 
     <template id = isla>
         <div class="cuadroIsla">
-            <img class = "fotoIsla" src="./assets/lagraciosa(3).jpg" alt="">
+            <img class = "fotoIsla" src="" alt="">
             <h3>&nbspIsla</h3>
         </div>
     </template>

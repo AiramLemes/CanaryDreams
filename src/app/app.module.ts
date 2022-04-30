@@ -12,6 +12,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { environment } from 'src/environments/environment';
 import { HomeComponent } from './home/home.component';
+import { IslaService } from './services/islas.service';
 
 
 
@@ -28,9 +29,9 @@ import { HomeComponent } from './home/home.component';
     ReactiveFormsModule,
     AngularFireDatabaseModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireAuthModule, AngularFirestoreModule
+    AngularFireAuthModule, AngularFirestoreModule,
   ],
-  providers: [],
+  providers: [IslaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

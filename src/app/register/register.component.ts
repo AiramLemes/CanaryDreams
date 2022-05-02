@@ -15,7 +15,13 @@ export class RegisterComponent implements OnInit {
 
   registerForm = new FormGroup({
     email: new FormControl(''),
-    password: new FormControl('')
+    password: new FormControl(''),
+    nombre: new FormControl(''),
+    apellidos: new FormControl(''),
+    sexo: new FormControl(''),
+    fecha: new FormControl(''),
+    telefono: new FormControl(''),
+    dni: new FormControl('')
   })
 
 
@@ -24,8 +30,9 @@ export class RegisterComponent implements OnInit {
   constructor(private authService: AuthService) { }
 
   onRegister() {
-    const {email, password} = this.registerForm.value;
-    this.authService.register(email, password);
+    const {email, password, nombre, apellidos, sexo, fecha, telefono, dni} = this.registerForm.value;
+    this.authService.register(email, password, nombre, apellidos, 
+      sexo, fecha, telefono, dni);
   }
 
   ngOnInit(): void {

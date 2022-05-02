@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { AuthService } from '../auth/services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -15,12 +16,12 @@ export class LoginComponent implements OnInit {
     password: new FormControl('')
   })
 
-  constructor(private authService: AuthService) { }
+  constructor(private authService: AuthService, private router: Router) { }
 
   onLogin() {
     const {email, password} = this.registerForm.value;
     const a = this.authService.login(email, password);
-    console.log(a);
+    this.router.navigateByUrl('/login');
 
     
   }

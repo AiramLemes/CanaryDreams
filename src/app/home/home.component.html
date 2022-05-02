@@ -20,10 +20,10 @@
                 <p>DESCUBRE TU ISLA DESTINO</p>    
             </div>
 
-            <div class = "cuadroIsla" *ngFor="let isla of islas">
-                <img src="" alt="" class="fotoIsla">
-                <h3>{{isla.nombre}}</h3>
-            </div>
+            <a href="" [routerLink]="['/isla',  isla.nombre]" class = "cuadroIsla" *ngFor="let isla of islas">
+                <img src="{{isla.imagenHome}}" alt="" class="fotoIsla">
+                <h3>&nbsp;{{isla.nombre}}</h3>
+            </a>
 
         </section>
 
@@ -34,6 +34,34 @@
                 <p>APARTAMENTOS DESTACADOS</p>
             </div>
 
+
+            <a href = "" class= CuadroApartAB *ngFor="let apartamento of apartamentos">
+
+                <img class= FotoCuadroApartAB src="{{apartamento.imagen}}" alt="">
+                
+                <div class = recuadroDatosAB>
+    
+                    <div class= FondoValApartAB>
+    
+                        <p class= ValApartAB> {{apartamento.valoracion}} </p>
+    
+                    </div>
+    
+                    <p class= NombreApartAB> &nbsp; {{apartamento.nombre}} </p>
+    
+                    <p class= DirApartAB> &nbsp; {{apartamento.localidad}} </p>
+    
+                    <div class= derechaPrecioAB>
+    
+                        <p class= PrecioApartAB> &nbsp; {{apartamento.precio}}€ </p>
+    
+                        <p class= DesdeApartAB> Desde </p>
+    
+                    </div>
+    
+                </div>
+    
+            </a>
             
 
 

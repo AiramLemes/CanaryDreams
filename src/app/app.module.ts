@@ -13,6 +13,11 @@ import { RegisterComponent } from './register/register.component';
 import { environment } from 'src/environments/environment';
 import { HomeComponent } from './home/home.component';
 import { IslaService } from './services/islas.service';
+import { ApartamentosService } from './services/apartamentos.service';
+import { IslaComponent } from './isla/isla.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HeaderComponent } from './header/header.component';
+import { AuthService } from './auth/services/auth.service';
 
 
 
@@ -21,7 +26,9 @@ import { IslaService } from './services/islas.service';
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    HomeComponent
+    HomeComponent,
+    IslaComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -29,9 +36,9 @@ import { IslaService } from './services/islas.service';
     ReactiveFormsModule,
     AngularFireDatabaseModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireAuthModule, AngularFirestoreModule,
+    AngularFireAuthModule, AngularFirestoreModule, NgbModule,
   ],
-  providers: [IslaService],
+  providers: [IslaService, ApartamentosService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

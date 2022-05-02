@@ -1,5 +1,6 @@
 import { Component, ComponentFactoryResolver, OnInit } from '@angular/core';
 import { IslaService } from '../../app/services/islas.service';
+import { ApartamentosService } from '../../app/services/apartamentos.service';
 
 
 
@@ -16,40 +17,44 @@ import { IslaService } from '../../app/services/islas.service';
 export class HomeComponent implements OnInit{
 
     islas!: Isla[];
-    constructor(private islaService: IslaService) {
+    apartamentos!: Apartamento[];
+    constructor(private islaService: IslaService, private apartamentosService: ApartamentosService) {
     }
 
-    lista!: Isla[];
 
     ngOnInit(): void {
-        const allIslas = this.islaService.getIslas();
-        allIslas.then((value) => {
-            
-            value.forEach((i: Isla) => {
+        this.islaService.getIslas().then((value) => {
+            this.islas = value;
+        /*  value.forEach((i: Isla) => {
                 console.log(i.nombre);
-                console.log(i.Apellidos);
+                console.log(i.imagenHome);
+                
             });
-            
-            console.log(this.islas);
-            
-
+        */
 
         })
 
-        
+        this.apartamentosService.getApartamentosHome().then((value) => {
+            this.apartamentos = value;
+        });
+
 
         
-        console.log(this.lista);
     }
     
 
 }
 
+type Apartamento = {
+    imagen: string;
+    nombre: string;
+    localidad: string;
+    precio: string;
+    valoracion: string;
+}
+
 
 type Isla = {
-
     imagenHome: string;
-    Apellidos: string;
     nombre: string;
-    
 }

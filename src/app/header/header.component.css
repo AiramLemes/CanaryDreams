@@ -4,11 +4,11 @@ header {
 
     display: grid; 
     grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1fr; 
     gap: 0px 0px; 
     grid-template-areas: 
-        ". user"; 
+        ". anfitrion user"; 
     width: 100%;
     height: 45px;
     margin: auto;
@@ -40,6 +40,22 @@ header {
   
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+
+.anfitrion {
+    grid-area: anfitrion;
+    display: block;
+    margin: auto;
+    height: 30px;
+    width: 150px;
+    background: linear-gradient(180deg, rgba(225, 30, 30, 0.8) 0%, rgba(142, 51, 199, 0.83) 100%);   
+    border-radius: 25px;
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFFFF;
+    text-align: center;
+    margin-right: -40%;
 }
 
 

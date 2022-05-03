@@ -26,25 +26,21 @@ export class AuthService {
 
 
 	async login (email:string, password:string) {
-		try {
 
+		if (this.user == null) {
 
-		const auth = await this.afAuth.signInWithEmailAndPassword(email, password).then((userCredential) => { 
-			const user = userCredential.user;
+			await this.afAuth.signInWithEmailAndPassword(email, password).then((userCredential) => { 
+				alert("Enhorabuena, ha iniciado sesión correctamente.")
+				window.location.assign('/')
+			});	
 
-			userCredential.user?.getIdToken().then((idToken) => {
-				this.cookies.set("token", idToken);
-			})
-		});
-		
-		
 		}
 
-		catch(error) {
-			console.log(error);
-			alert("Se ha producido un error, por favor, inténtelo de nuevo");
-			return error;
+		else {
+			alert("Ya hay una sesión abierta. Si quiere usar otra cuenta, cierre sesión");
 		}
+		
+		
 	
 	}
 
@@ -55,7 +51,7 @@ export class AuthService {
 		 sexo:string, fecha:string, telefono: string, dni: string) {
 		
 
-		const auth = await this.afAuth.createUserWithEmailAndPassword(email, password)
+		await this.afAuth.createUserWithEmailAndPassword(email, password)
 		.then((userCredential) => {
 
 			//const user = userCredential.user;
@@ -67,6 +63,8 @@ export class AuthService {
 			doc(userCredential.user?.uid).
 			set({nombre: nombre, apellidos: apellidos, sexo: sexo, 
 			fechaDeNacimiento: fecha, telefono: telefono, dni: dni, correo: email});
+
+			// Comprobar si al registrarse ya se ha iniciado sesión.
 
 		});
 		
@@ -84,23 +82,28 @@ export class AuthService {
 			console.log("No hay usuario logueado");
 			return false;
 		}
+
+
 	}
 
 
 
 	async logOut() {
-	
-		try {
-			await this.afAuth.signOut().then(() => {
+
+		let tempUser: any;
+		await this.afAuth.signOut().then((value) => {
+
+			if (tempUser != value) {
 				alert("Se ha cerrado la sesión correctamente");
 				window.location.assign('/')
-			}) ;
-		}
+			}
 
-		catch(error) {
-			console.log(error);
-			return;
-		}
+			else {
+				alert("No existe ninguna sesión en uso");
+			}
+
+			
+		}) ;
 
 	}
 

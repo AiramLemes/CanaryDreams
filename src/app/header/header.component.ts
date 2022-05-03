@@ -9,9 +9,16 @@ import { AuthService } from '../auth/services/auth.service';
 })
 export class HeaderComponent implements OnInit {
 
-    constructor(private authService: AuthService, private router: Router) { }
+
+    anfitrionButton!: any;
+
+    constructor(private authService: AuthService, private router: Router) {
+        
+    }
 
     ngOnInit(): void {
+        this.anfitrionButton = document.getElementsByClassName('anfitrion')[0];
+        this.mostrarAnfitrion();
     }
 
     
@@ -28,9 +35,21 @@ export class HeaderComponent implements OnInit {
 
     }
 
+    mostrarAnfitrion() { // Persfecto niño
+        this.authService.afAuth.onAuthStateChanged((user) => {
+			if (user) {
+				this.anfitrionButton.style.display = "";
+			} else {
+                this.anfitrionButton.style.display = "none";
+			}
+		  });
+    }
+    
+
     logOut() {
 
         this.authService.logOut();
+        this.mostrarAnfitrion
         
     }
     

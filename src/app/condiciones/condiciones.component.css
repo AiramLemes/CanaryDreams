@@ -1,0 +1,106 @@
+@media screen and (min-width: 40em){
+    body{
+        background: rgb(255, 255, 255);
+        font-family: "Times New Roman", Times, serif;
+        font-style: normal;
+        text-align: justify;
+        
+        font-size: 24px;
+        float: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        margin: 0 auto;
+        width: 80%;
+        
+        color: #000000;
+    }
+
+
+    .seccion_estandar{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    p.sobretitulo_gris{
+        font-weight: bold;
+        color: #646363;
+    }
+
+    h1.titulo_grande{
+        font-size: 44px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 60em){
+    body{
+        background: rgb(255, 255, 255);
+        font-family: "Times New Roman", Times, serif;
+        font-style: normal;
+        text-align: justify;
+        
+        font-size: 16px;
+        float: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        margin: 0 auto;
+        width: 80%;
+        
+        color: #000000;
+    }
+    
+    
+    .seccion_estandar{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    p.sobretitulo_gris{
+        font-weight: bold;
+        color: #646363;
+    }
+    
+    h1.titulo_grande{
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+}
+
+@media screen and (max-width: 40em){
+    body{
+        background: rgb(255, 255, 255);
+        font-family: "Times New Roman", Times, serif;
+        font-style: normal;
+        text-align: justify;
+        
+        font-size: 9.5px;
+        float: center;
+        padding-top: 35px;
+        padding-bottom: 35px;
+
+        margin: 0 auto;
+        width: 80%;
+        
+        color: #000000;
+    }
+    
+    
+    .seccion_estandar{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    p.sobretitulo_gris{
+        font-weight: bold;
+        color: #646363;
+    }
+    
+    h1.titulo_grande{
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+}

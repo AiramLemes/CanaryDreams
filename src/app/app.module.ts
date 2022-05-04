@@ -21,6 +21,7 @@ import { AuthService } from './auth/services/auth.service';
 import { InformacionComponent } from './Cuenta/informacion/informacion.component';
 import { SeguridadComponent } from './Cuenta/seguridad/seguridad.component';
 import { MenuComponent } from './Cuenta/menu/menu.component';
+import { CondicionesComponent } from './condiciones/condiciones.component';
 
 
 
@@ -34,7 +35,8 @@ import { MenuComponent } from './Cuenta/menu/menu.component';
     HeaderComponent,
     InformacionComponent,
     SeguridadComponent,
-    MenuComponent
+    MenuComponent,
+    CondicionesComponent
   ],
   imports: [
     BrowserModule,

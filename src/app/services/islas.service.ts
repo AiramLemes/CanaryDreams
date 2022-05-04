@@ -57,7 +57,7 @@ export class IslaService {
 
     getInformacionIsla(nombre: string) {
         return new Promise<any>((resolve) => {
-        this.db.collection('islas', ref => ref.where('nombre', '==', 'La Graciosa'))
+        this.db.collection('islas', ref => ref.where('nombre', '==', nombre))
         .valueChanges()
         .subscribe(isla =>  resolve(isla));
     })

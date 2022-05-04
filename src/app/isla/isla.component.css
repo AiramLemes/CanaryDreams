@@ -6,10 +6,20 @@ body{
     
     font-size: 24px;
     float: center;
-    padding-top: 100;
-    padding-bottom: 100;
+    padding-top: 100px;
+    padding-bottom: 100px;
     
     color: #000000;
+
+}
+
+
+h1 {
+
+    text-align: center;
+    position: relative;
+    top: 80%;
+
 }
 
 /***Primera Seccion***/
@@ -17,11 +27,12 @@ body{
     width: 100%;
     height: 600px;
     margin: auto;
-    
-
+    background-repeat: no-repeat;
     border: 1px solid #000000;
     box-sizing: border-box;
     border-radius: 3px;
+    background-image: url();
+    width: 80%;
 }
 
 /***Segunda Seccion***/
@@ -29,7 +40,7 @@ body{
     width: 1144px;
     height: auto;
     margin: 0 auto;
-    margin-top: 100;
+    margin-top: 100px;
     
 }
 
@@ -48,7 +59,7 @@ body{
     width: 1144px;
     height: 500px;
     margin: 0 auto;
-    margin-top: 100;
+    margin-top: 100px;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
@@ -100,7 +111,7 @@ body{
 .NombreApartAB{
     float: left;
     font-size:22px;
-    margin-top: 0;
+    margin-top: 0px;
 }
 
 .DirApartAB{
@@ -135,9 +146,9 @@ body{
 /***Cuarta Seccion***/
 .isla_sec_cua{
     width: 1144px;
-    height: 380;
+    height: 380px;
     margin: 0 auto;
-    margin-top: 100;
+    margin-top: 100px;
 }
 
 .isla_art_cua{
@@ -146,8 +157,8 @@ body{
     line-height: 30px;
     text-align: left;
     float: right;
-    margin-top: 40;
-    margin-left: 10;
+    margin-top: 40px;
+    margin-left: 10px;
 }
 
 .isla_sec_cua_img,.isla_img_cua{
@@ -166,9 +177,9 @@ body{
 /***Quinta Seccion***/
 .isla_sec_qui{
     width: 1144px;
-    height: 500;
+    height: 500px;
     margin: 0 auto;
-    margin-top: 100;
+    margin-top: 50px;
 }
 
 .isla_sec_qui_img,.isla_img_qui{
@@ -186,17 +197,17 @@ body{
 
 .isla_sec_qui_tex{
     width: 690px;
-    height: 500;
+    height: 500px;
     float: right;
 }
 
 /***Sexta Seccion***/
 .isla_sec_sex{
-    width: 100%;
+    width: 80%;
     height: 600px;
     margin: auto;
-    margin-top: 100;
-
+    margin-top: 100px;
+    background-repeat: no-repeat;
     border: 1px solid #000000;
     box-sizing: border-box;
     border-radius: 3px;
@@ -207,12 +218,12 @@ body{
     width: 1144px;
     height: 700px;
     margin: 0 auto;
-    margin-top: 100;
+    margin-top: 100px;
 }
 
 .isla_art_sep{
     width: 550px;
-    height: 700;
+    height: 700px;
     float: left;
 }
 
@@ -234,7 +245,7 @@ body{
     width: 1144px;
     height: 350px;
     margin: 0 auto;
-    margin-top: 100;
+    margin-top: 100px;
 }
 
 .isla_sec_oct_img,.isla_img_oct{
@@ -254,5 +265,528 @@ body{
     width: 550px;
     height: auto;
     float: right;
-    padding-top: 50;
+    padding-top: 50px;
+}
+
+@media screen and (max-width: 60em){
+    body{
+        background: rgb(255, 255, 255);
+        font-family: "Times New Roman", Times, serif;
+        font-style: normal;
+        text-align: justify;
+        
+        font-size: 16px;
+        float: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        
+        color: #000000;
+    }
+
+    /***Primera Seccion***/
+    .isla_sec_pri{
+        width: 100%;
+        height: 400px;
+        margin: auto;
+        
+
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 3px;
+    }
+
+    /***Segunda Seccion***/
+    .isla_sec_seg{
+        width: 768px;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 80px;
+        
+    }
+
+    .isla_art_seg{
+        width: 656px;
+        margin-left: auto;
+        margin-right: auto;
+        
+        line-height: 40px;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    /***Tercera Seccion***/
+    .isla_sec_ter{
+        width: 750px;
+        height: 680px;
+        margin: 0 auto;
+        margin-top: 80px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:    "." ".";
+    }
+    
+    .isla_div_ter {
+        width: 350px;
+        height: 215px;
+    
+        border:  2.731px solid #787878;
+        box-sizing: border-box;
+        border-radius: 9.9718px;
+    
+        color: #685D5D;
+    }
+    
+    .FotoCuadroApartAB {
+        width: 346px;
+        height: 148px;
+        border-radius: 8.2px 8.2px 0px 0px;
+        margin: auto;
+        margin-left: -1px;
+        margin-top: -1px;
+    }
+    
+    .isla_recuadro_ter{
+        width: 350px;
+        height: 65.568px;
+        margin-left: -1px;
+    }
+    
+    .FondoValApartAB{
+        float: right;
+        width: auto;
+        height: 25px;
+        margin-top: 5px;
+        margin-right: 10px;
+        background: #2A2867;
+    }
+    
+    .ValApartAB {
+        font-size:20px;
+        color: #ffffff;
+        margin:auto;
+    }
+    
+    .NombreApartAB{
+        float: left;
+        font-size:18px;
+        margin-top: 5px;
+    }
+    
+    .DirApartAB{
+        margin-left: -156px;
+        font-size:16px;
+        font-weight: normal;
+        margin-top: 40px;
+    }
+    
+    .DesdeApartAB{
+        float:right;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        margin-top: 40px;
+        margin-right: 8px;
+        color: #685D5D;
+    }
+    
+    .PrecioApartAB{
+        float:right;
+        font-family: Times New Roman;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        margin-right: -25px;
+        margin-top: 40px;
+        
+        color: #2D2B2B;
+    }
+
+    
+    /***Cuarta Seccion***/
+    .isla_sec_cua{
+        width: 768px;
+        height: 520px;
+        margin: 0 auto;
+    }
+    
+    #isla_sec_cua_text{
+        width: 368px;
+        height: 200px;
+        margin: auto;
+    }
+    
+    .isla_art_cua{
+        width: 360px;
+        height: 150px;
+        line-height: 30px;
+        text-align: center;
+        float: center;
+    }
+    
+    .isla_sec_cua_img{
+        width: 768px;
+        height: 300px;
+        margin: auto;
+    }
+
+    .isla_img_cua{
+        width: 630px;
+        height: 300px;
+        margin-left: 80px;
+    }
+    
+    
+    
+    /***Quinta Seccion***/
+    .isla_sec_qui{
+        width: 768px;
+        height: 650px;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    
+    .isla_sec_qui_img{
+        width: 768px;
+        height: 400px;
+        margin: auto;
+    }
+    
+
+    .isla_img_qui{
+        width: 420px;
+        height: 400px;
+        margin-left: 150px;
+    }
+    
+    .isla_sec_qui_tex{
+        width: 768px;
+        height: 250px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    /***Sexta Seccion***/
+    .isla_sec_sex{
+        width: 100%;
+        height: 400px;
+        margin: auto;
+        margin-top: 100px;
+    
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 3px;
+    }
+    
+    /***Septima Seccion***/
+    .isla_sec_sep{
+        width: 768px;
+        height: 700px;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+    
+    .isla_art_sep{
+        width: 768px;
+        height: 300px;
+    }
+    
+    .isla_sec_sep_img{
+        width: 768px;
+        height: 398px;
+    }
+
+    .isla_img_sep{
+        width: 400px;
+        height: 398px;
+    }
+    
+    /***Octava Seccion***/
+    .isla_sec_oct{
+        width: 768px;
+        height: 450px;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+    
+    .isla_sec_oct_img{
+        width: 768px;
+        height: 300px;
+    }
+    
+    .isla_img_oct{
+        width: 400px;
+        height: 300px;
+        margin-left: 160px;
+    }
+    
+    .isla_art_oct{
+        width: 768px;
+        height: 100px;
+    }
+
+
+}
+
+@media screen and (max-width: 40em){
+    body{
+        background: rgb(255, 255, 255);
+        font-family: "Times New Roman", Times, serif;
+        font-style: normal;
+        text-align: justify;
+        
+        font-size: 9.5px;
+        float: center;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        
+        color: #000000;
+    }
+
+    /***Primera Seccion***/
+    .isla_sec_pri{
+        width: 100%;
+        height: 200px;
+        margin: auto;
+        
+
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 3px;
+    }
+
+    /***Segunda Seccion***/
+    .isla_sec_seg{
+        width: 448px;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    .isla_art_seg{
+        width: 356px;
+        margin-left: auto;
+        margin-right: auto;
+        
+        line-height: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    /***Tercera Seccion***/
+    .isla_sec_ter{
+        width: 250px;
+        height: 1000px;
+        margin: 0 auto;
+        margin-top: 40px;
+
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:    "." ".";
+    }
+    
+    .isla_div_ter {
+        width: 250px;
+        height: 150px;
+    
+        border:  2.731px solid #787878;
+        box-sizing: border-box;
+        border-radius: 9.9718px;
+    
+        color: #685D5D;
+    }
+    
+    .FotoCuadroApartAB {
+        width: 246px;
+        height: 98px;
+        border-radius: 8.2px 8.2px 0px 0px;
+        margin: auto;
+        margin-left: -1px;
+        margin-top: -1px;
+    }
+    
+    .isla_recuadro_ter{
+        width: 250px;
+        height: 35.568px;
+        margin-left: -1px;
+    }
+    
+    .FondoValApartAB{
+        float: right;
+        width: auto;
+        height: 18px;
+        margin-top: 5px;
+        margin-right: 10px;
+        background: #2A2867;
+    }
+    
+    .ValApartAB {
+        font-size: 14px;
+        color: #ffffff;
+        margin:auto;
+    }
+    
+    .NombreApartAB{
+        float: left;
+        font-size:12px;
+        margin-top: 5px;
+    }
+    
+    .DirApartAB{
+        margin-left: -104px;
+        font-size: 10px;
+        font-weight: normal;
+        margin-top: 30px;
+    }
+    
+    .DesdeApartAB{
+        float:right;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        margin-top: 30px;
+        margin-right: 8px;
+        color: #685D5D;
+    }
+    
+    .PrecioApartAB{
+        float:right;
+        font-family: Times New Roman;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        margin-right: -18px;
+        margin-top: 30px;
+        
+        color: #2D2B2B;
+    }
+
+    
+    /***Cuarta Seccion***/
+    .isla_sec_cua{
+        width: 448px;
+        height: 280px;
+        margin: 0 auto;
+    }
+    
+    #isla_sec_cua_text{
+        width: 368px;
+        height: 100px;
+        margin: auto;
+    }
+    
+    .isla_art_cua{
+        width: 360px;
+        height: 150px;
+        line-height: 20px;
+        text-align: center;
+        float: center;
+    }
+    
+    .isla_sec_cua_img{
+        width: 448px;
+        height: 150px;
+        margin: auto;
+        margin-top: -70px;
+    }
+
+    .isla_img_cua{
+        width: 350px;
+        height: 150px;
+        margin-left: 50px;
+    }
+    
+    
+    
+    /***Quinta Seccion***/
+    .isla_sec_qui{
+        width: 448px;
+        height: 400px;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+    
+    .isla_sec_qui_img{
+        width: 448px;
+        height: 250px;
+        margin: auto;
+    }
+    
+
+    .isla_img_qui{
+        width: 200px;
+        height: 250px;
+        margin-left: 120px;
+    }
+    
+    .isla_sec_qui_tex{
+        width: 448px;
+        height: 130px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    /***Sexta Seccion***/
+    .isla_sec_sex{
+        width: 100%;
+        height: 200px;
+        margin: auto;
+        margin-top: 40px;
+    
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 3px;
+    }
+    
+    /***Septima Seccion***/
+    .isla_sec_sep{
+        width: 448px;
+        height: 380px;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    
+    .isla_art_sep{
+        width: 448px;
+        height: 170px;
+    }
+    
+    .isla_sec_sep_img{
+        width: 448px;
+        height: 200px;
+    }
+
+    .isla_img_sep{
+        width: 200px;
+        height: 198px;
+        margin-right: 230px;
+    }
+    
+    /***Octava Seccion***/
+    .isla_sec_oct{
+        width: 448px;
+        height: 250px;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    
+    .isla_sec_oct_img{
+        width: 448px;
+        height: 150px;
+    }
+    
+    .isla_img_oct{
+        width: 200px;
+        height: 150px;
+        margin-left: 130px;
+    }
+    
+    .isla_art_oct{
+        width: 448px;
+        height: 50px;
+        margin-top: -30px;
+    }
+
 }

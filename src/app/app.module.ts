@@ -18,6 +18,9 @@ import { IslaComponent } from './isla/isla.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
 import { AuthService } from './auth/services/auth.service';
+import { InformacionComponent } from './Cuenta/informacion/informacion.component';
+import { SeguridadComponent } from './Cuenta/seguridad/seguridad.component';
+import { MenuComponent } from './Cuenta/menu/menu.component';
 
 
 
@@ -28,7 +31,10 @@ import { AuthService } from './auth/services/auth.service';
     RegisterComponent,
     HomeComponent,
     IslaComponent,
-    HeaderComponent
+    HeaderComponent,
+    InformacionComponent,
+    SeguridadComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

@@ -54,15 +54,13 @@ export class AuthService {
 		await this.afAuth.createUserWithEmailAndPassword(email, password)
 		.then((userCredential) => {
 
-			//const user = userCredential.user;
-
-			let token: any;
-			token = userCredential.user?.getIdToken.toString
-
 			this.db.collection('users').
 			doc(userCredential.user?.uid).
 			set({nombre: nombre, apellidos: apellidos, sexo: sexo, 
 			fechaDeNacimiento: fecha, telefono: telefono, dni: dni, correo: email});
+
+			alert('Se ha registrado correctamente');
+			window.location.assign('/');
 
 			// Comprobar si al registrarse ya se ha iniciado sesión.
 

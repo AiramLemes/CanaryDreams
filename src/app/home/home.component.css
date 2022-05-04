@@ -14,6 +14,7 @@ body {
     "buscador"
     "isla"
     "apartamentos"; 
+    margin-top: 100px;
 
 }
 
@@ -41,9 +42,9 @@ section.buscador {
     grid-auto-columns: 1fr; 
     grid-template-rows: 1fr 1fr; 
     height: 500px;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/canary-dreams-db.appspot.com/o/home%2FHome.webp?alt=media&token=c3d07671-67d2-41fb-a4be-7fb59f1a20d5');
+    margin: auto;
     width: 100%;
-    background-image: url();
-    margin: 0 auto;
     border: 1px solid black;
 }
 

@@ -22,6 +22,7 @@ import { InformacionComponent } from './Cuenta/informacion/informacion.component
 import { SeguridadComponent } from './Cuenta/seguridad/seguridad.component';
 import { MenuComponent } from './Cuenta/menu/menu.component';
 import { CondicionesComponent } from './condiciones/condiciones.component';
+import { PrivacidadComponent } from './privacidad/privacidad.component';
 
 
 
@@ -36,7 +37,8 @@ import { CondicionesComponent } from './condiciones/condiciones.component';
     InformacionComponent,
     SeguridadComponent,
     MenuComponent,
-    CondicionesComponent
+    CondicionesComponent,
+    PrivacidadComponent
   ],
   imports: [
     BrowserModule,

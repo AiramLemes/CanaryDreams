@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { IslaComponent } from './isla/isla.component';
 import { InformacionComponent } from './Cuenta/informacion/informacion.component';
 import { CondicionesComponent } from './condiciones/condiciones.component';
+import { PrivacidadComponent } from './privacidad/privacidad.component';
 
 
 const routes: Routes = [
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'isla/:nombre', component: IslaComponent },
   { path: 'cuenta/informacion', component: InformacionComponent },
-  {path: 'Condiciones', component: CondicionesComponent, pathMatch: 'full' },
+  { path: 'Condiciones', component: CondicionesComponent, pathMatch: 'full' },
+  { path: 'privacidad', component: PrivacidadComponent, pathMatch: 'full' },
 
 
 ];

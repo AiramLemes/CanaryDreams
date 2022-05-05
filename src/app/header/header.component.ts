@@ -25,7 +25,7 @@ export class HeaderComponent implements OnInit {
     redireccionar(componente: string) {
         // Si el nombre de la ruta no existe se genera un error.
         if (this.authService.currentUser()) {
-            this.router.navigateByUrl("/"+ componente);
+            this.router.navigateByUrl("/cuenta/"+ componente);
         }
 
         else {
@@ -38,7 +38,7 @@ export class HeaderComponent implements OnInit {
     mostrarAnfitrion() { // Persfecto niño
         this.authService.afAuth.onAuthStateChanged((user) => {
 			if (user) {
-				this.anfitrionButton.style.display = "";
+				this.anfitrionButton.style.display = "block";
 			} else {
                 this.anfitrionButton.style.display = "none";
 			}
@@ -49,7 +49,6 @@ export class HeaderComponent implements OnInit {
     logOut() {
 
         this.authService.logOut();
-        this.mostrarAnfitrion
         
     }
     

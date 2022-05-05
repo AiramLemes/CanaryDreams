@@ -1,5 +1,5 @@
 body {
-    margin-bottom: 1000px;
+    margin-bottom: 500px;
 
 }
 
@@ -46,7 +46,7 @@ section.buscador {
     background-image: url('https://firebasestorage.googleapis.com/v0/b/canary-dreams-db.appspot.com/o/home%2FHome.webp?alt=media&token=c3d07671-67d2-41fb-a4be-7fb59f1a20d5');
     background-repeat: no-repeat;
     margin: auto;
-    width: 100%;
+    width: 1600px;
     border: 1px solid black;
 }
 
@@ -108,7 +108,7 @@ h3 {
     border-radius: 5px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: rgba(255, 255, 255, 0.7);
-    top: -60px;
+    top: -80px;
     left: 20px;
 }
 
@@ -270,6 +270,8 @@ a {
     margin: auto;
     color: black;
 }
+
+
 
 
 

@@ -1,15 +1,15 @@
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import 'firebase/auth';
-import { first } from 'rxjs';
+import { doc, getDoc } from "firebase/firestore";
 import { CookieService } from "ngx-cookie-service";
 import { AngularFirestore } from '@angular/fire/compat/firestore';
-import { getAuth, updateCurrentUser, User } from 'firebase/auth';
 
 
 @Injectable()
 
 export class AuthService {
+  
 	private user: any;
 
 	constructor(public afAuth: AngularFireAuth, public cookies: CookieService, public db: AngularFirestore) { 
@@ -17,8 +17,10 @@ export class AuthService {
 			if (user) {
 				this.user = user;
 				console.log(user);
+				console.log("Usuario logueado")
 			} else {
 			  this.user = null;
+			  console.log("No hay usuario logueado")
 			}
 		  });
 	}
@@ -27,7 +29,7 @@ export class AuthService {
 
 	async login (email:string, password:string) {
 
-		if (this.user == null) {
+		if (!this.user) {
 
 			await this.afAuth.signInWithEmailAndPassword(email, password).then((userCredential) => { 
 				alert("Enhorabuena, ha iniciado sesión correctamente.")
@@ -88,33 +90,51 @@ export class AuthService {
 
 	async logOut() {
 
-		let tempUser: any;
-		await this.afAuth.signOut().then((value) => {
+		if (this.user) {
 
-			if (tempUser != value) {
-				alert("Se ha cerrado la sesión correctamente");
-				window.location.assign('/')
-			}
-
-			else {
-				alert("No existe ninguna sesión en uso");
-			}
+			await this.afAuth.signOut().then((value) => {
 
 			
-		}) ;
-
-	}
-
-	getCurrentUser() {
-		try {
-			return this.afAuth.authState.pipe(first()).toPromise(); 
+				alert("Se ha cerrado la sesión correctamente");
+				window.location.assign('/')
+	
+				
+			})
 		}
 
-		catch(error) {
-			console.log(error);
-			return;
+		else {
+			alert("No existe ninguna sesión en uso");
+		}
+	
+	}
+
+
+
+
+	async getUserData() {
+	
+		const docRef = doc(this.db.firestore, "usuarios", this.user.uid);
+		const docSnap = await getDoc(docRef);
+
+		if (docSnap.exists()) {
+			return docSnap;
+		} 
+		
+		else {
+			// doc.data() will be undefined in this case
+			console.log("No such document!");
+			return
 		}
 	}
+
+
+	modificarUsuario(nombre: string, apellidos: string, telefono: string) {
+		
+		this.db.doc("usuarios/" + this.user.uid)
+		.update({nombre: nombre, apellidos: apellidos, telefono: telefono})
+		
+	}
+
 }
 
 

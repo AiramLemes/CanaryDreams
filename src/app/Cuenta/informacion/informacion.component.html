@@ -6,16 +6,16 @@
         
         <img class = "imagen" src="" alt="d">
 
-        <form class="personalData">
+        <form [formGroup]="personalData" class="personalData">
 
                 <div class="campos">
                     <label for="">Nombre</label>
-                    <input type="text" class="camposRegistrarse" formControlName = "nombre">
+                    <input type="text" class="camposRegistrarse" required formControlName = "nombre">
                 </div>
 
                 <div class="campos">
                     <label for="">Apellidos</label>
-                    <input type="text" class="camposRegistrarse" formControlName = "apellidos">
+                    <input type="text" class="camposRegistrarse" required formControlName = "apellidos">
                 </div>
 
 
@@ -26,7 +26,7 @@
                 
                 <div class="campos">
                     <label for="">Teléfono</label>
-                    <input type="text" class="camposRegistrarse" formControlName = "telefono">
+                    <input type="text" class="camposRegistrarse" required formControlName = "telefono">
                 </div>
 
                 <div class="campos">
@@ -44,6 +44,9 @@
                     <label for="">Correo</label>
                     <input type="text" class="camposRegistrarse" formControlName = "correo" readonly>
                 </div>
+
+                <input type="button" class="boton" (click)="aplicarCambios()" value="APLICAR CAMBIOS">
+
         </form>
 
 

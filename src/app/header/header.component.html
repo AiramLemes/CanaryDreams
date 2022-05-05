@@ -23,12 +23,12 @@
                     <a class = "menu" (click)="redireccionar('')">GESTIONAR MIS ALOJAMIENTOS</a> <br>
                     <a class = "menu" (click)="redireccionar('')">GESTIONAR MIS RESERVAS</a> <br>
                     <a class = "menu" (click)="redireccionar('')">RESERVAS PENDIENTES</a> <br>
-                    <a class = "menu" (click)="redireccionar('')">MI CUENTA</a> <br>
+                    <a class = "menu" (click)="redireccionar('informacion')">MI CUENTA</a> <br>
                     <a class = "menu" (click)="logOut()">CERRAR SESIÓN</a> <br>  
                 </div>
               </div>
             
-            <a href="">
+            <a (click)="redireccionar('informacion')">
                 <img class = "imagen" src="/assets/Count.png" alt=""> 
             </a>
         </div>

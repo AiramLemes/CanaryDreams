@@ -7,8 +7,11 @@
     grid-auto-flow: row;
     grid-template-areas:
     "nav data";
-    width:  max(1900px);
     margin-top: 65px;
+    margin: auto;
+    width: 1000px;
+    margin-top: 100px;
+    
 }
   
 
@@ -55,7 +58,7 @@ label {
 .personalData {  
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -65,7 +68,19 @@ label {
       "."
       "."
       "."
+      "."
       ".";
     grid-area: personalData;
+}
+
+.boton {
+
+    width: 300px;
+    height: 30px;
+    margin: auto;
+    border-radius: 15px;
+    background-color: #69C3FE;
+    cursor: pointer;
+
 }
   

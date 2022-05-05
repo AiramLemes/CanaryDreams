@@ -1,6 +1,7 @@
 import { Component, ComponentFactoryResolver, OnInit } from '@angular/core';
 import { IslaService } from '../../app/services/islas.service';
-import { ApartamentosService } from '../../app/services/apartamentos.service';
+import { AlojamientosService } from '../services/alojamientos.service';
+
 
 
 
@@ -18,7 +19,7 @@ export class HomeComponent implements OnInit{
 
     islas!: Isla[];
     apartamentos!: Apartamento[];
-    constructor(private islaService: IslaService, private apartamentosService: ApartamentosService) {
+    constructor(private islaService: IslaService, private alojamientosService: AlojamientosService) {
     }
 
 
@@ -34,7 +35,7 @@ export class HomeComponent implements OnInit{
 
         })
 
-        this.apartamentosService.getApartamentosHome().then((value) => {
+        this.alojamientosService.getAlojamientosHome().then((value) => {
             this.apartamentos = value;
         });
 

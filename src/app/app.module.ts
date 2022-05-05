@@ -13,7 +13,6 @@ import { RegisterComponent } from './register/register.component';
 import { environment } from 'src/environments/environment';
 import { HomeComponent } from './home/home.component';
 import { IslaService } from './services/islas.service';
-import { ApartamentosService } from './services/apartamentos.service';
 import { IslaComponent } from './isla/isla.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
@@ -23,6 +22,7 @@ import { SeguridadComponent } from './Cuenta/seguridad/seguridad.component';
 import { MenuComponent } from './Cuenta/menu/menu.component';
 import { CondicionesComponent } from './condiciones/condiciones.component';
 import { PrivacidadComponent } from './privacidad/privacidad.component';
+import { AlojamientosService } from './services/alojamientos.service';
 
 
 
@@ -48,7 +48,7 @@ import { PrivacidadComponent } from './privacidad/privacidad.component';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule, AngularFirestoreModule, NgbModule,
   ],
-  providers: [IslaService, ApartamentosService, AuthService],
+  providers: [IslaService, AlojamientosService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

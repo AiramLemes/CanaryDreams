@@ -36,6 +36,11 @@
         font-weight: bold;
     }
 
+    #puntos{
+        font-size: 28px;
+        font-weight: bold;
+    }
+
     .seccion_estandar_dos{
         width: 90%;
         height: 300px;
@@ -101,6 +106,11 @@
         font-weight: bold;
     }
     
+    #puntos{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
     .seccion_estandar_dos{
         width: 90%;
         height: 250px;
@@ -163,6 +173,10 @@
     
     h1.titulo_grande{
         font-size: 17px;
+        font-weight: bold;
+    }
+    #puntos{
+        font-size: 12px;
         font-weight: bold;
     }
     

@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'isla/:nombre', component: IslaComponent },
   { path: 'cuenta/informacion', component: InformacionComponent },
   { path: 'Condiciones', component: CondicionesComponent, pathMatch: 'full' },
-  { path: 'privacidad', component: PrivacidadComponent, pathMatch: 'full' },
+  { path: 'Privacidad', component: PrivacidadComponent, pathMatch: 'full' },
 
 
 ];

@@ -10,41 +10,9 @@ export class IslaService {
 
 
     itemsCollection!: AngularFirestoreCollection<Isla>;
-//    islas: Observable<Isla[]>;
 
-    constructor(private db: AngularFirestore) { 
-        
-    }
+    constructor(private db: AngularFirestore) {}
 
-    /*
-    getItems() {
-      return new Promise<any> this.db.collection('islas').snapshotChanges().subscribe((response) => {
-        console.log("response", response);
-      });
-    }
-
-    
-
-
-    getIslas() {
-      console.log('waiting until promise is resolved...');
-      
-        this.db.collection("prueba").valueChanges().toPromise().then(islas => {
-          
-          console.log('promise resolved');
-          console.log(islas);
-        })
-
-        .catch(err => {
-          console.log('Oh noooo!!');
-          console.log(err);
-        });
-      
-        console.log('promise is not resolved yet');
-    }
-
-
-*/
 
     getIslas() {  
         return new Promise<any>((resolve) => {

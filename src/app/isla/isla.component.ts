@@ -1,6 +1,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { AlojamientosService } from '../services/alojamientos.service';
 import { IslaService } from '../services/islas.service';
 
 @Component({
@@ -21,7 +22,7 @@ export class IslaComponent implements OnInit {
   imagen3!: string;
   imagen4!: string;
 
-  constructor(private islaService: IslaService, private route: ActivatedRoute) { 
+  constructor(private islaService: IslaService, private route: ActivatedRoute, private alojamientoService: AlojamientosService) { 
 
     this.nombre = this.route.snapshot.paramMap.get('nombre');
   }
@@ -29,10 +30,10 @@ export class IslaComponent implements OnInit {
 
   ngOnInit(): void {
 
-    console.log(this.nombre)
+    
 
     this.islaService.getInformacionIsla(this.nombre).then((value) => {
-      console.log(this.nombre)
+    
       this.texto1 = value[0].texto1;
       this.texto2 = value[0].texto2;
       this.texto3 = value[0].texto3;
@@ -50,10 +51,12 @@ export class IslaComponent implements OnInit {
       f[0].style.backgroundImage = "url(" + value[0].imagenFondo1 + ")";
       f = document.getElementsByClassName('isla_sec_sex') as HTMLCollectionOf<HTMLElement>;
       f[0].style.backgroundImage = "url(" + value[0].imagenFondo2 + ")";
-      console.log(value[0].texto5)
-      console.log(value[0].imagenFondo1);
-      console.log(value[0].imagenFondo2);
+
       
+    })
+
+    this.alojamientoService.getAlojamientosIsla(this.nombre).then((value) => {
+      // cargar los alojamientos de la isla
     })
   }
 

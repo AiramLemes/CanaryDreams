@@ -16,7 +16,6 @@ export class AuthService {
 		afAuth.onAuthStateChanged((user) => {
 			if (user) {
 				this.user = user;
-				console.log(user);
 				console.log("Usuario logueado")
 			} else {
 			  this.user = null;

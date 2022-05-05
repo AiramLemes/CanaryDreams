@@ -23,6 +23,14 @@ import { MenuComponent } from './Cuenta/menu/menu.component';
 import { CondicionesComponent } from './condiciones/condiciones.component';
 import { PrivacidadComponent } from './privacidad/privacidad.component';
 import { AlojamientosService } from './services/alojamientos.service';
+import { AnfitrionComponent } from './anfitrion/anfitrion/anfitrion.component';
+import { Paso1Component } from './anfitrion/paso1/paso1.component';
+import { Paso2Component } from './anfitrion/paso2/paso2.component';
+import { Paso3Component } from './anfitrion/paso3/paso3.component';
+import { Paso4Component } from './anfitrion/paso4/paso4.component';
+import { Paso5Component } from './anfitrion/paso5/paso5.component';
+import { Paso6Component } from './anfitrion/paso6/paso6.component';
+import { Paso7Component } from './anfitrion/paso7/paso7.component';
 
 
 
@@ -38,7 +46,15 @@ import { AlojamientosService } from './services/alojamientos.service';
     SeguridadComponent,
     MenuComponent,
     CondicionesComponent,
-    PrivacidadComponent
+    PrivacidadComponent,
+    AnfitrionComponent,
+    Paso1Component,
+    Paso2Component,
+    Paso3Component,
+    Paso4Component,
+    Paso5Component,
+    Paso6Component,
+    Paso7Component
   ],
   imports: [
     BrowserModule,

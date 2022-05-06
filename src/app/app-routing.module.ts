@@ -12,6 +12,10 @@ import { ContactarComponent } from './contactar/contactar.component';
 import { Paso1Component } from './anfitrion/paso1/paso1.component';
 import { Paso2Component } from './anfitrion/paso2/paso2.component';
 import { Paso3Component } from './anfitrion/paso3/paso3.component';
+import { Paso4Component } from './anfitrion/paso4/paso4.component';
+import { Paso5Component } from './anfitrion/paso5/paso5.component';
+import { Paso6Component } from './anfitrion/paso6/paso6.component';
+import { Paso7Component } from './anfitrion/paso7/paso7.component';
 
 
 const routes: Routes = [
@@ -27,6 +31,10 @@ const routes: Routes = [
   { path: 'anfitrion/paso1', component: Paso1Component, pathMatch: 'full' },
   { path: 'anfitrion/paso2/:id', component: Paso2Component, pathMatch: 'full' },
   { path: 'anfitrion/paso3/:id', component: Paso3Component, pathMatch: 'full' },
+  { path: 'anfitrion/paso4/:id', component: Paso4Component, pathMatch: 'full' },
+  { path: 'anfitrion/paso5/:id', component: Paso5Component, pathMatch: 'full' },
+  { path: 'anfitrion/paso6/:id', component: Paso6Component, pathMatch: 'full' },
+  { path: 'anfitrion/paso7/:id', component: Paso7Component, pathMatch: 'full' },
   { path: 'ayuda/contactar', component: ContactarComponent, pathMatch: 'full' },
 
 

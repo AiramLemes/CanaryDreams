@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { AlojamientosService } from 'src/app/services/alojamientos.service';
 
 @Component({
@@ -12,7 +12,7 @@ export class Paso2Component implements OnInit {
 
     id!: any;
 
-    constructor(private route: ActivatedRoute, private alojamiento: AlojamientosService) { 
+    constructor(private route: ActivatedRoute, private alojamiento: AlojamientosService, private path: Router) { 
         this.id = this.route.snapshot.paramMap.get('id');
     }
 
@@ -48,6 +48,7 @@ export class Paso2Component implements OnInit {
                 ciudad: ciudad}
     
             this.alojamiento.actualizarLocalidadAlojamiento(this.id, dir);
+            this.path.navigateByUrl("anfitrion/paso3/" + this.id);
             
             
         }

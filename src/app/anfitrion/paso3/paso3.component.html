@@ -1,57 +1,41 @@
 <body class = AP3>  
 
     <!--Titulo-->
-    <p class = TituloAP3> NÚMERO DE HUÉSPEDES QUE PUEDEN HOSPEDARSE </p>
+    <p class = TituloAP3> CUÉNTANOS UN POCO ACERCA DE LOS ESPACIOS DISPONIBLES </p>
 
-    <!--Imagen-->
-    <div class = imagenAP3>
-        <p class = texto1AP3> Huéspedes </p>
 
-        <div class = sumarAP3>
+    <form action="" [formGroup]="formulario" class="formulario">
 
-            <div class = Img1AP3>  </div>
-            <p class = num1AP3> 1 </p>
-            <div class = Img2AP3>  </div>
-
-        </div>
-
-        <p class = texto2AP3> Camas </p>
-
-        <div class = sumarAP3>
-
-            <div class = Img1AP3>  </div>
-            <p class = num1AP3> 1 </p>
-            <div class = Img2AP3>  </div>
-
-        </div>
-
-        <p class = texto3AP3> Dormitorios </p>
-
-        <div class = sumarAP3>
-
-            <div class = Img1AP3>  </div>
-            <p class = num1AP3> 1 </p>
-            <div class = Img2AP3>  </div>
-
-        </div>
-
-        <p class = texto4AP3> Baños </p>
-
-        <div class = sumarAP3>
-
-            <div class = Img1AP3>  </div>
-            <p class = num1AP3> 1 </p>
-            <div class = Img2AP3>  </div>
-
+        <div class="inputs">
+            <label for="huespedes" class="etiquetas">Huéspedes</label>
+            <input type="number" id="huespedes" class="campos" min="1" formControlName="huespedes">
         </div>
         
+        <div class="inputs">
+            <label for="camas" class="etiquetas">Camas</label>
+            <input type="number" id="camas" class="campos" min="1"  formControlName="camas">
+        </div>
+        
+        <div class="inputs">
+            <label for="baños" class="etiquetas">Baños</label>
+            <input type="number" id="baños" class="campos" min="1"  formControlName="baños">
+        </div>
+        
+        <div class="inputs">
+            <label for="dormitorios" class="etiquetas">Dormitorios</label>
+            <input type="number" id="dormitorios" class="campos" min="1"  formControlName="dormitorios">
+        </div>
+
+    </form>
+
+    <div class="botones">
+        <!--Boton 1-->
+        <input class = boton1 type="submit" value = "Atrás" (click)="volverAtras()">
+
+        <!--Boton 2-->
+        <input class = boton2 type="submit" value = "Siguiente" (click)="guardarInformacion()">
     </div>
+
     
-    <div class = lineaAP3>  </div>
-    <!--Boton 1-->
-    <input class = boton1AP3 type="submit" value = "Atrás">
-
-    <!--Boton 2-->
-    <input class = boton2AP3 type="submit" value = "Siguiente">
-
+    
 </body>

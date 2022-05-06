@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 export class AlojamientosService {
     
 
-    constructor(private db: AngularFirestore, private route: Router) { 
+    constructor(private db: AngularFirestore) { 
 
     }
 
@@ -34,13 +34,12 @@ export class AlojamientosService {
 
 
     crearAlojamiento(id: string, tipo: string) {
-        this.db.collection("apartamentos").doc(id).set({tipo: tipo})
+        this.db.collection("prueba").doc(id).set({tipo: tipo})
     }
 
 
-    actualizarLocalidadAlojamiento(id: string, dir: { direccion: any; cp: any; isla: any; provincia: any; ciudad: any; }) {
-        this.db.collection("apartamentos").doc(id).set(dir);
-        this.route.navigateByUrl("anfitrion/paso3/" + id);
+    actualizarLocalidadAlojamiento(id: string, dir: any) {
+        this.db.collection("prueba").doc(id).update(dir);
 
     }
 

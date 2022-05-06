@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { AlojamientosService } from 'src/app/services/alojamientos.service';
 
 @Component({
   selector: 'app-paso5',
@@ -7,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Paso5Component implements OnInit {
 
-  constructor() { }
+  id!: any;
+
+    constructor(private alojamiento: AlojamientosService, private route: ActivatedRoute, 
+        private path: Router)  {
+        this.id = this.route.snapshot.paramMap.get('id')
+     }
 
   ngOnInit(): void {
   }

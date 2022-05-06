@@ -1,1 +1,142 @@
-<p>paso4 works!</p>
+
+
+
+<body>  
+
+    <!--Titulo-->
+
+    <p class = TituloAP4> INDICA TODO  LO QUE OFRECE TU ESPACIO PARA QUE LOS VIAJEROS LO VEAN </p>
+
+    <!--Imagen-->
+
+    <div class = imagenAP4 Style = "visibility:hidden">  </div>
+
+    <p class = titulo1AP4>¿ Ofreces algún servicio destacado ?</p>
+
+    <!--Parte 1-->
+    <form [formGroup]="destacados" class = primerRecuadroAP4>
+
+        <div class = elemento1AP4>
+            <input type="checkbox" name="Piscina" formControlName="piscina"> 
+            <p class = parte1Texto1AP4>Piscina</p>
+        </div>
+
+        <div class = elemento1AP4>
+            <input type="checkbox" value="Bañera de hidromasaje" formControlName="patio"> 
+            <p class = parte1Texto1AP4>Bañera de hidromasaje</p>
+        </div>
+
+        <div class = elemento1AP4>
+            <input type="checkbox" value="Pati" formControlName="mesaBillar"> 
+            <p class = parte1Texto1AP4>Patio</p>
+        </div>
+
+        <div class = elemento1AP4>
+            <input type="checkbox" value="Barbacoa" formControlName="comedor"> 
+            <p class = parte1Texto1AP4>Barbacoa</p>
+        </div>
+
+        <div class = elemento1AP4>
+            <input type="checkbox" value="Mesa de billar" formControlName="bañera"> 
+            <p class = parte1Texto1AP4>Mesa de billar</p>
+        </div>
+
+        <div class = elemento1AP4>
+            <input type="checkbox" value="Chimenea Interior" formControlName="barbacoa"> 
+            <p class = parte1Texto1AP4>Chimenea Interior</p>
+        </div>
+
+        <div class = elemento1AP4>
+            <input type="checkbox" value="Comedor al aire libre" formControlName="chimenea"> 
+            <p class = parte1Texto1AP4>Comedor al aire libre</p>
+        </div>
+
+        <div class = elemento1AP4>
+            <input type="checkbox" value="Equipo para hacer ejercicio" formControlName="ejercicio"> 
+            <p class = parte1Texto1AP4>Equipo para hacer ejercicio</p>
+        </div>
+
+    </form>
+
+    <!--Parte 2-->
+    <p class = titulo1AP4>¿Y éstos?, son los favoritos de los huéspedes</p>
+
+    <form class = primerRecuadroAP4 [formGroup]="favoritos">
+
+        <div class = elemento1AP4>
+            <input type="checkbox" value="Wifi" formControlName="wifi"> 
+            <p class = parte1Texto1AP4>Wifi</p>
+        </div>
+
+        <div class = elemento1AP4>
+            <input type="checkbox" value="Televisión" formControlName="tv"> 
+            <p class = parte1Texto1AP4>Televisión</p>
+        </div>
+
+        <div class = elemento1AP4>
+            <input type="checkbox" value="Cocina" formControlName="cocina"> 
+            <p class = parte1Texto1AP4>Cocina</p>
+        </div>
+
+        <div class = elemento1AP4>
+            <input type="checkbox" value="Lavadora" formControlName="lavadora"> 
+            <p class = parte1Texto1AP4>Lavadora</p>
+        </div>
+
+        <div class = elemento1AP4>
+            <input type="checkbox" value="Parking gratuito" formControlName="parking"> 
+            <p class = parte1Texto1AP4>Parking gratuito</p>
+        </div>
+
+        <div class = elemento1AP4>
+            <input type="checkbox" value="Aire Acondiconado" formControlName="ac"> 
+            <p class = parte1Texto1AP4>Aire Acondiconado</p>
+        </div>
+
+        <div class = elemento1AP4>
+            <input type="checkbox" value="Zona para trabajar" formControlName="zonaTrabajo"> 
+            <p class = parte1Texto1AP4>Zona para trabajar</p>
+        </div>
+
+        <div class = elemento1AP4>
+            <input type="checkbox" value="Ducha exterior" formControlName="ducha">  
+            <p class = parte1Texto1AP4>Ducha exterior</p>
+        </div>
+
+    </form>
+
+    <!--Parte 3-->
+    <p class = titulo1AP4>¿Dispones de alguno de estos elementos de seguridad?</p>
+
+    <form class = primerRecuadroAP4 [formGroup]="seguridad">
+
+        <div class = elemento1AP4>
+            <input type="checkbox" value="Detector de humo" formControlName="humo"> 
+            <p class = parte1Texto1AP4>Detector de humo</p>
+        </div>
+
+        <div class = elemento1AP4>
+            <input type="checkbox" value="Botiquín" formControlName="botiquin"> 
+            <p class = parte1Texto1AP4>Botiquín</p>
+        </div>
+
+        <div class = elemento1AP4>
+            <input type="checkbox" value="Detector de Monóxido de Carbono" formControlName="detector"> 
+            <p class = parte1Texto1AP4>Detector de Monóxido de Carbono</p>
+        </div>
+
+        <div class = elemento1AP4>
+            <input type="checkbox" value="Extintor de incendios" formControlName="extintor"> 
+            <p class = parte1Texto1AP4>Extintor de incendios</p>
+        </div>
+
+    </form>
+
+
+    <!--botones-->
+    <div class = lineaAP4>  </div>
+
+    <input class = boton1AP4 type="submit" value = "Atrás">
+    
+    <button class = boton2AP4 (click)="guardarInformacion()">Siguiente</button>
+</body>

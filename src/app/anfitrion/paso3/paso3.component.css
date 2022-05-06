@@ -1,29 +1,96 @@
-/********************ESTO ES APARTAMENTO BUSCADOR********************/
+
 body.AP3{
 
     font-family: Roboto Condensed;
     font-style: normal;
-    font-size: x-large;
+    font-size: 30px;
     text-align: center;
-    color: #000000; 
 
-    margin: 0 auto;
-
-    padding-top: 100px; 
-    padding-bottom: 170px;
-
-    width: 100%;
-
+    
+    margin: auto;
     overflow: hidden;
+
+    width: 1000px;
+    margin-top: -50px;
+
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        "TituloAP3"
+        "formulario"
+        "botones";
 
 }
 
-/********************ESTO ES ANFITRIÓN PASO 3********************/
+
+.formulario {
+    grid-area: formulario;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        "."
+        "."
+        "."
+        "."; 
+
+    width: 1000px;
+    align-content: center;
+}
+
+
+
+.inputs {
+
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        ". .";
+    margin: auto;
+    margin-top: 30px;
+}
+
+.etiquetas {
+    float: left;
+    margin-right: 150px;
+
+}
+
+
+.campos {
+    width: 300px;
+}
+
+.botones {
+    grid-area: botones;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        ". .";
+    margin: auto;
+    width: 800px;
+
+}
+
+
+
+
 
 .TituloAP3{
     width: 940px;
     height: 56px;
-
+    grid-area: TituloAP3;
     margin: auto;
 
     margin-bottom: 40px;
@@ -41,156 +108,11 @@ body.AP3{
     color: tomato;  
 }
 
-.imagenAP3{
-    width: 700px;
-    height: 503px;
-
-    margin: auto;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "." "." "." ".";
-
-    background: url(https://www.fotocommunity.es/styleguide/img/homepage/poster-comments.jpg);
-}
-
-.texto1AP3{
-    width: 249.22px;
-    height: 56px;
-
-    margin-left:20px;
-    margin-top:30px;
-
-    font-family: Roboto Condensed;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 46px;
-
-    background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: tomato;  
-
-}
-
-.texto2AP3{
-    width: 249.22px;
-    height: 56px;
-
-    margin-left:0px;
-    margin-top:30px;
-
-    font-family: Roboto Condensed;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 56px;
-
-    background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: tomato;  
-
-}
-
-.texto3AP3{
-    width: 249.22px;
-    height: 56px;
-
-    margin-left:35px;
-    margin-top:30px;
-
-    font-family: Roboto Condensed;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 56px;
-
-    background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: tomato;  
-
-}
-
-.texto4AP3{
-    width: 249.22px;
-    height: 56px;
-
-    margin-left:0px;
-    margin-top:30px;
-
-    font-family: Roboto Condensed;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 56px;
-
-    background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: tomato;  
-
-}
-
-.sumarAP3{
-    margin-top:60px;
-    margin-left:100px;
-    width: 200px;
-    height: 50px;
-}
-
-.num1AP3{
-    width: 16.91px;
-    height: 48px;
-
-    font-family: Roboto Condensed;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 42px;
-
-    margin-top: -50px;
-    margin-left: 80px;
-
-    background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: tomato;  
-
-}
-
-.Img1AP3{
-    width: 33.83px;
-    height: 41.14px;
-    background: url(https://www.istockphoto.com/resources/images/PhotoFTLP/998044806.jpg);
-}
-
-.Img2AP3{
-    margin-top: -75px;
-    margin-left: 150px;
-    width: 33.83px;
-    height: 41.14px;
-    background: url(https://www.istockphoto.com/resources/images/PhotoFTLP/998044806.jpg);
-}
-
-.LineaAP3{
-    position: absolute;
-    width: 33.83px;
-    height: 41.14px;
-    left: 962.17px;
-    top: 929.57px;
-}
-
-.boton1AP3{
+.boton1{
     width: 153px;
     height: 45px;
-    float: left;
-    margin-top: 40px;
-    margin-left: 40px;
+    margin: auto;
+    margin-left: 50px;
     
     background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
     border-radius: 18px;
@@ -204,15 +126,11 @@ body.AP3{
     color: #FFFFFF;
 }
 
-.boton2AP3{
+.boton2{
     width: 153px;
     height: 45px;
-
-    float: right;
-    margin-top: 40px;
-
-    margin-right: 40px;
-
+    margin: auto;
+    margin-right: 50px;
     background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
     border-radius: 18px;
 

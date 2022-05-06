@@ -1,0 +1,465 @@
+body.AP4{
+    font-family: Times New Roman, Times, serif; 
+    font-style: normal; font-weight: bold; 
+    float: center; 
+    padding-top: 100px; 
+    padding-bottom: 100px;
+    color: #000000; 
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.TituloAP4{
+    width: 900px;
+    height: 112px;
+
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: -260px;
+
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 500px;
+    font-size: 28px;
+    line-height: 56px;
+    text-align: center;
+
+
+    background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: tomato;  
+}
+
+.primerRecuadroAP4{
+    width: 620px;
+    height: 203px;
+
+    margin: auto;
+    margin-top: 10px;
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 0.2fr  0.2fr  0.2fr  0.2fr;
+    grid-template-areas: 
+    "." "." "." ".";
+}
+
+.imagenAP4{
+    width: 144px;
+    height: 151px;
+
+    margin-left:1100px;
+    margin-top:100px;
+
+    background: url(https://www.fotocommunity.es/styleguide/img/homepage/poster-comments.jpg);
+}
+
+.titulo1AP4{
+    width: 900px;
+    height: 42px;
+
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 42px;
+
+    color: #000000;
+}
+
+.elemento1AP4{
+    width: 105px;
+    height: 42px;
+}
+
+.parte1Texto1AP4{
+    width: 500px;
+    height: 42px;
+
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 42px;
+    margin-top:-35px;
+    margin-left:80px;
+
+    color: #000000;
+}
+
+.Img1AP4{
+    width: 28px;
+    height: 28px;
+    background: url(https://www.fotocommunity.es/styleguide/img/homepage/poster-comments.jpg);
+   
+}
+
+
+.lineaAP4{
+    width: 100%;
+    margin-top: -100px;
+
+    border: 6px solid #D5C7C7;
+    transform: rotate(0.08deg);
+}
+
+
+
+.boton1AP4{
+    width: 153px;
+    height: 35px;
+
+    margin-top: 40px;
+    margin-left: 40px;
+
+
+    background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+    border-radius: 18px;
+
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 500px;
+    font-size: 26px;
+    line-height: 22px;
+
+    color: #FFFFFF;
+}
+
+.boton2AP4{
+    width: 153px;
+    height: 35px;
+
+    float:right;
+    margin-top: 40px;
+    margin-right: 40px;
+
+    background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+    border-radius: 18px;
+
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 500px;
+    font-size: 26px;
+    line-height: 22px;
+
+    color: #FFFFFF;
+}
+
+/* 640 to 960 pixels */
+@media screen and (max-width: 60em) {
+    
+
+    body.AP4{
+        font-family: Times New Roman, Times, serif; 
+        font-style: normal; font-weight: bold; 
+        float: center; 
+        padding-top: 100px; 
+        padding-bottom: 170px;
+        color: #000000; 
+        margin: 0 auto;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .TituloAP4{
+        width: 600px;
+        height: 112px;
+    
+        margin: auto;
+        margin-top: -50px;
+        margin-bottom: -190px;
+    
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: 500px;
+        font-size: 20px;
+        line-height: 36px;
+        text-align: center;
+    
+    
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: tomato;  
+    }
+    
+    .primerRecuadroAP4{
+        width: 600px;
+        height: 203px;
+    
+        margin: auto;
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr;
+        grid-template-areas: 
+        "." "." "." ".";
+    }
+    
+    .imagenAP4{
+        width: 100px;
+        height: 90px;
+    
+        margin-left: 650px;
+        margin-top:70px;
+    
+    
+    }
+    
+    .titulo1AP4{
+        width: 600px;
+        height: 42px;
+        
+    
+        margin: 0 auto;
+        margin-bottom: 20px;
+    
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 42px;
+    
+        color: #000000;
+    }
+    
+    .elemento1AP4{
+        width: 105px;
+        height: 42px;
+    }
+    
+    .parte1Texto1AP4{
+        width: 500px;
+        height: 42px;
+    
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 52px;
+        margin-top:-37px;
+        margin-left:40px;
+    
+        color: #000000;
+    }
+    
+    .Img1AP4{
+        width: 28px;
+        height: 28px;
+        background: url(https://www.fotocommunity.es/styleguide/img/homepage/poster-comments.jpg);
+    }
+    
+    
+    .lineaAP4{
+        width: 100%;
+        margin-top: -37px;
+    
+        border: 6px solid #D5C7C7;
+        transform: rotate(0.08deg);
+    }
+    
+    
+    
+    .boton1AP4{
+        width: 153px;
+        height: 35px;
+    
+        margin-top: 30px;
+        margin-left: 30px;
+    
+    
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        border-radius: 18px;
+    
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: 500px;
+        font-size: 26px;
+        line-height: 32px;
+    
+        color: #FFFFFF;
+    }
+    
+    .boton2AP4{
+        width: 153px;
+        height: 35px;
+    
+        margin-top: 30px;
+        margin-left: 30px;
+    
+        float:right;
+    
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        border-radius: 18px;
+    
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: 500px;
+        font-size: 26px;
+        line-height: 32px;
+    
+        color: #FFFFFF;
+    }
+}
+
+/* 640 to 960 pixels */
+@media screen and (max-width: 40em) {
+    
+
+    body.AP4{
+        font-family: Times New Roman, Times, serif; 
+        font-style: normal; font-weight: bold; 
+        float: center; 
+        padding-top: 100px; 
+        padding-bottom: 170px;
+        color: #000000; 
+        margin: 0 auto;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .TituloAP4{
+        width: 290px;
+        height: 112px;
+    
+        margin: auto;
+        margin-top:-50px;
+    
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: 500px;
+        font-size: 10px;
+        line-height: 26px;
+        text-align: center;
+        margin-bottom: -220px;
+    
+    
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: tomato;  
+    }
+    
+    .primerRecuadroAP4{
+        width: 290px;
+        height: 403px;
+    
+        margin: auto;
+    
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "." "." "." ".";
+    }
+    
+    .imagenAP4{
+        width: 100px;
+        height: 90px;
+    
+        margin-left: 650px;
+        margin-top:70px;
+    
+        
+    }
+    
+    .titulo1AP4{
+        width: 290px;
+        height: 42px;
+        
+    
+        margin: 0 auto;
+        margin-bottom: 20px;
+    
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+    
+        color: #000000;
+    }
+    
+    .elemento1AP4{
+        width: 105px;
+        height: 42px;
+    }
+    
+    .parte1Texto1AP4{
+        width: 300px;
+        height: 42px;
+    
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 42px;
+        margin-top:-29px;
+        margin-left:40px;
+    
+        color: #000000;
+    }
+    
+    .Img1AP4{
+        width: 18px;
+        height: 18px;
+        background: url(https://www.fotocommunity.es/styleguide/img/homepage/poster-comments.jpg);
+    }
+    
+    
+    .lineaAP4{
+        width: 100%;
+        margin-top: -130px;
+    
+        border: 6px solid #D5C7C7;
+        transform: rotate(0.08deg);
+    }
+    
+    
+    
+    .boton1AP4{
+        width: 70px;
+        height: 20px;
+    
+        margin-top: 20px;
+        margin-left: 20px;
+    
+    
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        border-radius: 18px;
+    
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: 500px;
+        font-size: 14px;
+        line-height: 17px;
+    
+        color: #FFFFFF;
+    }
+    
+    .boton2AP4{
+        width: 70px;
+        height: 20px;
+    
+        float:right;
+        margin-top: 20px;
+        margin-right: 20px;
+    
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        border-radius: 18px;
+    
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: 500px;
+        font-size: 14px;
+        line-height: 17px;
+    
+        color: #FFFFFF;
+    }
+}

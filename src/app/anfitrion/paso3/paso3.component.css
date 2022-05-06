@@ -1,0 +1,687 @@
+/********************ESTO ES APARTAMENTO BUSCADOR********************/
+body.AP3{
+
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-size: x-large;
+    text-align: center;
+    color: #000000; 
+
+    margin: 0 auto;
+
+    padding-top: 100px; 
+    padding-bottom: 170px;
+
+    width: 100%;
+
+    overflow: hidden;
+
+}
+
+/********************ESTO ES ANFITRIÓN PASO 3********************/
+
+.TituloAP3{
+    width: 940px;
+    height: 56px;
+
+    margin: auto;
+
+    margin-bottom: 40px;
+
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 500px;
+    font-size: 30px;
+    line-height: 56px;
+
+
+    background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: tomato;  
+}
+
+.imagenAP3{
+    width: 700px;
+    height: 503px;
+
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "." "." "." ".";
+
+    background: url(https://www.fotocommunity.es/styleguide/img/homepage/poster-comments.jpg);
+}
+
+.texto1AP3{
+    width: 249.22px;
+    height: 56px;
+
+    margin-left:20px;
+    margin-top:30px;
+
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 46px;
+
+    background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: tomato;  
+
+}
+
+.texto2AP3{
+    width: 249.22px;
+    height: 56px;
+
+    margin-left:0px;
+    margin-top:30px;
+
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 56px;
+
+    background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: tomato;  
+
+}
+
+.texto3AP3{
+    width: 249.22px;
+    height: 56px;
+
+    margin-left:35px;
+    margin-top:30px;
+
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 56px;
+
+    background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: tomato;  
+
+}
+
+.texto4AP3{
+    width: 249.22px;
+    height: 56px;
+
+    margin-left:0px;
+    margin-top:30px;
+
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 56px;
+
+    background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: tomato;  
+
+}
+
+.sumarAP3{
+    margin-top:60px;
+    margin-left:100px;
+    width: 200px;
+    height: 50px;
+}
+
+.num1AP3{
+    width: 16.91px;
+    height: 48px;
+
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+
+    margin-top: -50px;
+    margin-left: 80px;
+
+    background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: tomato;  
+
+}
+
+.Img1AP3{
+    width: 33.83px;
+    height: 41.14px;
+    background: url(https://www.istockphoto.com/resources/images/PhotoFTLP/998044806.jpg);
+}
+
+.Img2AP3{
+    margin-top: -75px;
+    margin-left: 150px;
+    width: 33.83px;
+    height: 41.14px;
+    background: url(https://www.istockphoto.com/resources/images/PhotoFTLP/998044806.jpg);
+}
+
+.LineaAP3{
+    position: absolute;
+    width: 33.83px;
+    height: 41.14px;
+    left: 962.17px;
+    top: 929.57px;
+}
+
+.boton1AP3{
+    width: 153px;
+    height: 45px;
+    float: left;
+    margin-top: 40px;
+    margin-left: 40px;
+    
+    background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+    border-radius: 18px;
+
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 500px;
+    font-size: 30px;
+    line-height: 42px;
+
+    color: #FFFFFF;
+}
+
+.boton2AP3{
+    width: 153px;
+    height: 45px;
+
+    float: right;
+    margin-top: 40px;
+
+    margin-right: 40px;
+
+    background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+    border-radius: 18px;
+
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 500px;
+    font-size: 30px;
+    line-height: 42px;
+
+    color: #FFFFFF;
+}
+
+
+/* 640 to 960 pixels */
+@media screen and (max-width: 60em) {
+    
+
+    body.AP3{
+
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-size: x-large;
+        text-align: center;
+        color: #000000; 
+    
+        margin: 0 auto;
+    
+        padding-top: 50px; 
+    
+        width: 100%;
+        overflow: hidden;
+    
+    }
+    
+    /********************ESTO ES ANFITRIÓN PASO 3********************/
+    
+    .TituloAP3{
+        width: 630px;
+        height: 56px;
+    
+        margin: auto;
+    
+        margin-bottom: 40px;
+    
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: 500px;
+        font-size: 22px;
+        line-height: 56px;
+    
+    
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: tomato;  
+    }
+    
+    .imagenAP3{
+        width: 460px;
+        height: 390px;
+    
+        margin: auto;
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "." "." "." ".";
+    
+        background: url(https://www.fotocommunity.es/styleguide/img/homepage/poster-comments.jpg);
+    }
+    
+    .texto1AP3{
+        width: 249.22px;
+        height: 56px;
+    
+        margin-left:0px;
+        margin-top:15px;
+    
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 46px;
+    
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: tomato;  
+    
+    }
+    
+    .texto2AP3{
+        width: 249.22px;
+        height: 56px;
+    
+        margin-left:0px;
+        margin-top:15px;
+    
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 46px;
+    
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: tomato;  
+    
+    }
+    
+    .texto3AP3{
+        width: 249.22px;
+        height: 56px;
+    
+        margin-left:0px;
+        margin-top:15px;
+    
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 46px;
+    
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: tomato;  
+    
+    }
+    
+    .texto4AP3{
+        width: 249.22px;
+        height: 56px;
+    
+        margin-left:0px;
+        margin-top:15px;
+    
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 46px;
+    
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: tomato;  
+    
+    }
+    
+    .sumarAP3{
+        margin-top:10px;
+        margin-left:10px;
+        width: 10px;
+        height: 10px;
+    }
+    
+    .num1AP3{
+        width: 16.91px;
+        height: 40px;
+    
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 62px;
+    
+        margin-top: -40px;
+        margin-left: 80px;
+    
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: tomato;  
+    
+    }
+    
+    .Img1AP3{
+        width: 20px;
+        height: 20px;
+        margin-top: 20px;
+        background: url(https://www.istockphoto.com/resources/images/PhotoFTLP/998044806.jpg);
+    }
+    
+    .Img2AP3{
+        margin-top: -45px;
+        margin-left: 150px;
+        width: 20px;
+        height: 20px;
+        background: url(https://www.istockphoto.com/resources/images/PhotoFTLP/998044806.jpg);
+    }
+    
+    .LineaAP3{
+        position: absolute;
+        width: 33.83px;
+        height: 41.14px;
+        left: 962.17px;
+        top: 929.57px;
+    }
+    
+    .boton1AP3{
+        width: 103px;
+        height: 35px;
+        float: left;
+        margin-top: 40px;
+        margin-left: 80px;
+        
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        border-radius: 18px;
+    
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: 500px;
+        font-size: 20px;
+        line-height: 32px;
+    
+        color: #FFFFFF;
+    }
+    
+    .boton2AP3{
+        width: 103px;
+        height: 35px;
+    
+        float: right;
+        margin-top: 40px;
+    
+        margin-right: 80px;
+    
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        border-radius: 18px;
+    
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: 500px;
+        font-size: 20px;
+        line-height: 32px;
+    
+        color: #FFFFFF;
+    }
+}
+
+/* 640 to 960 pixels */
+@media screen and (max-width: 40em) {
+    
+
+    body.AP3{
+
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-size: x-large;
+        text-align: center;
+        color: #000000; 
+    
+        margin: 0 auto;
+    
+        padding-top: 20px; 
+    
+        width: 100%;
+
+        overflow: hidden;
+    
+    }
+    
+    /********************ESTO ES ANFITRIÓN PASO 3********************/
+    
+    .TituloAP3{
+        width: 260px;
+        height: 106px;
+    
+        margin: auto;
+    
+        margin-bottom: 0px;
+    
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: 500px;
+        font-size: 15px;
+        line-height: 36px;
+    
+    
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: tomato;  
+    }
+    
+    .imagenAP3{
+        width: 250px;
+        height: 230px;
+    
+        margin: auto;
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "." "." "." ".";
+    
+        background: url(https://www.fotocommunity.es/styleguide/img/homepage/poster-comments.jpg);
+    }
+    
+    .texto1AP3{
+        width: 249.22px;
+        height: 16px;
+    
+        margin-left:-70px;
+        margin-top: 20px;
+    
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+    
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: tomato;  
+    
+    }
+    
+    .texto2AP3{
+        width: 249.22px;
+        height: 16px;
+    
+        margin-left:-80px;
+        margin-top:15px;
+    
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+    
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: tomato;  
+    
+    }
+    
+    .texto3AP3{
+        width: 249.22px;
+        height: 16px;
+    
+        margin-left:-64px;
+        margin-top:10px;
+    
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+    
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: tomato;  
+    
+    }
+    
+    .texto4AP3{
+        width: 249.22px;
+        height: 16px;
+    
+        margin-left:-80px;
+        margin-top:1px;
+    
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+    
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: tomato;  
+    
+    }
+    
+    .sumarAP3{
+        margin-top:0px;
+        margin-left:-60px;
+        width: 200px;
+        height: 50px;
+    }
+    
+    .num1AP3{
+        width: 16.91px;
+        height: 30px;
+    
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 42px;
+    
+        margin-top: -25px;
+        margin-left: 40px;
+    
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: tomato;  
+    
+    }
+    
+    .Img1AP3{
+        width: 10px;
+        height: 10px;
+        background: url(https://www.istockphoto.com/resources/images/PhotoFTLP/998044806.jpg);
+    }
+    
+    .Img2AP3{
+        margin-top: -35px;
+        margin-left: 90px;
+        width: 10px;
+        height: 10px;
+        background: url(https://www.istockphoto.com/resources/images/PhotoFTLP/998044806.jpg);
+    }
+    
+    .LineaAP3{
+        position: absolute;
+        width: 33.83px;
+        height: 41.14px;
+        left: 962.17px;
+        top: 929.57px;
+    }
+    
+    .boton1AP3{
+        width: 60px;
+        height: 25px;
+        float: left;
+        margin-top: 40px;
+        margin-left: 10px;
+        
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        border-radius: 18px;
+    
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: 500px;
+        font-size: 10px;
+        line-height: 22px;
+    
+        color: #FFFFFF;
+    }
+    
+    .boton2AP3{
+        width: 60px;
+        height: 25px;
+    
+        float: right;
+        margin-top: 40px;
+    
+        margin-right: 10px;
+    
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        border-radius: 18px;
+    
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: 500px;
+        font-size: 10px;
+        line-height: 22px;
+    
+        color: #FFFFFF;
+    }
+}

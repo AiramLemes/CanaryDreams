@@ -1,12 +1,14 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AlojamientosService {
+    
 
-    constructor(private db: AngularFirestore) { 
+    constructor(private db: AngularFirestore, private route: Router) { 
 
     }
 
@@ -36,8 +38,10 @@ export class AlojamientosService {
     }
 
 
+    actualizarLocalidadAlojamiento(id: string, dir: { direccion: any; cp: any; isla: any; provincia: any; ciudad: any; }) {
+        this.db.collection("apartamentos").doc(id).set(dir);
+        this.route.navigateByUrl("anfitrion/paso3/" + id);
 
-
-
+    }
 
 }

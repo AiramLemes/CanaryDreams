@@ -1,1 +1,40 @@
-<p>paso2 works!</p>
+<body class = AP2>
+        
+    <!--Titulo-->
+    <p class = TituloAP2> NECESITAMOS SABER LA UBICACIÓN DE TU ALOJAMIENTO </p>
+
+    <!--Formulario-->
+    
+    <form class = "formulario" [formGroup]="localidad">
+        
+        
+    
+            <label for="">Dirección </label>
+            <input type="text" required class="campos" formControlName="direccion">
+        
+
+        
+            <label for="">Código Postal </label>
+            <input type="text" required class="campos" formControlName="cp">
+        
+
+        
+            <label for="">Isla</label>
+            <input type="text" required class="campos" formControlName="isla">
+        
+
+        
+            <label for="">Provincia </label>
+            <input type="text" required class="campos" formControlName="provincia">
+        
+
+        
+            <label for="">Ciudad</label>
+            <input type="text" required class="campos" formControlName="ciudad">
+        
+
+    </form>
+
+    <button (click)="actualizarLocalidadAlojamiento()" class = boton2AP2>Siguiente</button>
+
+</body>

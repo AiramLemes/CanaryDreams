@@ -1,0 +1,455 @@
+/********************ESTO ES APARTAMENTO BUSCADOR********************/
+body.AP1{
+
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-size: x-large;
+    color: #000000; 
+
+    margin: 0 auto;
+
+    padding-top: 70px; 
+    padding-bottom: 100px;
+
+    width: 100%;
+    overflow: hidden;
+
+}
+
+
+a {
+    cursor: pointer;
+}
+
+
+.TituloAP1{
+    
+    width: 900px;
+    height: 100px;
+
+    margin: auto;
+
+
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 500px;
+    font-size: 30px;
+    line-height: 56px;
+
+
+    background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: tomato;  
+}
+
+.SegTituloAP1{
+    width: 500px;
+    height: 28px;
+    margin-bottom: 40px;
+
+    
+  
+    float: left;
+
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 28px;
+
+    color: #000000;
+}
+
+.centro{
+    margin: auto;
+    width: 800px;
+}
+
+.imagenCasaAP1{
+    width: 80px;
+    height:70px;
+    float: right;
+
+    margin-top:-50px;
+    margin-left: 800px;
+}
+
+.recuadroTotalAP1{
+        width: 700px;
+        height: 300px;
+        margin: 0 auto;
+        margin-top: 180px;
+
+        display: grid; 
+        grid-template-columns: 10fr 1fr; 
+        grid-template-rows: 0.6fr 0.6fr 0.6fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          ". ."
+          ". ."
+          "filaTres filaTres"; 
+}
+
+.filaTres { 
+    grid-area: filaTres; 
+    margin: 0 auto;
+}
+
+.primerCuadradoAP1{
+    width: 290px;
+    height: 70px;
+
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+.primerCuadradoImagenAP1{
+    width: 70px;
+    height: 60px;
+
+    margin-left: 205px;
+
+    margin-top: 3.5px;
+
+    background: url(https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg);
+    border-radius: 12px;
+}
+
+.primerCuadradoTextoAP1{
+    width: 209px;
+    height: 45.46px;
+
+    margin-top:-59px;
+    margin-left: 30px;
+
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 42px;
+
+    color: #000000;
+}
+
+.centro1{
+    margin: auto;
+    width: 940px;
+}
+
+.BotonAP1{
+    width: 153px;
+    height: 35px;
+
+
+    float: right;
+
+    margin-top: 10px;
+    margin-right: 50px;
+
+    background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+    border-radius: 18px;
+
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 500px;
+    font-size: 20px;
+    line-height: 22px;
+
+    color: #FFFFFF;
+    
+}
+
+
+/* 640 to 960 pixels */
+@media screen and (max-width: 60em) {
+    
+    body.AP1{
+
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-size: x-large;
+        color: #000000; 
+
+        margin: 0 auto;
+
+        padding-top: 60px; 
+        padding-bottom: 70px;
+
+        width: 100%;
+        overflow: hidden
+    }
+
+    .centro{
+        margin: auto;
+        width: 430px;
+    }
+
+    .TituloAP1{
+        
+        width: 500px;
+        height: 40px;
+
+        text-align: center;
+
+        margin: 0 auto;
+
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: 500px;
+        font-size:18px;
+        line-height: 56px;
+
+
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: tomato;  
+    }
+
+    .SegTituloAP1{
+        width: 500px;
+        height: 28px;
+        float: left;
+
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 28px;
+
+        color: #000000;
+    }
+
+    .imagenCasaAP1{
+        width: 90px;
+        height: 70px;
+
+        float: right;
+    }
+
+    .recuadroTotalAP1{
+            width: 500px;
+            height: 300px;
+            margin: auto;
+            margin-top: 150px;
+
+            display: grid; 
+            grid-template-columns: 1.8fr 1.8fr; 
+            grid-template-rows: 1fr 1fr 1fr; 
+            gap: 0px 0px; 
+            grid-template-areas: 
+            ". ."
+            ". ."
+            "filaTres filaTres"; 
+    }
+
+    .filaTres { 
+        grid-area: filaTres; 
+    }
+
+    .primerCuadradoAP1{
+        width: 200px;
+        height: 80px;
+
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 12px;
+    }
+
+    .primerCuadradoImagenAP1{
+        width: 75px;
+        height: 60px;
+
+        margin-left:120px;
+
+        margin-top: 10px;
+
+        background: url(https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg);
+        border-radius: 12px;
+    }
+
+    .primerCuadradoTextoAP1{
+        width: 109px;
+        height: 45.46px;
+
+        margin-top:-62px;
+        margin-left: 10px;
+
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 42px;
+
+        color: #000000;
+    }
+
+
+    .BotonAP1{
+        width: 103px;
+        height: 35px;
+
+        margin-right:-80px;
+
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        border-radius: 18px;
+
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: 500px;
+        font-size: 20px;
+        line-height: 22px;
+
+        color: #FFFFFF;
+        
+    }
+}
+
+/* 640 */
+@media screen and (max-width: 40em) {
+    
+    body.AP1{
+
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-size: x-large;
+        color: #000000; 
+
+        margin: 0 auto;
+
+        padding-top: 30px; 
+        padding-bottom: 40px;
+
+        width: 100%;
+        overflow: hidden
+    }
+
+    .centro{
+        margin: auto;
+        width: 260px;
+    }
+
+    .TituloAP1{
+        
+        width: 90px;
+        height: 90px;
+
+        text-align: center;
+
+        margin: 0 auto;
+
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: 500px;
+        font-size: 10px;
+        line-height: 15px;
+
+
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: tomato;  
+    }
+
+    .SegTituloAP1{
+        width: 170px;
+        height: 28px;
+
+        margin-left: 50px;
+
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 8px;
+        line-height: 28px;
+
+        color: #000000;
+    }
+
+    .imagenCasaAP1{
+        width: 0px;
+        height: 0px;
+    }
+
+    .recuadroTotalAP1{
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            margin-top: 30px;
+
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            grid-template-rows: 0.5fr 0.5fr 0.5fr; 
+            gap: 0px 0px; 
+            grid-template-areas: 
+            ". ."
+            ". ."
+            "filaTres filaTres"; 
+    }
+
+    .filaTres { 
+        grid-area: filaTres; 
+        margin: auto;
+    }
+
+    .primerCuadradoAP1{
+        width: 90px;
+        height: 50px;
+
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 12px;
+    }
+
+    .primerCuadradoImagenAP1{
+        width: 30px;
+        height: 30px;
+
+        margin-left:58px;
+
+        margin-top: 8px;
+
+        background: url(https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg);
+        border-radius: 12px;
+    }
+
+    .primerCuadradoTextoAP1{
+        width: 209px;
+        height: 45.46px;
+
+        margin-top:-45px;
+        margin-left: 10px;
+
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 8px;
+        line-height: 42px;
+
+        color: #000000;
+    }
+
+    .BotonAP1{
+        width: 70px;
+        height: 25px;
+
+        float: right;
+
+        margin-top: 10px;
+        margin-right: 0px;
+
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        border-radius: 18px;
+
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: 500px;
+        font-size: 12px;
+        line-height: 22px;
+
+        color: #FFFFFF;
+        
+    }
+}

@@ -7,7 +7,7 @@ import { AngularFirestore } from '@angular/fire/compat/firestore';
 export class AlojamientosService {
 
     constructor(private db: AngularFirestore) { 
-          
+
     }
 
     getAlojamientosHome() {  
@@ -20,15 +20,23 @@ export class AlojamientosService {
     }
 
     getAlojamientosIsla(isla: string) {  
-      
-      return new Promise<any>((resolve) => {
-          this.db.collection("apartamentos", ref =>
-          ref.where("isla", "==", isla)
-          .orderBy("valoracion", "desc").limit(6))
-          .valueChanges({idField: 'id'})
-          .subscribe(isla =>  resolve(isla));
-      })
-  }
+
+    return new Promise<any>((resolve) => {
+        this.db.collection("apartamentos", ref =>
+            ref.where("isla", "==", isla)
+            .orderBy("valoracion", "desc").limit(6))
+            .valueChanges({idField: 'id'})
+            .subscribe(isla =>  resolve(isla));
+        })
+    }
+
+
+    crearAlojamiento(id: string, tipo: string) {
+        this.db.collection("apartamentos").doc(id).set({tipo: tipo})
+    }
+
+
+
 
 
 

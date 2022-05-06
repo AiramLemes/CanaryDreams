@@ -1,0 +1,825 @@
+
+body.AP{
+    
+    font-family: Times New Roman, Times, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center; 
+    float: center;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    color: #000000;
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+
+}
+.PrimerRecuadroAP{
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.FondoPrimerRecuadroAP{
+    width: 354px;
+    height: 378px;
+    background: #FDF9F2;
+    border-radius: 31px;
+    float: left;
+}
+
+.PrimerRecuadroTextoAP{
+    width: 306.39px;
+    font-size: 20px;
+    margin-top: 90px;
+    margin-left: 30px;
+    margin-right: auto;
+}
+
+.PrimerRecuadroTexto2AP{
+    width: 306.39px;
+    font-size: 20px;
+    line-height: 37px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.PrimerRecuadroBotonAP{
+    width: 229.39px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    
+    font-family: "Times New Roman", Times, serif;
+    background: #9BF5AE;
+    border-radius: 8px;
+
+    font-size: 25px;
+}
+
+.PrimeraImagenAP{
+    width: 350px;
+    height: 350px;
+
+    margin-top: 20px;
+    border-radius: 277px;
+    float: right;
+}
+
+/*-------------------------Segunda Sección----------------------------*/
+
+.SegundoRecuadroFondoAP{
+    width: 800px;
+    height: 1100px;
+
+    margin: 0 auto;
+    margin-top: -190px;
+
+    background: #FDF9F2;
+    border-radius: 21px;
+    float: center; 
+}
+
+.SegundoRecuadroTituloAP{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding-top: 50px;
+    
+    font-size: 25px;
+    line-height: 47px;
+}
+
+.SegundoRecuadroSegTituloAP{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+/*--------Punto 1--------*/
+
+.SegundoRecuadroPunto1AP{
+    height: 260px;
+
+    font-size: 30px;
+    line-height: 35px;
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.SegundoRecuadroPunto1TextoAP{
+    width: 260px;
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 500;
+    float: left;
+}
+
+.SegundoRecuadroPunto1TitAP{
+    font-size: 20px;
+    line-height: 47px;
+    font-weight: bold;
+
+}
+
+.SegundoRecuadroImg1AP{
+    width: 250px;
+    height: 202px;
+    float: right;
+}
+
+/*--------Punto 2--------*/
+
+.SegundoRecuadroPunto2AP{
+    height: 325px;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.SegundoRecuadroPunto2TextoAP{
+    width: 370px;
+    float: right;
+}
+.SegundoRecuadroPunto2TitAP{
+    width: 270px;
+
+    font-size: 20px;
+    margin-right: 80px;
+    line-height: 27px;
+    float: right;
+
+}
+
+.SegundoRecuadroPunto2TextAP{
+    width: 336px;
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 500;
+    float: right;
+}
+
+.SegundoRecuadroImg2AP{
+    width: 230px;
+    height: 230px;
+
+    float: left;
+    margin-top: 20px;
+}
+
+/*--------Punto 3--------*/
+
+.SegundoRecuadroPunto3AP{
+    width: 1050px;
+    height: 320px;
+    margin-top: 30px;
+    margin-left: 50px;
+    float: left;
+    font-size: 30px;
+}
+
+.SegundoRecuadroPunto3TextoAP{
+    width: 309px;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: left;
+    float: left;
+}
+
+.SegundoRecuadroPunto3TitAP{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    line-height: 47px;
+
+}
+
+.SegundoRecuadroPunto3TextAP{
+    font-size: 20px;
+    line-height: 35px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.SegundoRecuadroImg3AP{
+    width: 280px;
+    height: 200px;
+    float: right;
+    margin-right: 390px;
+}
+
+/*--------------------------Tercera Sección----------------------------*/
+
+.TercerRecuadroFondoAP{
+    width: 800px;
+    height: 500px;
+
+    margin: 0 auto;
+    margin-top: 100px;
+
+    background: #FDF9F2;
+    border-radius: 21px;
+}
+.TercerRecuadroTituloAP{
+
+    width: 600px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 47px;
+    padding-top: 35px;
+}
+.imagenTextoAP{
+    width: 1037px;
+    height: 271px;
+    margin-top: 70px;
+    margin-left: 40px;
+
+}
+.TercerRecuadroTexto2AP{ 
+    width: 300px;  
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 500px;
+    margin-top: 20px;
+    float: left;
+}
+
+.TercerRecuadroImagenAP{
+    width: 300px;
+    height: 200px;
+
+    float: right;
+    margin-right: 360px;
+}
+
+.TercerRecuadroBotonAP{
+
+    width: 150px;
+    height: 32px;
+    background: rgba(144, 245, 166, 0.9);
+    border-radius: 7px;
+    margin-bottom: 190px;
+
+    font-family: "Times New Roman", Times, serif;
+    font-style: normal;
+    font-weight: BOLD;
+    font-size: 20px;
+    line-height: 0px;
+    text-align: center;
+
+}
+
+
+/* 640 to 960 pixels */
+@media screen and (max-width: 60em) {
+    
+
+    .PrimerRecuadroAP{
+        width: 620px;
+        height: 600px;
+        margin: 0 auto;
+    }
+    
+    .FondoPrimerRecuadroAP{
+        width: 254px;
+        height: 278px;
+        background: #FDF9F2;
+        border-radius: 31px;
+        float: left;
+        margin-left: 30px;
+    }
+    
+    .PrimerRecuadroTextoAP{
+        margin-top: 50px;
+        width: 250px;
+        font-size: 15px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .PrimerRecuadroTexto2AP{
+        width: 250px;
+        font-size: 10px;
+        line-height: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .PrimerRecuadroBotonAP{
+        width: 130px;
+        margin-left: auto;
+        margin-right: auto;
+        
+        font-family: "Times New Roman", Times, serif;
+        background: #9BF5AE;
+        border-radius: 8px;
+    
+        font-size: 15px;
+    }
+    
+    .PrimeraImagenAP{
+        width: 284px;
+        height: 278px;
+    
+        margin-top: -10px;
+        border-radius: 277px;
+        float: right;
+        margin-right: 30px;
+    }
+    
+    /*-------------------------Segunda Sección----------------------------*/
+    
+    .SegundoRecuadroFondoAP{
+        width: 560px;
+        height: 800px;
+    
+        margin: 0 auto;
+        margin-top: -300px;
+    
+        background: #FDF9F2;
+        border-radius: 21px;
+        float: center; 
+    }
+    
+    .SegundoRecuadroTituloAP{
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        
+        padding-top: 20px;
+        
+        font-size: 20px;
+        line-height: 47px;
+    }
+    
+    .SegundoRecuadroSegTituloAP{
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        font-size: 15px;
+        line-height: 22px;
+    }
+    
+    /*--------Punto 1--------*/
+    
+    .SegundoRecuadroPunto1AP{
+        height: 260px;
+    
+        font-size: 20px;
+        line-height: 35px;
+        text-align: left;
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    .SegundoRecuadroPunto1TextoAP{
+        width: 250px;
+        float: left;
+        font-weight: 500px;
+        font-size: 15px;
+        margin-top:-20px;
+    }
+    
+    .SegundoRecuadroPunto1TitAP{
+        font-size: 15px;
+        line-height: 47px;
+        font-weight: bold;
+    
+    }
+    
+    .SegundoRecuadroImg1AP{
+        width: 150px;
+        height: 132px;
+        float: right;
+    }
+    
+    /*--------Punto 2--------*/
+    
+    .SegundoRecuadroPunto2AP{
+        height: 205px;
+        font-size: 20px;
+        line-height: 35px;
+        text-align: left;
+        margin-top: -90px;
+        
+
+        margin-right: 0;
+    }
+    
+    .SegundoRecuadroPunto2TextoAP{
+        width: 200px;
+        float: right;
+        font-size: 15px;
+    }
+    .SegundoRecuadroPunto2TitAP{
+        width: 220px;
+        float: right;
+        font-size: 15px;
+        line-height: 47px;
+    
+    }
+    
+    .SegundoRecuadroPunto2TextAP{
+        width: 300px;
+        font-size: 15px;
+        line-height: 35px;
+        text-align: align;
+        font-weight: 500;
+        margin-top: -20px;
+    }
+    
+    .SegundoRecuadroImg2AP{
+        width: 170px;
+        height: 147px;
+    
+        float: left;
+        margin-top: 20px;
+    }
+    
+    /*--------Punto 3--------*/
+    
+    .SegundoRecuadroPunto3AP{
+        width: 600px;
+        height: 320px;
+        margin-top: 10px;
+        margin-left: 50px;
+        float: left;
+    }
+    
+    .SegundoRecuadroPunto3TextoAP{
+        width: 200px;
+        font-size: 15px;
+        line-height: 35px;
+        text-align: left;
+        float: left;
+    }
+    
+    .SegundoRecuadroPunto3TitAP{
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 15px;
+        line-height: 47px;
+    
+    }
+    
+    .SegundoRecuadroPunto3TextAP{
+        font-size: 15px;
+        line-height: 35px;
+        width: 300px;
+        text-align: left;
+        font-weight: 500px;
+    }
+    
+    .SegundoRecuadroImg3AP{
+        width: 200px;
+        height: 180px;
+        float: right;
+        margin-top: 10px;
+        margin-right: 120px;
+    }
+    
+    /*--------------------------Tercera Sección----------------------------*/
+    
+    .TercerRecuadroFondoAP{
+        width: 560px;
+        height: 370px;
+    
+        margin: 0 auto;
+        margin-top: 100px;
+    
+        background: #FDF9F2;
+        border-radius: 21px;
+    }
+    .TercerRecuadroTituloAP{
+    
+        width: 500px;
+    
+        margin: auto;
+    
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 47px;
+        padding-top: 35px;
+    }
+    .imagenTextoAP{
+        width: 1037px;
+        height: 191px;
+        margin-top: 50px;
+        margin-left: 40px;
+    
+    }
+    .TercerRecuadroTexto2AP{ 
+        width: 220px;  
+        font-size: 15px;
+        line-height: 40px;
+        font-weight: 500px;
+        margin-top: -10px;
+        float: left;
+    }
+    
+    .TercerRecuadroImagenAP{
+        width: 220px;
+        height: 120px;
+        margin-right: 550px;
+
+    }
+    
+    .TercerRecuadroBotonAP{
+    
+        width: 100px;
+        height: 30px;
+        background: rgba(144, 245, 166, 0.9);
+        border-radius: 7px;
+        margin-top: -90px;
+    
+        font-family: "Times New Roman", Times, serif;
+        font-style: normal;
+        font-weight: BOLD;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+    
+    }
+
+/* under 640 px */
+@media screen and (max-width: 40em) {
+    
+    .PrimerRecuadroAP{
+        width: 280px;
+        height: 1000px;
+        margin: 0 auto;
+        margin-top:-40px;
+    }
+    
+    .FondoPrimerRecuadroAP{
+        width: 290px;
+        height: 180px;
+        margin: 0 auto;
+        background: #FDF9F2;
+        border-radius: 31px;
+    }
+    
+    .PrimerRecuadroTextoAP{
+        width: 300px;
+        font-size: 12px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    
+    .PrimerRecuadroTexto2AP{
+        width: 300px;
+        font-size: 12px;
+        line-height: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .PrimerRecuadroBotonAP{
+        width: 100px;
+        height: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        
+        font-family: "Times New Roman", Times, serif;
+        background: #9BF5AE;
+        border-radius: 8px;
+    
+        font-size: 10px;
+    }
+    
+    .PrimeraImagenAP{
+        width: 280px;
+        height: 180px;
+        margin: 0 auto;
+        margin-top: 40px;
+        border-radius: 40px;
+    }
+    
+    /*-------------------------Segunda Sección----------------------------*/
+    
+    .SegundoRecuadroFondoAP{
+        width: 280px;
+        height: 890px;
+    
+        margin: 0 auto;
+        margin-top: -570px;
+    
+        background: #FDF9F2;
+        border-radius: 21px;
+        float: center; 
+    }
+    
+    .SegundoRecuadroTituloAP{
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+        
+        padding-top: 50px;
+        
+        font-size: 15px;
+        line-height: 20px;
+    }
+    
+    .SegundoRecuadroSegTituloAP{
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        font-size: 12px;
+        line-height: 10px;
+    }
+    
+    /*--------Punto 1--------*/
+    
+    .SegundoRecuadroPunto1AP{
+        height: 260px;
+    
+        font-size: 12px;
+        line-height: 35px;
+        text-align: left;
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    .SegundoRecuadroPunto1TextoAP{
+        width: 200px;
+        line-height: 20px;
+        float: left;
+        font-weight: 500px;
+        font-size: 10px;
+    }
+    
+    .SegundoRecuadroPunto1TitAP{
+        font-size: 12px;
+        line-height: 10px;
+        font-weight: bold;
+    
+    }
+    
+    .SegundoRecuadroImg1AP{
+        width: 160px;
+        height: 100px;
+        margin:0 auto;
+    }
+    
+    /*--------Punto 2--------*/
+    
+    .SegundoRecuadroPunto2AP{
+        height: 325px;
+        width: 280px;
+        font-size: 30px;
+        line-height: 35px;
+        text-align: left;
+        margin-top: -80px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    .SegundoRecuadroPunto2TextoAP{
+        width: 400px;
+        font-size: 10px;
+        float: left;
+    }
+    .SegundoRecuadroPunto2TitAP{
+        width: 400px;
+    
+        font-size: 12px;
+        float: left;
+    
+    }
+    
+    .SegundoRecuadroPunto2TextAP{
+        width: 210px;
+        margin-top:-20px;
+        font-size: 10px;
+        line-height: 20px;
+        font-weight: 500px;
+        float: left;
+    }
+    
+    .SegundoRecuadroImg2AP{
+        width: 190px;
+        height: 100px;
+        margin: 0 auto;
+    }
+    
+    /*--------Punto 3--------*/
+    
+    .SegundoRecuadroPunto3AP{
+        width: 190px;
+        height: 320px;
+        margin-top: -80px;
+        margin-left: 50px;
+        float: left;
+    }
+    
+    .SegundoRecuadroPunto3TextoAP{
+        width: 209px;
+        font-size: 10px;
+        line-height: 35px;
+        text-align: left;
+        float: left;
+    }
+    
+    .SegundoRecuadroPunto3TitAP{
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 12px;
+        line-height: 47px;
+    
+    }
+    
+    .SegundoRecuadroPunto3TextAP{
+        font-size: 10px;
+        width: 200px;
+        margin-top: -20px;
+        line-height: 25px;
+        text-align: left;
+        font-weight: 500px;
+    }
+    
+    .SegundoRecuadroImg3AP{
+        width: 190px;
+        height: 150px;
+        margin: 0 auto;
+    }
+    
+    /*--------------------------Tercera Sección----------------------------*/
+    
+    .TercerRecuadroFondoAP{
+        width: 280px;
+        height: 240px;
+    
+        margin: 0 auto;
+        margin-top: 40px;
+    
+        background: #FDF9F2;
+        border-radius: 21px;
+    }
+    .TercerRecuadroTituloAP{
+    
+        width: 200px;
+    
+        margin-left: auto;
+        margin-right: auto;
+    
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 27px;
+        padding-top: 35px;
+    }
+    .imagenTextoAP{
+        width: 500px;
+        height: 101px;
+        margin-top: 5px;
+        margin-left: -50px;
+    
+    }
+    .TercerRecuadroTexto2AP{ 
+        width: 100px;  
+        font-size: 8px;
+        line-height: 20px;
+        font-weight: 500px;
+        margin-left: 70px;
+    }
+    
+    .TercerRecuadroImagenAP{
+        width: 100px;
+        height: 70px;
+        margin-right:200px;
+    }
+    
+    .TercerRecuadroBotonAP{
+    
+        width: 100px;
+        height: 20px;
+        background: rgba(144, 245, 166, 0.9);
+        border-radius: 7px;
+        margin-top: -80px;
+    
+        font-family: "Times New Roman", Times, serif;
+        font-style: normal;
+        font-weight: BOLD;
+        font-size: 10px;
+        text-align: center;
+    
+    }
+}}

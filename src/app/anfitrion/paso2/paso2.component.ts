@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-paso2',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Paso2Component implements OnInit {
 
-  constructor() { }
+    id!: any;
 
-  ngOnInit(): void {
-  }
+    constructor(private route: ActivatedRoute) { 
+        this.id = this.route.snapshot.paramMap.get('id');
+    }
+
+    ngOnInit(): void {
+
+    }
 
 }

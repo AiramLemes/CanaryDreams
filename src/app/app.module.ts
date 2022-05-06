@@ -31,6 +31,7 @@ import { Paso4Component } from './anfitrion/paso4/paso4.component';
 import { Paso5Component } from './anfitrion/paso5/paso5.component';
 import { Paso6Component } from './anfitrion/paso6/paso6.component';
 import { Paso7Component } from './anfitrion/paso7/paso7.component';
+import { ContactarComponent } from './contactar/contactar.component';
 
 
 
@@ -54,7 +55,8 @@ import { Paso7Component } from './anfitrion/paso7/paso7.component';
     Paso4Component,
     Paso5Component,
     Paso6Component,
-    Paso7Component
+    Paso7Component,
+    ContactarComponent
   ],
   imports: [
     BrowserModule,

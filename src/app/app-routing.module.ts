@@ -7,6 +7,10 @@ import { IslaComponent } from './isla/isla.component';
 import { InformacionComponent } from './Cuenta/informacion/informacion.component';
 import { CondicionesComponent } from './condiciones/condiciones.component';
 import { PrivacidadComponent } from './privacidad/privacidad.component';
+import { AnfitrionComponent } from './anfitrion/anfitrion/anfitrion.component';
+import { ContactarComponent } from './contactar/contactar.component';
+import { Paso1Component } from './anfitrion/paso1/paso1.component';
+import { Paso2Component } from './anfitrion/paso2/paso2.component';
 
 
 const routes: Routes = [
@@ -16,8 +20,13 @@ const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'isla/:nombre', component: IslaComponent },
   { path: 'cuenta/informacion', component: InformacionComponent },
-  { path: 'Condiciones', component: CondicionesComponent, pathMatch: 'full' },
-  { path: 'Privacidad', component: PrivacidadComponent, pathMatch: 'full' },
+  { path: 'condiciones', component: CondicionesComponent, pathMatch: 'full' },
+  { path: 'privacidad', component: PrivacidadComponent, pathMatch: 'full' },
+  { path: 'anfitrion', component: AnfitrionComponent, pathMatch: 'full' },
+  { path: 'anfitrion/paso1', component: Paso1Component, pathMatch: 'full' },
+  { path: 'anfitrion/paso2/:id', component: Paso2Component, pathMatch: 'full' },
+  { path: 'anfitrion/paso3/:id', component: Paso2Component, pathMatch: 'full' },
+  { path: 'ayuda/contactar', component: ContactarComponent, pathMatch: 'full' },
 
 
 ];

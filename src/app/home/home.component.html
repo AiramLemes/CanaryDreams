@@ -12,13 +12,11 @@
             <div id = "buscador_home"></div>
         </section>
 
-
+        <div class="titulo1">
+            <p>DESCUBRE TU ISLA DESTINO</p>    
+        </div>
 
         <section class="islas">
-        
-            <div class="titulo1">
-                <p>DESCUBRE TU ISLA DESTINO</p>    
-            </div>
 
             <a href="" [routerLink]="['/isla',  isla.nombre]" class = "cuadroIsla" *ngFor="let isla of islas">
                 <img src="{{isla.imagenHome}}" alt="" class="fotoIsla">
@@ -27,12 +25,11 @@
 
         </section>
 
+        <div class="titulo2">
+            <p>APARTAMENTOS DESTACADOS</p>
+        </div>
 
         <section class="apartamentos">
-
-            <div class="titulo2">
-                <p>APARTAMENTOS DESTACADOS</p>
-            </div>
 
 
             <a href = "" class= CuadroApartAB *ngFor="let apartamento of apartamentos">
@@ -54,8 +51,6 @@
                     <div class= derechaPrecioAB>
     
                         <p class= PrecioApartAB> &nbsp; {{apartamento.precio}}€ </p>
-    
-                        <p class= DesdeApartAB> Desde </p>
     
                     </div>
     

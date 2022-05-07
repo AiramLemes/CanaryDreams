@@ -134,6 +134,10 @@ export class AuthService {
 		
 	}
 
+	getUid(): string {
+		return this.user.uid
+	}
+
 }
 
 

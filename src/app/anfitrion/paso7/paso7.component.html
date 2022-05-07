@@ -1,11 +1,11 @@
-<form class="container">
+<form class="container" [formGroup]="informacion">
 
 
     <div class="titulo"> POR ÚLTIMO, INDÍQUENOS EL PRECIO POR NOCHE
         Y LAS FECHAS DE DISPONIBILIDAD</div>
 
     <div class="precio">
-        <input type="text" class="campoPrecio" id="">
+        <input type="text" class="campoPrecio" formControlName="precio">
         <h3>por noche</h3>
     </div>
 
@@ -16,12 +16,12 @@
 
         <div class="desde">
             <h4>DESDE</h4>
-            <input type="date" class="fechas"> 
+            <input type="date" class="fechas" formControlName="desde"> 
         </div>
 
         <div class="hasta">
             <h4>HASTA</h4>
-            <input type="date" class="fechas">
+            <input type="date" class="fechas" formControlName="hasta">
         </div>
     </div>
 

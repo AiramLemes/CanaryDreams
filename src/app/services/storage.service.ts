@@ -9,13 +9,14 @@ export class StorageService {
   constructor(private storage: AngularFireStorage) { }
 
   //Tarea para subir archivo
-  public async tareaCloudStorage(nombreArchivo: string, datos: any) {
-    return await this.storage.ref("apartamentos/" + nombreArchivo).put(datos);
+  public async tareaCloudStorage(nombreArchivo: string, datos: any, id: string) {
+    return await this.storage.ref("apartamentos").child(id + "/" + nombreArchivo).put(datos).percentageChanges()
+    
   }
 
   //Referencia del archivo
-  public async referenciaCloudStorage(nombreArchivo: string) {
+  public async referenciaCloudStorage(nombreArchivo: string, id: string) {
     
-    return await this.storage.ref("apartamentos/" + nombreArchivo);
+    return await this.storage.ref("apartamentos").child(id + "/" + nombreArchivo)
   }
 }

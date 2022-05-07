@@ -53,16 +53,15 @@ export class Paso6Component implements OnInit {
       }, 
 
     }
-  
+    
     this.alojamiento.guardarDatosAlojamiento(this.id, informacion);
-
-    this.path.navigateByUrl("/anfitrion/paso7"+ this.id)
+    this.path.navigateByUrl("/anfitrion/paso7/"+ this.id)
 
   }
 
 
   volverAtras() {
-    this.path.navigateByUrl("/anfitrion/paso5" + this.id);
+    this.path.navigateByUrl("/anfitrion/paso5/" + this.id);
   }
 
   

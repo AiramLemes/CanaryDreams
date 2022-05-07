@@ -86,9 +86,9 @@ export class Paso4Component implements OnInit {
       }
     }
   
-    this.alojamiento.actualizarLocalidadAlojamiento(this.id, informacion);
+    this.alojamiento.guardarDatosAlojamiento(this.id, informacion);
 
-    this.path.navigateByUrl("/anfitrion/paso5"+ this.id)
+    this.path.navigateByUrl("/anfitrion/paso5/"+ this.id)
 
 
   }

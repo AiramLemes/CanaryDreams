@@ -1,1 +1,72 @@
-<p>paso6 works!</p>
+<body class = AP6>
+    <!--Titulo-->
+    <p class = TituloAP6> PARA MEJORAR SU ANUNCIO, PRECISAMOS INFORMACIÓN <br> ADICIONAL DE TU ALOJAMIENTO </p>
+
+    <!--Primera parte-->
+    <form [formGroup]="informacion">
+        <p class = Titulo1AP6> Título </p>
+        <div class = Cuadrado1AP6> 
+            <input type="text" class="campoTitulo" formControlName="titulo" required>  
+        </div>
+
+        <!--Segundo parte-->
+        <p class = Titulo2AP6> Escribir una descripción </p>
+        <div class = Cuadrado2AP6> <textarea class = "campoDescripcion" requireds formControlName="descripcion"></textarea> </div>
+    </form>
+    
+    <!--Recuadros Finales-->
+
+    <p class = Titulo3AP6>Elige aspectos destacados</p>
+
+    <form [formGroup]="aspectosDestacados" class = recuadrosTotalAP6>
+
+        <div class = Recuadro1AP6> 
+            <input type="checkbox" class="checkbox" formControlName="tranquilo">
+            <img src="/assets/slippers.png" class="imagen" alt="">
+            <label style="margin: auto;">Tranquilo</label> 
+        </div>
+
+        <div class = Recuadro1AP6> 
+            <input type="checkbox" class="checkbox" formControlName="unico">
+            <img src="/assets/lighthouse.png" class="imagen" alt="">
+            <label style="margin: auto;">Único</label> 
+        </div>
+
+        <section class = Fila2>
+
+            <div class = Recuadro1AP6>
+                <input type="checkbox" class="checkbox" formControlName="familiar">
+                <img src="/assets/home.png" class="imagen" alt="">
+                <label style="margin: auto;">Familiar</label> 
+
+                <!--div class = Img1AP6> </div-->
+            </div>
+
+        </section>
+
+        <div class = Recuadro1AP6> 
+            <input type="checkbox" class="checkbox" formControlName="espacioso">
+            <img src="/assets/people.png" class="imagen" alt="">
+            <label style="margin: auto;">Espacioso</label> 
+        </div>
+
+        <div class = Recuadro1AP6> 
+            <input type="checkbox" class="checkbox" formControlName="centrico">
+            <img src="/assets/map.png" class="imagen" alt="">
+            <label style="margin: auto;">Céntrico</label> 
+            
+            
+            <!--div class = Img1AP6> </div!-->
+        </div>
+
+    </form>
+
+    <!--Linea-->
+    <div class = lineaAP6>  </div>
+
+    <!--Boton 1-->
+    <input class = boton1AP6 type="submit" value = "Atrás" (click)="volverAtras()">
+
+    <!--Boton 2-->
+    <input class = boton2AP6 type="submit" value = "Siguiente" (click)="guardarInformacion()">
+</body>

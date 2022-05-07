@@ -38,7 +38,7 @@ export class AlojamientosService {
     }
 
 
-    actualizarLocalidadAlojamiento(id: string, dir: any) {
+    guardarDatosAlojamiento(id: string, dir: any) {
         this.db.collection("prueba").doc(id).update(dir);
 
     }

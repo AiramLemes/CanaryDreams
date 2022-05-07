@@ -41,13 +41,13 @@ export class Paso2Component implements OnInit {
         
 
         if (direccion != "" && cp != "" && provincia != "" && isla != "" && ciudad != "" ) {
-            const dir = {direccion: direccion, 
+            const dir = { direccion: {direccion: direccion, 
                 cp: cp, 
                 isla: isla,
                 provincia: provincia, 
-                ciudad: ciudad}
+                ciudad: ciudad}}
     
-            this.alojamiento.actualizarLocalidadAlojamiento(this.id, dir);
+            this.alojamiento.guardarDatosAlojamiento(this.id, dir);
             this.path.navigateByUrl("anfitrion/paso3/" + this.id);
             
             

@@ -1,1 +1,28 @@
-<p>paso5 works!</p>
+<form class = AP5 [formGroup]="archivoForm" (ngSubmit)="subirArchivo()"> 
+
+
+    <!--Titulo-->
+    <p class = TituloAP5> ¡ESTÁS EN LA RECTA FINAL! <br> NECESITAMOS QUE SUBAS ALGUNAS FOTOS DE TU ALOJAMIENTO </p>
+    <p class = Titulo2AP5> AÑADE 6 FOTOS COMO MÍNIMO </p>
+
+    <!--RecuadroImagen-->
+    <div class = RecuadroImagenAP5> 
+
+        <!--TextoRecuadro-->
+        <p class = TextoRecuadroAP5> Arrastra y suelta <br> o <br> Haz click en el botón de subir </p>
+
+        <!--BotonSubir-->
+        <input class = "botonSubirAP5" type="file" value = "SUBIR" formControlName="archivo" (change)="cambioArchivo($event)">
+
+    </div>
+
+    <!--Linea-->
+    <div class = lineaAP5>  </div>
+
+    <!--Boton 1-->
+    <input class = boton1AP5 type="submit" value = "Atrás">
+
+    <!--Boton 2-->
+    <input class = boton2AP5 type="submit" value = "Siguiente">
+
+</form>

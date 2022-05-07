@@ -41,12 +41,12 @@ export class Paso3Component implements OnInit {
         var dormitorios = this.formulario.get("dormitorios")!.value
 
     if (huespedes != "" && camas != "" && dormitorios != "" && baños != "") {
-        const rooms = {huespedes: huespedes, 
+        const rooms = { espacios: {huespedes: huespedes, 
         camas: camas, 
         baños: baños,
-        dormitorios: dormitorios}
+        dormitorios: dormitorios}}
 
-        this.alojamiento.actualizarLocalidadAlojamiento(this.id, rooms);
+        this.alojamiento.guardarDatosAlojamiento(this.id, rooms);
         this.path.navigateByUrl("anfitrion/paso4/" + this.id);
 
 

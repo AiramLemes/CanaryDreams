@@ -59,4 +59,8 @@ export class Paso2Component implements OnInit {
 
     }
 
+    volverAtras() {
+        this.path.navigateByUrl("anfitrion/paso1")
+    }
+
 }

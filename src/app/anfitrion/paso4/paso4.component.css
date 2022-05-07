@@ -101,55 +101,49 @@ body.AP4{
 }
 
 
-.lineaAP4{
-    width: 100%;
-    margin-top: -100px;
+.botones {
+    grid-area: botones;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        ". .";
+    margin: auto;
+    width: 1000px;
 
-    border: 6px solid #D5C7C7;
-    transform: rotate(0.08deg);
 }
 
 
 
-.boton1AP4{
-    width: 153px;
-    height: 35px;
-
-    margin-top: 40px;
-    margin-left: 40px;
-
-
+.boton1 {
+    width: 200px;
+    height: 30px;
     background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
     border-radius: 18px;
-
     font-family: Roboto Condensed;
-    font-style: normal;
-    font-weight: 500px;
-    font-size: 26px;
-    line-height: 22px;
-
+    font-size: 20px;
     color: #FFFFFF;
+    margin: auto;
 }
 
-.boton2AP4{
-    width: 153px;
-    height: 35px;
-
-    float:right;
-    margin-top: 40px;
-    margin-right: 40px;
-
+.boton2 {
+    width: 200px;
+    height: 30px;
     background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
     border-radius: 18px;
-
     font-family: Roboto Condensed;
-    font-style: normal;
-    font-weight: 500px;
-    font-size: 26px;
-    line-height: 22px;
-
+    font-size: 20px;
     color: #FFFFFF;
+    margin: auto;
 }
+
+
+
+
+
+
 
 /* 640 to 960 pixels */
 @media screen and (max-width: 60em) {

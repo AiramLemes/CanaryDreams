@@ -60,7 +60,7 @@ export class Paso3Component implements OnInit {
 
 
     volverAtras() {
-        this.path.navigateByUrl("./anfitrion/paso2/" + this.id)
+        this.path.navigateByUrl("/anfitrion/paso2/" + this.id)
     }
 
 

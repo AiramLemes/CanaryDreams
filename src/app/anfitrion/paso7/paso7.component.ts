@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { AlojamientosService } from 'src/app/services/alojamientos.service';
 
 @Component({
   selector: 'app-paso7',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Paso7Component implements OnInit {
 
-  constructor() { }
+  id!: any;
 
+  constructor(private alojamiento: AlojamientosService, private route: ActivatedRoute, private path: Router)  {
+        this.id = this.route.snapshot.paramMap.get('id')
+  }
   ngOnInit(): void {
+  }
+
+
+  guardarInformacion() {
+  
+  }
+
+
+  volverAtras() {
+    this.path.navigateByUrl("/anfitrion/paso5/" + this.id);
   }
 
 }

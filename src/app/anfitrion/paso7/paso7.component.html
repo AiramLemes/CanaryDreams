@@ -1,4 +1,4 @@
-<div class="container">
+<form class="container">
 
 
     <div class="titulo"> POR ÚLTIMO, INDÍQUENOS EL PRECIO POR NOCHE
@@ -11,17 +11,29 @@
 
     <div class="calendario">
 
-        <p class="titulo2">Fechas De Disponibilidad</p>
+        <p class="titulo2">FECHAS DE DISPONIBILIDAD</p>
         <img class="imagen" src="/assets/calendar.png">
 
         <div class="desde">
-            <h4>Desde</h4>
+            <h4>DESDE</h4>
             <input type="date" class="fechas"> 
         </div>
 
         <div class="hasta">
-            <h4>Hasta</h4>
+            <h4>HASTA</h4>
             <input type="date" class="fechas">
         </div>
     </div>
-  </div>
+
+    <!--botones-->
+    <div class="botones">
+        <!--Boton 1-->
+        <button class = "boton1" (click)="volverAtras()">Atrás</button>
+
+        <!--Boton 2-->
+        <button class = "boton2" (click)="guardarInformacion()">Terminar</button>
+    </div>
+
+
+
+</form>

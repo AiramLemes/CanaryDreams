@@ -93,4 +93,8 @@ export class Paso4Component implements OnInit {
 
   }
 
+  volverAtras() {
+    this.path.navigateByUrl("/anfitrion/paso3/" + this.id)
+  }
+
 }

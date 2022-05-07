@@ -1,14 +1,15 @@
 .container {  
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.6fr 1fr 1fr;
+    grid-template-rows: 0.6fr 1fr 1fr 0.6fr;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
       "titulo"
       "precio"
-      "calendario";
+      "calendario"
+      "botones";
       width: 1000px;
       margin: auto;
 }
@@ -121,6 +122,44 @@
     grid-area: imagen; 
     width: 100px;
     height: 100px;
+    margin: auto;
+    
+}
+
+
+.botones {
+    grid-area: botones;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        ". .";
+    margin: auto;
+    width: 1000px;
+
+}
+
+.boton1 {
+    width: 200px;
+    height: 30px;
+    background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+    border-radius: 18px;
+    font-family: Roboto Condensed;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin: auto;
+}
+
+.boton2 {
+    width: 200px;
+    height: 30px;
+    background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+    border-radius: 18px;
+    font-family: Roboto Condensed;
+    font-size: 20px;
+    color: #FFFFFF;
     margin: auto;
     
 }

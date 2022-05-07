@@ -8,12 +8,14 @@ body.AP2{
 
     display: grid; 
     grid-template-columns: 1fr; 
-    grid-template-rows: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 0.5fr; 
     gap: 0px 0px; 
     grid-template-areas: 
         "TituloAP2"
-        "formulario"; 
-
+        "formulario" 
+        "botones"; 
+    
+    width: 1000px;
     
 }
 
@@ -32,6 +34,7 @@ body.AP2{
         "."
         "."; 
 }
+
 
 .campos {
 
@@ -67,296 +70,54 @@ label {
 }
 
 
-.imagenBuscadorAP2{
-    width: 48px;
-    height: 48px;
-    background: url(https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg);
+.botones {
 
-    margin-top:-85px;
-    margin-left:420px;
-
+    margin: auto;
+    display: grid; 
+    grid-area: botones;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        ". ."; 
+    margin: auto;
+    width: 1000px;
 }
 
 
 
 
-.boton2AP2{
+.boton1 {
     width: 200px;
     height: 30px;
-
     background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
     border-radius: 18px;
-
     font-family: Roboto Condensed;
     font-size: 20px;
-    margin: auto;
-    margin-top: 100px;
-
     color: #FFFFFF;
+    margin: auto;
 }
+
+.boton2 {
+    width: 200px;
+    height: 30px;
+    background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+    border-radius: 18px;
+    font-family: Roboto Condensed;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin: auto;
+    
+}
+
 
 /* 640 to 960 pixels */
 @media screen and (max-width: 60em) {
 
-    body.AP2{
-        font-family: Times New Roman, Times, serif; 
-        font-style: normal; font-weight: bold; 
-        text-align: center;
-        float: center; 
-        padding-top: 100px; 
-        padding-bottom: 20px;
-        color: #000000; 
-        margin: 0 auto;
-        width: 100%;
-        overflow: hidden;
-    }
     
-    .TituloAP2{
-        width: 550px;
-        height: 70px;
+}
     
-        font-family: Roboto Condensed;
-        font-style: normal;
-        font-weight: 500px;
-        font-size: 17px;
-        line-height: 56px;
+/* under 690 px */
+@media screen and (max-width: 40em) {
     
-        margin: auto;
-        margin-top: -20px;
-        margin-bottom: 20px;
-    
-    
-        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        color: tomato;  
-    }
-    
-    .mapaAP2{
-        width: 320px;
-        height: 320px;
-    
-        margin: auto;
-    
-        background: url(https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg);
-    }
-    
-    .buscadorAP2{
-        width: 214px;
-        height: 50px;
-    
-        background: #ffffff;
-        border-radius: 134px;
-    
-        margin: auto;
-    
-        margin-top: -340px;
-        
-        
-    }
-    
-    .textoBuscadorAP2{
-        width: 200px;
-        height: 28px;
-        font-family: 'Roboto Condensed';
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 42px;
-    
-        margin-top:40px;
-        margin-left:10px;
-    
-        color: #000000;
-    }
-    
-    .imagenBuscadorAP2{
-        width: 35px;
-        height: 35px;
-        background: url(https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg);
-    
-        margin-top:-60px;
-        margin-left:320px;
-    
-    }
-    
-    .lineaAP2{
-        margin-top: 300px;
-        width: 960px;
-        height: 0px;
-        left: 0px;
-        top: 300px;
-    
-        border: 6px solid #D4C7C7;
-    }
-    
-    .boton1AP2{
-        width: 80px;
-        height: 30px;
-        float: left;
-    
-        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
-        border-radius: 18px;
-    
-        font-family: Roboto Condensed;
-        font-style: normal;
-        font-weight: 500px;
-        font-size: 20px;
-        line-height: 32px;
-    
-        color: #FFFFFF;
-    
-        margin-top: 60px;
-        margin-left: 60px;
-    }
-    
-    .boton2AP2{
-        width: 80px;
-        height: 30px;
-        float: right;
-        margin-top: 60px;
-        margin-right: 60px;
-    
-        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
-        border-radius: 18px;
-    
-        font-family: Roboto Condensed;
-        font-style: normal;
-        font-weight: 500px;
-        font-size: 18px;
-        line-height: 32px;
-    
-        color: #FFFFFF;
-    }
-    
-    /* under 690 px */
-    @media screen and (max-width: 40em) {
-        
-        body.AP2{
-            font-family: Times New Roman, Times, serif; 
-            font-style: normal; font-weight: bold; 
-            text-align: center;
-            float: center; 
-            padding-top: 50px; 
-            padding-bottom: 170px;
-            color: #000000; 
-            margin: 0 auto;
-            width: 100%;
-            overflow: hidden;
-        }
-        
-        .TituloAP2{
-            width: 200px;
-            height: 70px;
-        
-            font-family: Roboto Condensed;
-            font-style: normal;
-            font-weight: 500px;
-            font-size: 10px;
-            line-height: 20px;
-        
-            margin: auto;
-            margin-top: -20;
-            margin-bottom: 20;
-        
-        
-            background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            color: tomato;  
-        }
-        
-        .mapaAP2{
-            width: 200px;
-            height: 200px;
-        
-            margin: auto;
-        
-            background: url(https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg);
-        }
-        
-        .buscadorAP2{
-            width: 150px;
-            height: 30px;
-        
-            background: #ffffff;
-            border-radius: 134px;
-        
-            margin: auto;
-        
-            margin-top: -190px;
-            
-            
-        }
-        
-        .textoBuscadorAP2{
-            width: 120px;
-            height: 28px;
-            font-family: 'Roboto Condensed';
-            font-style: normal;
-            font-weight: bold;
-            font-size: 12px;
-            line-height: 28px;
-        
-            margin-top:-28px;
-            margin-left:15px;
-        
-            color: #000000;
-        }
-        
-        .imagenBuscadorAP2{
-            width: 30px;
-            height: 30px;
-            background: url(https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg);
-        
-            margin-top:-53px;
-            margin-left:180px;
-        
-        }
-        
-        .lineaAP2{
-            margin-top: 200px;
-            width: 640px;
-            height: 0px;
-            left: 0px;
-            top: 0px;
-            margin-bottom: -40px;
-        
-            border: 6px solid #D4C7C7;
-        }
-        
-        .boton1AP2{
-            width: 60px;
-            height: 20px;
-            float: left;
-        
-            background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
-            border-radius: 18px;
-        
-            font-family: Roboto Condensed;
-            font-style: normal;
-            font-weight: 500px;
-            font-size: 10px;
-            line-height: 20px;
-        
-            color: #FFFFFF;
-        
-        }
-        
-        .boton2AP2{
-            width: 60px;
-            height: 20px;
-            float: right;
-        
-            background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
-            border-radius: 18px;
-        
-            font-family: Roboto Condensed;
-            font-style: normal;
-            font-weight: 500px;
-            font-size: 10px;
-            line-height: 20px;
-        
-            color: #FFFFFF;
-        }
-    }}
+}

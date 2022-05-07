@@ -69,22 +69,6 @@ body.AP3{
     width: 300px;
 }
 
-.botones {
-    grid-area: botones;
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-        ". .";
-    margin: auto;
-    width: 800px;
-
-}
-
-
-
 
 
 .TituloAP3{
@@ -108,39 +92,42 @@ body.AP3{
     color: tomato;  
 }
 
-.boton1{
-    width: 153px;
-    height: 45px;
+
+.botones {
+    grid-area: botones;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        ". .";
     margin: auto;
-    margin-left: 50px;
-    
-    background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
-    border-radius: 18px;
+    width: 1000px;
 
-    font-family: Roboto Condensed;
-    font-style: normal;
-    font-weight: 500px;
-    font-size: 30px;
-    line-height: 42px;
-
-    color: #FFFFFF;
 }
 
-.boton2{
-    width: 153px;
-    height: 45px;
-    margin: auto;
-    margin-right: 50px;
+.boton1 {
+    width: 200px;
+    height: 30px;
     background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
     border-radius: 18px;
-
     font-family: Roboto Condensed;
-    font-style: normal;
-    font-weight: 500px;
-    font-size: 30px;
-    line-height: 42px;
-
+    font-size: 20px;
     color: #FFFFFF;
+    margin: auto;
+}
+
+.boton2 {
+    width: 200px;
+    height: 30px;
+    background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+    border-radius: 18px;
+    font-family: Roboto Condensed;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin: auto;
+    
 }
 
 

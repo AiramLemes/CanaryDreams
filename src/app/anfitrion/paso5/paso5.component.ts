@@ -56,6 +56,15 @@ export class Paso5Component implements OnInit {
     }
   }
 
+
+  continuar() {
+
+    this.path.navigateByUrl("anfitrion/paso6/" + this.id)
+  }
+
+  volverAtras() {
+    this.path.navigateByUrl("anfitrion/paso4/" + this.id)
+  }
   
 
 }

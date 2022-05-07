@@ -6,15 +6,21 @@
     <p class = Titulo2AP5> AÑADE 6 FOTOS COMO MÍNIMO </p>
 
     <!--RecuadroImagen-->
-    <div class = RecuadroImagenAP5> 
+    <form class = RecuadroImagenAP5 [formGroup]="archivoForm"> 
 
         <!--TextoRecuadro-->
-        <p class = TextoRecuadroAP5> Arrastra y suelta <br> o <br> Haz click en el botón de subir </p>
+        <p class = TextoRecuadroAP5> 
+            Haz click en el botón de subir 
+            <br><br> Has subido {{this.numeroArchivosSubidos}} archivo/s <br><br>
+            <input class="botonSubirAP5" type="button" (click)="subirArchivo()" value="SUBIR" >
+        </p>
+        <br>
 
         <!--BotonSubir-->
-        <input class = "botonSubirAP5" type="file" value = "SUBIR" formControlName="archivo" (change)="cambioArchivo($event)">
+        <input class = "botonSeleccionarArchivoAP5" type="file" formControlName="archivo"
+         (change)="cambioArchivo($event)" accept=".jpeg, .webp, .png, .jpg">
 
-    </div>
+    </form>
 
 
     <!--botones-->

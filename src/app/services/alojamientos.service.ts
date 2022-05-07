@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { Router } from '@angular/router';
+import { arrayUnion } from 'firebase/firestore';
 
 @Injectable({
   providedIn: 'root'
@@ -34,13 +35,21 @@ export class AlojamientosService {
 
 
     crearAlojamiento(id: string, tipo: string) {
-        this.db.collection("prueba").doc(id).set({tipo: tipo})
+        this.db.collection("alojamientos").doc(id).set({tipo: tipo})
     }
 
 
     guardarDatosAlojamiento(id: string, dir: any) {
-        this.db.collection("prueba").doc(id).update(dir);
+        this.db.collection("alojamientos").doc(id).update(dir);
 
+    }
+
+    guardarReferenciaAlojamientoEnUser (userId:string, idAlojamiento:string) {
+        var ref = "alojamientos/" + idAlojamiento
+    
+        var r = this.db.collection("usuarios").doc(userId).update({
+            alojamientos: arrayUnion(ref)
+        })
     }
 
 }

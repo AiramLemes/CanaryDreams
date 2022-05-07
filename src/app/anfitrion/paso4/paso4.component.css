@@ -111,7 +111,7 @@ body.AP4{
     grid-template-areas: 
         ". .";
     margin: auto;
-    width: 1000px;
+    width: 940px;
 
 }
 
@@ -126,6 +126,7 @@ body.AP4{
     font-size: 20px;
     color: #FFFFFF;
     margin: auto;
+    float: left;
 }
 
 .boton2 {
@@ -137,6 +138,7 @@ body.AP4{
     font-size: 20px;
     color: #FFFFFF;
     margin: auto;
+    float: right;
 }
 
 
@@ -260,45 +262,44 @@ body.AP4{
     
     
     
-    .boton1AP4{
-        width: 153px;
-        height: 35px;
+    .botones {
+        grid-area: botones;
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+            ". .";
+        margin: auto;
+        width: 600px;
     
-        margin-top: 30px;
-        margin-left: 30px;
-    
-    
-        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
-        border-radius: 18px;
-    
-        font-family: Roboto Condensed;
-        font-style: normal;
-        font-weight: 500px;
-        font-size: 26px;
-        line-height: 32px;
-    
-        color: #FFFFFF;
     }
     
-    .boton2AP4{
-        width: 153px;
-        height: 35px;
     
-        margin-top: 30px;
-        margin-left: 30px;
     
-        float:right;
-    
+    .boton1 {
+        width: 140px;
+        height: 30px;
+        float: left;
         background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
         border-radius: 18px;
-    
         font-family: Roboto Condensed;
-        font-style: normal;
-        font-weight: 500px;
-        font-size: 26px;
-        line-height: 32px;
-    
+        font-size: 20px;
         color: #FFFFFF;
+        margin: auto;
+    }
+    
+    .boton2 {
+        width: 140px;
+        float: right;
+        height: 30px;
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        border-radius: 18px;
+        font-family: Roboto Condensed;
+        font-size: 20px;
+        color: #FFFFFF;
+        margin: auto;
     }
 }
 
@@ -314,13 +315,15 @@ body.AP4{
         padding-bottom: 170px;
         color: #000000; 
         margin: 0 auto;
-        width: 100%;
+        width: 300px;
         overflow: hidden;
     }
     
     .TituloAP4{
+        padding-bottom: 40px;
+        padding-top: 30px;
         width: 290px;
-        height: 112px;
+        height: 130px;
     
         margin: auto;
         margin-top:-50px;
@@ -328,7 +331,7 @@ body.AP4{
         font-family: Roboto Condensed;
         font-style: normal;
         font-weight: 500px;
-        font-size: 10px;
+        font-size: 15px;
         line-height: 26px;
         text-align: center;
         margin-bottom: -220px;
@@ -381,7 +384,7 @@ body.AP4{
     }
     
     .elemento1AP4{
-        width: 105px;
+        width: 145px;
         height: 42px;
     }
     
@@ -417,43 +420,36 @@ body.AP4{
     
     
     
-    .boton1AP4{
-        width: 70px;
-        height: 20px;
+    .botones {
+        margin: auto;
+        width: 300px;
+        margin-top:-130px;
     
-        margin-top: 20px;
-        margin-left: 20px;
-    
-    
-        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
-        border-radius: 18px;
-    
-        font-family: Roboto Condensed;
-        font-style: normal;
-        font-weight: 500px;
-        font-size: 14px;
-        line-height: 17px;
-    
-        color: #FFFFFF;
     }
     
-    .boton2AP4{
-        width: 70px;
-        height: 20px;
     
-        float:right;
-        margin-top: 20px;
-        margin-right: 20px;
     
+    .boton1 {
+        width: 80px;
+        height: 30px;
         background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
         border-radius: 18px;
-    
         font-family: Roboto Condensed;
-        font-style: normal;
-        font-weight: 500px;
-        font-size: 14px;
-        line-height: 17px;
-    
+        font-size: 15px;
         color: #FFFFFF;
+        margin: auto;
+        float: left;
+    }
+    
+    .boton2 {
+        width: 80px;
+        height: 30px;
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        border-radius: 18px;
+        font-family: Roboto Condensed;
+        font-size: 15px;
+        color: #FFFFFF;
+        margin: auto;
+        float: right;
     }
 }

@@ -5,22 +5,15 @@ body.AP2{
     font-style: normal; font-weight: bold; 
     text-align: center; 
     margin: auto;
-
-    display: grid; 
-    grid-template-columns: 1fr; 
-    grid-template-rows: 1fr 1fr 0.5fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-        "TituloAP2"
-        "formulario" 
-        "botones"; 
     
-    width: 1000px;
+    width: 920px;
+    overflow: hidden;
     
 }
 
 .formulario {
-
+    border: black 1px solid;
+    width: 700px;
     margin: auto;
     display: grid; 
     grid-area: formulario;
@@ -33,15 +26,18 @@ body.AP2{
         "."
         "."
         "."; 
+    margin-bottom: 40px;
 }
 
 
 .campos {
 
-    width: 400px;
-    height: 30px;
-    margin: auto;
-    margin-bottom: 20px;
+    width: 350px;
+    height: 20px;
+    margin-right: 120px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 
 }
 
@@ -49,10 +45,12 @@ label {
     margin: auto;
     width: 200px;
     text-align: left;
+    margin-left: 80px;
 }
 
 .TituloAP2{
     height: 90px;
+    width: 900px;
 
     font-family: Roboto Condensed;
     font-style: normal;
@@ -73,15 +71,10 @@ label {
 .botones {
 
     margin: auto;
-    display: grid; 
-    grid-area: botones;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-        ". ."; 
     margin: auto;
-    width: 1000px;
+    width: 850px;
+    height: 30px;
+    
 }
 
 
@@ -95,7 +88,7 @@ label {
     font-family: Roboto Condensed;
     font-size: 20px;
     color: #FFFFFF;
-    margin: auto;
+    float: left;
 }
 
 .boton2 {
@@ -106,18 +99,227 @@ label {
     font-family: Roboto Condensed;
     font-size: 20px;
     color: #FFFFFF;
-    margin: auto;
+    float: right;
     
 }
 
 
 /* 640 to 960 pixels */
 @media screen and (max-width: 60em) {
-
+    body.AP2{
+        font-family: Times New Roman, Times, serif; 
+        font-style: normal; font-weight: bold; 
+        text-align: center; 
+        margin: auto;
+        
+        width: 640px;
+        overflow: hidden;
+        
+    }
+    
+    .formulario {
+        border: black 1px solid;
+        width: 500px;
+        margin: auto;
+        display: grid; 
+        grid-area: formulario;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+            "."
+            "."
+            "."
+            "."
+            "."; 
+        margin-bottom: 40px;
+    }
+    
+    
+    .campos {
+    
+    width: 200px;
+        height: 20px;
+        margin-right: 120px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    
+    
+    }
+    
+    label {
+        margin: auto;
+        width: 200px;
+        text-align: left;
+        margin-left: 80px;
+    }
+    
+    .TituloAP2{
+        height: 90px;
+        width: 620px;
+    
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: 500px;
+        font-size: 20px;
+        line-height: 90px;
+    
+        margin: auto;
+        margin-top:-20px;
+        grid-area: TituloAP2;
+    
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: tomato;  
+    }
+    
+    
+    .botones {
+    
+        margin: auto;
+        margin: auto;
+        width: 590px;
+        height: 30px;
+        
+    }
+    
+    
+    
+    
+    .boton1 {
+        width: 150px;
+        height: 25px;
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        border-radius: 18px;
+        font-family: Roboto Condensed;
+        font-size: 20px;
+        color: #FFFFFF;
+        float: left;
+    }
+    
+    .boton2 {
+        width: 150px;
+        height: 25px;
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        border-radius: 18px;
+        font-family: Roboto Condensed;
+        font-size: 20px;
+        color: #FFFFFF;
+        float: right;
+        
+    }
     
 }
     
 /* under 690 px */
 @media screen and (max-width: 40em) {
+    body.AP2{
+        font-family: Times New Roman, Times, serif; 
+        font-style: normal; font-weight: bold; 
+        text-align: center; 
+        margin: auto;
+        
+        width: 300px;
+        overflow: hidden;
+        
+    }
     
+    .formulario {
+        border: black 1px solid;
+        width: 290px;
+        margin: auto;
+        display: grid; 
+        grid-area: formulario;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+            "."
+            "."
+            "."
+            "."
+            "."; 
+            margin-top: -85px;
+        margin-bottom: 40px;
+    }
+    
+    
+    .campos {
+    
+        width: 140px;
+        height: 20px;
+        margin-right: 120px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    
+    
+    }
+    
+    label {
+        margin: auto;
+        width: 100px;
+        text-align: left;
+        margin-left: 20px;
+        font-size: 13px;
+    }
+    
+    .TituloAP2{
+        height: 180px;
+        width: 260px;
+        
+    
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: 500px;
+        font-size: 12px;
+        line-height: 30px;
+    
+        margin: auto;
+        margin-top:0px;
+        grid-area: TituloAP2;
+    
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: tomato;  
+    }
+    
+    
+    .botones {
+    
+        margin: auto;
+        margin: auto;
+        width: 300px;
+        height: 30px;
+        
+    }
+    
+    
+    
+    
+    .boton1 {
+        width: 100px;
+        height: 20px;
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        border-radius: 18px;
+        font-family: Roboto Condensed;
+        font-size: 17px;
+        color: #FFFFFF;
+        float: left;
+        line-height: 10px;
+    }
+    
+    .boton2 {
+        width: 100px;
+        height: 20px;
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        border-radius: 18px;
+        font-family: Roboto Condensed;
+        font-size: 17px;
+        color: #FFFFFF;
+        float: right;
+        line-height: 10px;
+        
+    }
 }

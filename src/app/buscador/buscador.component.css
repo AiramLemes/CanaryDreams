@@ -1,4 +1,3 @@
-/********************ESTO ES APARTAMENTO BUSCADOR********************/
 body.AB{
 
     font-family: Roboto Condensed;
@@ -213,7 +212,7 @@ section.ApartamentosAB {
         width: 60px;
         height:30px;
         margin-left: 30px;
-        margin-top: 16px;
+        margin-top: 7px;
         border-radius:7px;
         background-color: rgba(144, 255, 122, 0.467);
     }
@@ -423,7 +422,7 @@ section.BuscadorAB {
     width: 50px;
     height:25px;
     margin-left: 20px;
-    margin-top: 16px;
+    margin-top: 7px;
     border-radius:7px;
     font-size:12px;
     background-color: rgba(144, 255, 122, 0.467);
@@ -559,6 +558,11 @@ section.ApartamentosAB {
     
     color: #2D2B2B;
 }
+}
+
+.buscador640{
+    width: 100px;
+    height: 15px;
 }
 
 .pasarPaginaAB {

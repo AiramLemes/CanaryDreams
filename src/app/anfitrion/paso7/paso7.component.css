@@ -1,28 +1,157 @@
 .container {  
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.6fr 1fr 1fr 0.6fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "titulo"
-      "precio"
-      "calendario"
-      "botones";
-      width: 1000px;
+    width: 920px;
+    margin: auto;
+}
+
+
+
+.titulo { 
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 56px;
+  text-align: center;
+
+  background: linear-gradient(180deg, #D9202C 0%, #9132BF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-emphasis-color: transparent;
+  
+}
+
+.precio {  
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  width: 600px;
+
+}
+
+.campoPrecio {
+
+  width: 300px;
+  height: 100px;
+  margin: auto;
+  background: #E9E7E7;
+  border-radius: 20px;
+  font-size: 70px;
+  text-align: center;
+  font-weight: normal;
+
+}
+
+.calendario {  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.7fr 1.3fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "titulo2 imagen"
+    "desde hasta";
+  grid-area: calendario;
+  margin: auto;
+  margin-left: 100px;
+  margin-top: 20px;
+  width: 800px;
+}
+
+.desde { 
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 0.6fr 1.4fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+      "."
+      "."; 
+  grid-area: desde; 
+  margin-left: 30px;
+  
+  
+}
+
+.hasta { 
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 0.6fr 1.4fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+      "."
+      "."; 
+  grid-area: hasta; 
+  
+  margin-left: 30px;
+  
+}
+
+.fechas {
+  margin-left: -4px;
+  width: 200px;
+  height: 50px;
+}
+
+.titulo2 { 
+  grid-area: titulo2; 
+  font-size: 30px;
+}
+
+.imagen { 
+  grid-area: imagen; 
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  
+}
+
+
+.botones {
+  margin: auto;
+  width: 800px;
+  margin-bottom: 50px;
+
+}
+
+.boton1 {
+  width: 200px;
+  height: 30px;
+  background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+  border-radius: 18px;
+  font-family: Roboto Condensed;
+  font-size: 20px;
+  color: #FFFFFF;
+  margin: auto;
+  float: left;
+}
+
+.boton2 {
+  width: 200px;
+  height: 30px;
+  background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+  border-radius: 18px;
+  font-family: Roboto Condensed;
+  font-size: 20px;
+  color: #FFFFFF;
+  margin: auto;
+  float: right;
+  
+}
+
+@media screen and (max-width: 60em) {
+  .container {  
+      width: 600px;
       margin: auto;
 }
 
 
   
 .titulo { 
-    grid-area: titulo; 
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 500;
-    font-size: 30px;
-    line-height: 56px;
+    font-size: 20px;
+    line-height: 36px;
     text-align: center;
 
     background: linear-gradient(180deg, #D9202C 0%, #9132BF 100%);
@@ -34,30 +163,21 @@
 }
   
 .precio {  
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1.2fr 0.8fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "."
-      ".";
-    grid-area: precio;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 20px;
     text-align: center;
-    width: 1000px;
+    width: 600px;
 
 }
 
 .campoPrecio {
 
-    width: 300px;
-    height: 100px;
+    width: 200px;
+    height: 60px;
     margin: auto;
     background: #E9E7E7;
     border-radius: 20px;
-    font-size: 70px;
+    font-size: 30px;
     text-align: center;
     font-weight: normal;
 
@@ -74,9 +194,9 @@
       "desde hasta";
     grid-area: calendario;
     margin: auto;
-    margin-left: 100px;
+    margin-left: 30px;
     margin-top: 20px;
-    width: 1000px;
+    width: 600px;
 }
   
 .desde { 
@@ -88,7 +208,7 @@
         "."
         "."; 
     grid-area: desde; 
-    margin: auto;
+    margin-left: 30px;
     
     
 }
@@ -103,63 +223,203 @@
         "."; 
     grid-area: hasta; 
     
-    margin: auto;
+    margin-left: 30px;
     
 }
 
 .fechas {
-    margin: auto;
-    width: 200px;
-    height: 50px;
+    margin-left: -4px;
+    width: 170px;
+    height: 30px;
 }
 
 .titulo2 { 
     grid-area: titulo2; 
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .imagen { 
     grid-area: imagen; 
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     margin: auto;
     
 }
 
 
 .botones {
-    grid-area: botones;
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-        ". .";
     margin: auto;
-    width: 1000px;
+    width: 600px;
+    margin-bottom: 50px;
 
 }
 
 .boton1 {
-    width: 200px;
-    height: 30px;
+    width: 160px;
+    height: 25px;
     background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
     border-radius: 18px;
     font-family: Roboto Condensed;
-    font-size: 20px;
+    font-size: 18px;
     color: #FFFFFF;
     margin: auto;
+    float: left;
 }
 
 .boton2 {
-    width: 200px;
-    height: 30px;
+    width: 160px;
+    height: 25px;
     background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
     border-radius: 18px;
     font-family: Roboto Condensed;
-    font-size: 20px;
+    font-size: 18px;
     color: #FFFFFF;
     margin: auto;
+    float: right;
     
+}
+}
+
+@media screen and (max-width: 40em) {
+  .container {  
+      width: 300px;
+      margin: auto;
+}
+
+
+  
+.titulo { 
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 500px;
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: -20px;
+    text-align: center;
+
+    background: linear-gradient(180deg, #D9202C 0%, #9132BF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+    
+}
+  
+.precio {  
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    width: 300px;
+
+}
+
+.campoPrecio {
+
+    width: 160px;
+    height: 40px;
+    margin: auto;
+    background: #E9E7E7;
+    border-radius: 20px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: normal;
+
+}
+  
+.calendario {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.7fr 1.0fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "titulo2 imagen"
+      "desde hasta";
+    grid-area: calendario;
+    margin: auto;
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 250px;
+}
+  
+.desde { 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.6fr 1.4fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        "."
+        "."; 
+    grid-area: desde; 
+    margin-left: -15px;
+    
+    
+}
+  
+.hasta { 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.6fr 1.4fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        "."
+        "."; 
+    grid-area: hasta; 
+    
+    margin-left: 30px;
+    margin-bottom: -50px;
+    
+}
+
+.fechas {
+    margin-left: 0px;
+    width: 100px;
+    height: 25px;
+}
+
+.titulo2 { 
+    font-size: 13px;
+
+}
+
+.imagen { 
+    grid-area: imagen; 
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    margin-left: 10px;
+}
+
+
+.botones {
+    margin: auto;
+    width: 300px;
+    margin-bottom: 10px;
+
+}
+
+.boton1 {
+    width: 100px;
+    height: 20px;
+    background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+    border-radius: 18px;
+    font-family: Roboto Condensed;
+    font-size: 15px;
+    color: #FFFFFF;
+    margin: auto;
+    float: left;
+}
+
+.boton2 {
+    width: 100px;
+    height: 20px;
+    background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+    border-radius: 18px;
+    font-family: Roboto Condensed;
+    font-size: 15px;
+    color: #FFFFFF;
+    margin: auto;
+    float: right;
+    
+}
 }

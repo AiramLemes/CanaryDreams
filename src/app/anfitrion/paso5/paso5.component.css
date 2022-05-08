@@ -109,16 +109,9 @@ body.AP5{
 }
 
 .botones {
-    grid-area: botones;
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-        ". .";
     margin: auto;
-    width: 1000px;
+    width: 890px;
+    padding-bottom: 50px;
 
 }
 
@@ -131,6 +124,7 @@ body.AP5{
     font-size: 20px;
     color: #FFFFFF;
     margin: auto;
+    float:left;
 }
 
 .boton2 {
@@ -142,6 +136,7 @@ body.AP5{
     font-size: 20px;
     color: #FFFFFF;
     margin: auto;
+    float: right;
     
 }
 
@@ -160,6 +155,18 @@ body.AP5{
         margin: 0 auto;
         width: 100%;
         overflow: hidden;
+    }
+
+    .botonSeleccionarArchivoAP5{
+
+        width: 300px;
+        height: 30px;
+        margin-left: 125px;
+        border-radius: 20px;
+        border: 1px solid black;
+        font-family: Roboto Condensed;
+        font-size: 20px;
+        color: #000000;
     }
     
     .TituloAP5{
@@ -229,7 +236,7 @@ body.AP5{
     }
     
     .botonSubirAP5{
-        margin-top: -100px;
+        margin-top: 50px;
         width: 110px;
         height: 40px;
     
@@ -255,45 +262,37 @@ body.AP5{
         transform: rotate(0.08deg);
     }
     
-    .boton1AP5{
-        margin-top: 20px;
-        margin-left: 20px;
-        width: 100px;
-        height: 30px;
+    .botones {
+        margin: auto;
+        width: 600px;
+        padding-bottom: 50px;
+        margin-top: 50px;
     
-        float: left;
-    
-        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
-        border-radius: 18px;
-    
-        font-family: Roboto Condensed;
-        font-style: normal;
-        font-weight: 500px;
-        font-size: 22px;
-        line-height: 22px;
-    
-        color: #FFFFFF;
     }
     
-    .boton2AP5{
-        margin-top: 20px;
-        margin-left: 20px;
-        width: 100px;
-        height: 30px;
-    
-        float: right;
-
-    
+    .boton1 {
+        width: 150px;
+        height: 25px;
         background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
         border-radius: 18px;
-    
         font-family: Roboto Condensed;
-        font-style: normal;
-        font-weight: 500px;
-        font-size: 22px;
-        line-height: 22px;
-    
+        font-size: 18px;
         color: #FFFFFF;
+        margin: auto;
+        float:left;
+    }
+    
+    .boton2 {
+        width: 150px;
+        height: 25px;
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        border-radius: 18px;
+        font-family: Roboto Condensed;
+        font-size: 18px;
+        color: #FFFFFF;
+        margin: auto;
+        float: right;
+        
     }
 }
 
@@ -312,6 +311,19 @@ body.AP5{
         margin: 0 auto;
         width: 100%;
         overflow: hidden;
+    }
+
+    .botonSeleccionarArchivoAP5{
+
+        width: 220px;
+        height: 25px;
+        margin-left: 10px;
+        border-radius: 20px;
+        border: 1px solid black;
+        font-family: Roboto Condensed;
+        font-size: 20px;
+        color: #000000;
+        font-size: 10px;
     }
     
     .TituloAP5{
@@ -383,7 +395,7 @@ body.AP5{
     }
     
     .botonSubirAP5{
-        margin-top: -60px;
+        margin-top: 15px;
         width: 80px;
         height: 25px;
 
@@ -410,43 +422,36 @@ body.AP5{
         transform: rotate(0.08deg);
     }
     
-    .boton1AP5{
-        margin-top: 20px;
-        margin-left: 20px;
-        width: 70px;
-        height: 25px;
+    .botones {
+        margin: auto;
+        width: 300px;
+        padding-bottom: 50px;
+        margin-top: 50px;
     
-        float: left;
-    
-        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
-        border-radius: 18px;
-    
-        font-family: Roboto Condensed;
-        font-style: normal;
-        font-weight: 500px;
-        font-size: 15px;
-        line-height: 22px;
-    
-        color: #FFFFFF;
     }
     
-    .boton2AP5{
-        margin-top: 20px;
-        margin-left: 20px;
-        width: 70px;
-        height: 25px;
-    
-        float: right;
-    
+    .boton1 {
+        width: 100px;
+        height: 20px;
         background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
         border-radius: 18px;
-    
         font-family: Roboto Condensed;
-        font-style: normal;
-        font-weight: 500px;
         font-size: 15px;
-        line-height: 22px;
-    
         color: #FFFFFF;
+        margin: auto;
+        float:left;
+    }
+    
+    .boton2 {
+        width: 100px;
+        height: 20px;
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        border-radius: 18px;
+        font-family: Roboto Condensed;
+        font-size: 15px;
+        color: #FFFFFF;
+        margin: auto;
+        float: right;
+        
     }
 }

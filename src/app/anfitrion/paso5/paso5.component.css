@@ -64,7 +64,7 @@ body.AP5{
 
 .TextoRecuadroAP5{
     width: 500px;
-    height: 235px;
+    height: 185px;
 
     margin: auto;
     margin-top: 40px;
@@ -79,23 +79,11 @@ body.AP5{
     color: #000000;
 }
 
-.botonSeleccionarArchivoAP5{
-
-    width: 400px;
-    height: 30px;
-    margin-left: 50px;
-    border-radius: 20px;
-    border: 1px solid black;
-    font-family: Roboto Condensed;
-    font-size: 20px;
-    color: #000000;
-}
-
-
-.botonSubirAP5 {
-    
-    width: 200px;
-    height: 30px;
+.botonSubirAP5{
+    margin-top: -60px;
+    width: 210px;
+    height: 40px;
+    margin-left: 137px;
 
     background: linear-gradient(180deg, #E11E1E 0%, #9132BF 100%);
     border-radius: 20px;
@@ -110,16 +98,9 @@ body.AP5{
 }
 
 .botones {
-    grid-area: botones;
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-        ". .";
-    margin: auto;
-    width: 1000px;
+    width: 900px;
+    margin: 0 auto;
+    margin-bottom: 150px;
 
 }
 
@@ -183,23 +164,7 @@ body.AP5{
         color: tomato;  
     }
     
-    .Titulo2AP5{
-        width: 600px;
-        height: 47px;
-        
-        margin: 0 auto;
-        font-family: Roboto Condensed;
-        font-style: normal;
-        font-weight: 500px;
-        font-size: 19px;
-        line-height: 47px;
-        /* identical to box height */
     
-        text-align: center;
-    
-        color: #000000;
-    
-    }
     
     .RecuadroImagenAP5{
         width: 570px;
@@ -214,7 +179,7 @@ body.AP5{
     
     .TextoRecuadroAP5{
         width: 300px;
-        height: 235px;
+        height: 135px;
     
         margin: auto;
         margin-top:40px;
@@ -230,9 +195,11 @@ body.AP5{
     }
     
     .botonSubirAP5{
-        margin-top: -100px;
         width: 110px;
         height: 40px;
+
+        margin-bottom: 6030px;
+        margin-left: 227px;
     
         background: linear-gradient(180deg, #E11E1E 0%, #9132BF 100%);
         border-radius: 20px;
@@ -256,45 +223,37 @@ body.AP5{
         transform: rotate(0.08deg);
     }
     
-    .boton1AP5{
-        margin-top: 20px;
-        margin-left: 20px;
-        width: 100px;
-        height: 30px;
+    .botones {
+        width: 600px;
+        margin: 0 auto;
+        margin-top:40px;
+        margin-bottom: 100px;
     
-        float: left;
-    
-        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
-        border-radius: 18px;
-    
-        font-family: Roboto Condensed;
-        font-style: normal;
-        font-weight: 500px;
-        font-size: 22px;
-        line-height: 22px;
-    
-        color: #FFFFFF;
     }
     
-    .boton2AP5{
-        margin-top: 20px;
-        margin-left: 20px;
-        width: 100px;
+    .boton1 {
+        width: 150px;
         height: 30px;
-    
-        float: right;
-
-    
+        float: left;
         background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
         border-radius: 18px;
-    
         font-family: Roboto Condensed;
-        font-style: normal;
-        font-weight: 500px;
-        font-size: 22px;
-        line-height: 22px;
-    
+        font-size: 20px;
         color: #FFFFFF;
+    
+    }
+    
+    .boton2 {
+        width: 150px;
+        float: right;
+        height: 30px;
+        background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
+        border-radius: 18px;
+        font-family: Roboto Condensed;
+        font-size: 20px;
+        color: #FFFFFF;
+    
+        
     }
 }
 
@@ -308,10 +267,10 @@ body.AP5{
         text-align: center;
         float: center; 
         padding-top: 25px; 
-        padding-bottom: 170px;
+        padding-bottom:0px;
         color: #000000; 
         margin: 0 auto;
-        width: 100%;
+        width: 300px;
         overflow: hidden;
     }
     
@@ -367,7 +326,7 @@ body.AP5{
     
     .TextoRecuadroAP5{
         width: 300px;
-        height: 135px;
+        height: 95px;
     
         margin: auto;
         margin-left: -20px;
@@ -386,6 +345,7 @@ body.AP5{
     .botonSubirAP5{
         margin-top: -60px;
         width: 80px;
+        margin-left: 90px;
         height: 25px;
 
     
@@ -402,52 +362,37 @@ body.AP5{
         color: #000000;
     }
     
-    .lineaAP5{
-        width: 100%;
-        height: 0px;
-        margin-top:20px;
     
-        border: 6px solid #D5C7C7;
-        transform: rotate(0.08deg);
+    .botones {
+        width: 280px;
+        margin: 0 auto;
+        margin-top:40px;
+        margin-bottom: 0px;
+    
     }
     
-    .boton1AP5{
-        margin-top: 20px;
-        margin-left: 20px;
-        width: 70px;
-        height: 25px;
-    
+    .boton1 {
+        width: 80px;
+        height: 30px;
         float: left;
-    
         background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
         border-radius: 18px;
-    
         font-family: Roboto Condensed;
-        font-style: normal;
-        font-weight: 500px;
-        font-size: 15px;
-        line-height: 22px;
-    
+        font-size: 18px;
         color: #FFFFFF;
+    
     }
     
-    .boton2AP5{
-        margin-top: 20px;
-        margin-left: 20px;
-        width: 70px;
-        height: 25px;
-    
+    .boton2 {
+        width: 80px;
         float: right;
-    
+        height: 30px;
         background: linear-gradient(180deg, #DB1F27 0%, #A32E9A 100%);
         border-radius: 18px;
-    
         font-family: Roboto Condensed;
-        font-style: normal;
-        font-weight: 500px;
-        font-size: 15px;
-        line-height: 22px;
-    
+        font-size: 18px;
         color: #FFFFFF;
+    
+        
     }
 }

@@ -9,12 +9,7 @@
     <form class = RecuadroImagenAP5 [formGroup]="archivoForm"> 
 
         <!--TextoRecuadro-->
-        <p class = TextoRecuadroAP5> 
-            Haz click en el botón de subir 
-            <br><br> Has subido {{this.numeroArchivosSubidos}} archivo/s <br><br>
-            <input class="botonSubirAP5" type="button" (click)="subirArchivo()" value="SUBIR" >
-        </p>
-        <br>
+        <p class = TextoRecuadroAP5>  <br> Haz click en el botón de subir </p>
 
         <!--BotonSubir-->
         <input class = "botonSeleccionarArchivoAP5" type="file" formControlName="archivo"

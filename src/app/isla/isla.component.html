@@ -20,107 +20,25 @@
 
         <!--Tercera Seccion-->
         <section class="isla_sec_ter">
-            <div class="isla_div_ter">
-                <img class= FotoCuadroApartAB src="https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg">      
-                <div class = "isla_recuadro_ter">
+            
+            <a href="" [routerLink]="['/alojamiento',  alojamiento.id]" *ngFor="let alojamiento of alojamientos">
+                <div class="isla_div_ter">
+                    <img class= FotoCuadroApartAB src="{{alojamiento.imagenes.imagen}}">      
+                    <div class = "isla_recuadro_ter">
 
-                    <div class= FondoValApartAB>
-                        <p class= ValApartAB> 9.8 </p>
-                    </div>
+                        <div class= FondoValApartAB>
+                            <p class= ValApartAB> 9.8 </p>
+                        </div>
 
-                    <p class= NombreApartAB> Nombre Apartamento </p>
-                    <p class= DirApartAB> Dirección Apartamento </p>
+                        <p class= NombreApartAB> {{alojamiento.informacionGeneral.titulo}} </p>
+                        <p class= DirApartAB> {{alojamiento.direccion.direccion}} </p>
 
-                    <div class= derechaPrecioAB>
-                        <p class= PrecioApartAB> 999,99€ </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="isla_div_ter">
-                <img class= FotoCuadroApartAB src="https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg">      
-                <div class = "isla_recuadro_ter">
-
-                    <div class= FondoValApartAB>
-                        <p class= ValApartAB> 9.8 </p>
-                    </div>
-
-                    <p class= NombreApartAB> Nombre Apartamento </p>
-                    <p class= DirApartAB> Dirección Apartamento </p>
-
-                    <div class= derechaPrecioAB>
-                        <p class= PrecioApartAB> 999,99€ </p>
+                        <div class= derechaPrecioAB>
+                            <p class= PrecioApartAB> {{alojamiento.alquiler.precio}} </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="isla_div_ter">
-                <img class= FotoCuadroApartAB src="https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg">      
-                <div class = "isla_recuadro_ter">
-
-                    <div class= FondoValApartAB>
-                        <p class= ValApartAB> 9.8 </p>
-                    </div>
-
-                    <p class= NombreApartAB> Nombre Apartamento </p>
-                    <p class= DirApartAB> Dirección Apartamento </p>
-
-                    <div class= derechaPrecioAB>
-                        <p class= PrecioApartAB> 999,99€ </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="isla_div_ter">
-                <img class= FotoCuadroApartAB src="https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg">      
-                <div class = "isla_recuadro_ter">
-
-                    <div class= FondoValApartAB>
-                        <p class= ValApartAB> 9.8 </p>
-                    </div>
-
-                    <p class= NombreApartAB> Nombre Apartamento </p>
-                    <p class= DirApartAB> Dirección Apartamento </p>
-
-                    <div class= derechaPrecioAB>
-                        <p class= PrecioApartAB> 999,99€ </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="isla_div_ter">
-                <img class= FotoCuadroApartAB src="https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg">      
-                <div class = "isla_recuadro_ter">
-
-                    <div class= FondoValApartAB>
-                        <p class= ValApartAB> 9.8 </p>
-                    </div>
-
-                    <p class= NombreApartAB> Nombre Apartamento </p>
-                    <p class= DirApartAB> Dirección Apartamento </p>
-
-                    <div class= derechaPrecioAB>
-                        <p class= PrecioApartAB> 999,99€ </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="isla_div_ter">
-                <img class= FotoCuadroApartAB src="https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg">      
-                <div class = "isla_recuadro_ter">
-
-                    <div class= FondoValApartAB>
-                        <p class= ValApartAB> 9.8 </p>
-                    </div>
-
-                    <p class= NombreApartAB> Nombre Apartamento </p>
-                    <p class= DirApartAB> Dirección Apartamento </p>
-
-                    <div class= derechaPrecioAB>
-                        <p class= PrecioApartAB> 999,99€ </p>
-                    </div>
-                </div>
-            </div>
+            </a>
 
         </section>
 

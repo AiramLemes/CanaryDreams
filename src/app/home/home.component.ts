@@ -30,19 +30,10 @@ export class HomeComponent implements OnInit{
 
         this.alojamientosService.getAlojamientosHome().then((value) => {
             this.alojamientos = value;
-            console.log(value)
         });
     }
     
 
-}
-
-type Apartamento = {
-    imagen: string;
-    nombre: string;
-    localidad: string;
-    precio: string;
-    valoracion: string;
 }
 
 

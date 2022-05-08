@@ -62,7 +62,7 @@ export class AlojamientosService {
     guardarReferenciaAlojamientoEnUser (userId:string, idAlojamiento:string) {
         var ref = "alojamientos/" + idAlojamiento
     
-        var r = this.db.collection("usuarios").doc(userId).update({
+        this.db.collection("usuarios").doc(userId).update({
             alojamientos: arrayUnion(ref)
         })
     }

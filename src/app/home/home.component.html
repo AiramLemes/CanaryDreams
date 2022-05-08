@@ -9,7 +9,7 @@
                 <h1>¿ Dudas de dónde alojarte ?</h1>
             </div>
 
-            <input id = "buscador_home" type = submit value = "Empezar a buscar">
+            <input id = "buscador_home" type = submit value = "Empezar a buscar" [routerLink]="['/buscador']">
         </section>
 
         <div class="titulo1">
@@ -32,7 +32,7 @@
         <section class="apartamentos">
 
 
-            <a href = "" class= CuadroApartAB *ngFor="let alojamiento of alojamientos">
+            <a href = "" [routerLink]="['/alojamiento',  alojamiento.id]" class= CuadroApartAB *ngFor="let alojamiento of alojamientos">
 
                 <img class= FotoCuadroApartAB src="{{alojamiento.imagenes.imagen}}" alt="">
                 

@@ -15,15 +15,13 @@ export class Paso6Component implements OnInit {
   id!: any;
   anfitrion: any;
 
-  constructor(private alojamiento: AlojamientosService, private route: ActivatedRoute, private path: Router,
-    private user: AuthService)  {
+  constructor(private alojamiento: AlojamientosService, private route: ActivatedRoute, private path: Router)  {
         this.id = this.route.snapshot.paramMap.get('id')
-        this.user.getUserData().then((data: any) => {
-          this.anfitrion = data.nombre;
-        })
+        
      }
 
   ngOnInit(): void {
+    
   }
 
   informacion = new FormGroup ({
@@ -47,8 +45,6 @@ export class Paso6Component implements OnInit {
       informacionGeneral:{
         titulo: this.informacion.get("titulo")!.value, 
         descripcion: this.informacion.get("descripcion")!.value, 
-        anfitrion: this.anfitrion
-       
       },
 
       aspectosDestacados:{

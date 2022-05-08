@@ -72,11 +72,10 @@ export class Paso5Component implements OnInit {
 
             const imagenes = {imagenes:{
                 imagen: this.enlaces[0],
-                imagen1: this.enlaces[1],
-                imagen2: this.enlaces[2],
+                /*imagen2: this.enlaces[2],
                 imagen3: this.enlaces[3],
                 imagen4: this.enlaces[4],
-                imagen5: this.enlaces[5],
+                imagen5: this.enlaces[5],*/
             }}
             console.log(imagenes)
             this.alojamiento.guardarDatosAlojamiento(this.id, imagenes);    

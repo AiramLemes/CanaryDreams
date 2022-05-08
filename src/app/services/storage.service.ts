@@ -19,4 +19,10 @@ export class StorageService {
     
     return await this.storage.ref("alojamientos").child(id + "/" + nombreArchivo)
   }
+
+
+  public async eliminarAlojamiento(id: string) {
+    
+    return await this.storage.ref("alojamientos"+ "/" + id).delete()
+  }
 }

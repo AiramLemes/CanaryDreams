@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
-import { arrayUnion } from 'firebase/firestore';
+import { arrayRemove, arrayUnion } from 'firebase/firestore';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AlojamientosService {
+    
     
 
     constructor(private db: AngularFirestore) { 
@@ -68,7 +69,6 @@ export class AlojamientosService {
                 var parts = element.split("/");
                 this.db.collection(parts[0]).doc(parts[1]).valueChanges({idField: 'id'}).subscribe((alojamiento:any) => {
                     alojamientos.push(alojamiento)
-                    console.log(alojamiento)
                 })
 
             });
@@ -76,6 +76,30 @@ export class AlojamientosService {
         })
 
         return alojamientos
+    }
+
+
+
+
+    eliminarAlojamiento(id: string, userId: string): boolean {
+        
+        this.db.collection("alojamientos").doc(id).delete().then(()=> {
+
+            var ref = "alojamientos/" + id
+    
+            var r = this.db.collection("usuarios").doc(userId).update({
+                alojamientos: arrayRemove(ref)
+            })
+
+            return true
+        })
+
+        .catch((error) => {
+            return false
+        })
+
+        return false
+        
     }
 
 }

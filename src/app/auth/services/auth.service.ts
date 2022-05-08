@@ -9,6 +9,7 @@ import { AngularFirestore } from '@angular/fire/compat/firestore';
 @Injectable()
 
 export class AuthService {
+    
   
 	private user: any;
 

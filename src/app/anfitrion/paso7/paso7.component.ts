@@ -46,10 +46,10 @@ export class Paso7Component implements OnInit {
                 hasta: hasta, 
         
             }};
-        
+            
             this.alojamiento.guardarDatosAlojamiento(this.id, informacion);
-    
-            this.path.navigateByUrl("/");
+            alert("El anuncio se ha creado correctamente")
+            this.path.navigateByUrl("/cuenta/informacion");
         }
        
     }

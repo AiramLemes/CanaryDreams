@@ -15,7 +15,7 @@ export class AlojamientosService {
 
     getAlojamientosHome() {  
         return new Promise<any>((resolve) => {
-            this.db.collection("apartamentos", ref =>
+            this.db.collection("alojamientos", ref =>
             ref.orderBy("valoracion", "desc").limit(6))
             .valueChanges({idField: 'id'})
             .subscribe(isla =>  resolve(isla));
@@ -25,7 +25,7 @@ export class AlojamientosService {
     getAlojamientosIsla(isla: string) {  
 
         return new Promise<any>((resolve) => {
-            this.db.collection("apartamentos", ref =>
+            this.db.collection("alojamientos", ref =>
                 ref.where("isla", "==", isla)
                 .orderBy("valoracion", "desc").limit(6))
                 .valueChanges({idField: 'id'})
@@ -81,13 +81,13 @@ export class AlojamientosService {
 
 
 
-    eliminarAlojamiento(id: string, userId: string): boolean {
+    eliminarAlojamiento(id: string, userId: string) {
         
         this.db.collection("alojamientos").doc(id).delete().then(()=> {
 
             var ref = "alojamientos/" + id
     
-            var r = this.db.collection("usuarios").doc(userId).update({
+            this.db.collection("usuarios").doc(userId).update({
                 alojamientos: arrayRemove(ref)
             })
 
@@ -98,7 +98,7 @@ export class AlojamientosService {
             return false
         })
 
-        return false
+
         
     }
 

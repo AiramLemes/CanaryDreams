@@ -11,6 +11,9 @@ export class BuscadorComponent implements OnInit {
 
     constructor(private alojamiento: AlojamientosService) { }
 
+    alojamientos: any[] = [];
+    allAlojamientos: any[] = [];
+
     async ngOnInit(): Promise<void> {
         await this.alojamiento.getAllAlojamientos().then((value) => {
             this.allAlojamientos = value;
@@ -18,8 +21,7 @@ export class BuscadorComponent implements OnInit {
         this.alojamientos = this.allAlojamientos
     }
 
-    alojamientos: any[] = [];
-    allAlojamientos: any[] = [];
+    
 
     buscador = new FormGroup ({
         buscar: new FormControl("")
@@ -29,7 +31,7 @@ export class BuscadorComponent implements OnInit {
     buscar() {
         var buscar:string = this.buscador.get("buscar")!.value
         buscar = buscar.toLowerCase()
-        
+    
 
         switch (buscar) {
 
@@ -88,26 +90,22 @@ export class BuscadorComponent implements OnInit {
             default:
                 this.alojamientos = [];
                 this.allAlojamientos.forEach(element => {
-                    if (element.nombre.toLowerCase().includes(buscar.toLowerCase())) {
+                    if (element.informacionGeneral.descripcion.toLowerCase().includes(buscar.toLowerCase())) {
                         this.alojamientos.push(element)
                     }
 
-                    if (element.localidad.toLowerCase().includes(buscar.toLowerCase())) {
+                    if (element.direccion.ciudad.toLowerCase().includes(buscar.toLowerCase())) {
                         this.alojamientos.push(element)
                     }
 
-                    if (element.valoracion.toString().toLowerCase().includes(buscar.toLowerCase())) {
-                        this.alojamientos.push(element)
-                    }
-
-                    if (element.precio.toString().toLowerCase().includes(buscar.toLowerCase())) {
+                    if (element.alquiler.precio.toString().toLowerCase().includes(buscar.toLowerCase())) {
                         this.alojamientos.push(element)
                     }
                 });
                 break;
 
         }
-
+        console.log(this.alojamientos)
     }
   
 

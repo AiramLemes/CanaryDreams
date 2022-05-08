@@ -32,6 +32,8 @@ import { Paso5Component } from './anfitrion/paso5/paso5.component';
 import { Paso6Component } from './anfitrion/paso6/paso6.component';
 import { Paso7Component } from './anfitrion/paso7/paso7.component';
 import { ContactarComponent } from './contactar/contactar.component';
+import { BuscadorComponent } from './buscador/buscador.component';
+import { AlojamientoComponent } from './alojamiento/alojamiento.component';
 
 
 
@@ -56,7 +58,9 @@ import { ContactarComponent } from './contactar/contactar.component';
     Paso5Component,
     Paso6Component,
     Paso7Component,
-    ContactarComponent
+    ContactarComponent,
+    BuscadorComponent,
+    AlojamientoComponent
   ],
   imports: [
     BrowserModule,
@@ -64,7 +68,7 @@ import { ContactarComponent } from './contactar/contactar.component';
     ReactiveFormsModule,
     AngularFireDatabaseModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireAuthModule, AngularFirestoreModule, NgbModule,
+    AngularFireAuthModule, AngularFirestoreModule,
   ],
   providers: [IslaService, AlojamientosService, AuthService],
   bootstrap: [AppComponent]

@@ -24,24 +24,30 @@ export class AlojamientosService {
 
     getAlojamientosIsla(isla: string) {  
 
-    return new Promise<any>((resolve) => {
-        this.db.collection("apartamentos", ref =>
-            ref.where("isla", "==", isla)
-            .orderBy("valoracion", "desc").limit(6))
-            .valueChanges({idField: 'id'})
-            .subscribe(isla =>  resolve(isla));
-        })
+        return new Promise<any>((resolve) => {
+            this.db.collection("apartamentos", ref =>
+                ref.where("isla", "==", isla)
+                .orderBy("valoracion", "desc").limit(6))
+                .valueChanges({idField: 'id'})
+                .subscribe(isla =>  resolve(isla));
+            })
     }
-
 
     crearAlojamiento(id: string, tipo: string) {
         this.db.collection("alojamientos").doc(id).set({tipo: tipo})
     }
 
+    getAllAlojamientos() {
+        return new Promise<any>((resolve) => {
+            this.db.collection("apartamentos")
+            .valueChanges({idField: 'id'})
+            .subscribe(alojamiento =>  resolve(alojamiento));
+        })
+    }
+    
 
     guardarDatosAlojamiento(id: string, dir: any) {
         this.db.collection("alojamientos").doc(id).update(dir);
-
     }
 
     guardarReferenciaAlojamientoEnUser (userId:string, idAlojamiento:string) {

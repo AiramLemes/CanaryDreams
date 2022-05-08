@@ -16,6 +16,9 @@ import { Paso4Component } from './anfitrion/paso4/paso4.component';
 import { Paso5Component } from './anfitrion/paso5/paso5.component';
 import { Paso6Component } from './anfitrion/paso6/paso6.component';
 import { Paso7Component } from './anfitrion/paso7/paso7.component';
+import { BuscadorComponent } from './buscador/buscador.component';
+import { AlojamientoComponent } from './alojamiento/alojamiento.component';
+
 
 
 const routes: Routes = [
@@ -36,6 +39,8 @@ const routes: Routes = [
   { path: 'anfitrion/paso6/:id', component: Paso6Component, pathMatch: 'full' },
   { path: 'anfitrion/paso7/:id', component: Paso7Component, pathMatch: 'full' },
   { path: 'ayuda/contactar', component: ContactarComponent, pathMatch: 'full' },
+  { path: 'buscador', component: BuscadorComponent, pathMatch: 'full' },
+  { path: 'alojamiento/:id', component: AlojamientoComponent, pathMatch: 'full' },
 
 
 ];

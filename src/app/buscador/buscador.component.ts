@@ -94,6 +94,10 @@ export class BuscadorComponent implements OnInit {
                         this.alojamientos.push(element)
                     }
 
+                    if (element.informacionGeneral.titulo.toLowerCase().includes(buscar.toLowerCase())) {
+                        this.alojamientos.push(element)
+                    }
+
                     if (element.direccion.ciudad.toLowerCase().includes(buscar.toLowerCase())) {
                         this.alojamientos.push(element)
                     }
@@ -105,7 +109,7 @@ export class BuscadorComponent implements OnInit {
                 break;
 
         }
-        console.log(this.alojamientos)
+        
     }
   
 

@@ -41,9 +41,8 @@ export class Paso2Component implements OnInit {
         
 
         if (direccion != "" && cp != "" && provincia != "" && isla != "" && ciudad != "" ) {
-            const dir = { direccion: {direccion: direccion, 
+            const dir = {isla: isla, direccion: {direccion: direccion, 
                 cp: cp, 
-                isla: isla,
                 provincia: provincia, 
                 ciudad: ciudad}}
     

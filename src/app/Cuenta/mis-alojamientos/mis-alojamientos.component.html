@@ -4,7 +4,7 @@
     
     <!--Imagen 1-->
 
-    <img class = Imagen1MJ src = "https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg" alt = "">
+    <img class = Imagen1MJ src = "assets/misAlojamientos.png" alt = "">
 
     <!--Titulo 1-->
     <p class = Titulo1MJ>Mis Alojamientos</p>
@@ -13,8 +13,8 @@
 
     <!--Apartamentos-->
     <section class= ApartamentosMJ>
-
-        <a href = "" class= CuadroApartAB *ngFor="let alojamiento of misAlojamientos">
+        
+        <div class= CuadroApartAB *ngFor="let alojamiento of misAlojamientos">
             <div class= CuadroApartMJ>
 
                 <img class= FotoCuadroApartMJ src="{{alojamiento.imagenes.imagen}}" alt="">
@@ -39,7 +39,7 @@
                 </div>
             
             </div>
-        </a>
+        </div>
 
     </section>
     

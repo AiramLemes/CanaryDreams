@@ -43,6 +43,7 @@ const routes: Routes = [
   { path: 'buscador', component: BuscadorComponent, pathMatch: 'full' },
   { path: 'alojamiento/:id', component: AlojamientoComponent, pathMatch: 'full' },
   { path: 'cuenta/misAlojamientos', component: MisAlojamientosComponent, pathMatch: 'full' },
+  { path: 'contactar', component: ContactarComponent, pathMatch: 'full' },
   
 
 

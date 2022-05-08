@@ -1,130 +1,136 @@
-
-@media screen and (min-width: 40em) {
-
-    section {
-
-        width: 1000px; 
-        display: grid;
-        grid-template-columns: 1fr 1fr; 
-        grid-template-rows: 1fr; 
-        grid-template-areas: 
-        "."; 
-        margin: auto;
-        margin-top: 100px;
-
-
-    }
-
-    h2 {
-        margin-left: 16%;
-        font-family: 'Roboto Condensed';
-        font-style: normal;
-        font-weight: 500;
-        font-size: large;
-        line-height: 16px;
-        margin-bottom: 10px;
-        
-
-    }
+.error {
+    display: none; color: red; font-weight: bold;
+}
 
 
 
+ .teal {border:5px dotted teal;background-color:#eafafb;}
 
 
 
-    .boton:hover {
-        background-color: #90F5A6;
-        text-decoration: none;
-    }
+.submitted :invalid + .error { display: block; }
+.submitted :invalid { border: 1px solid red; }
 
 
-    .boton {
-        text-decoration: none;
-        padding: 12px;
-        font-weight: 600;
-        font-size: 20px;
-        color: #000000;
-        background-color: #C4C4C4;
-        border-radius: 3px;
-        margin-top: 200px;
+section {
 
-    }
-
-    form.FormularioRegistrarse {
-
-        display: grid;
-        grid-template-columns: 1fr 1fr ; 
-        grid-template-rows: 0.7fr 1fr 1fr 1fr 1fr 1.5fr; 
-        grid-template-areas: 
-        "." "." "." "." "." "."; 
-        margin: 0 auto;
-        margin-left: 20%;
-        margin-top: auto;
-
-    }
+    width: 1000px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    grid-template-areas: "."; 
+    margin: auto;
+    margin-top: 100px;
 
 
-    .FormularioRegistrarse {
+}
 
-        width: 631px;
-        height: 650px;
-        background: #F4E4E4;
-        border-radius: 32px;
-        
-    }
+h2 {
+    margin-left: 16%;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 500;
+    font-size: large;
+    line-height: 16px;
+    margin-bottom: 10px;
+    
 
-
-
-
-    .camposRegistrarse {
-        margin-left: 16%;
-        width: 200px;
-        height: 20px;
-        background: #FFFFFF;
-
-    }
-
-    #botonRegistrarse{
-        width: 200px;
-        height: 40px;
-        background: #FFFFFF;
-        margin-left: 60%;
-        margin-bottom: 10%;
-        border-radius: 44px;    
-    }
+}
 
 
-    #IconoLogIn {
-        
-        width: 60px;
-        height: 60px;
-        margin-left: 90%;
-        margin-top: 10px;
-
-        -moz-border-radius: 50%;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-
-        background: linear-gradient(180deg, #E11E1E 0%, rgba(142, 51, 199, 0) 100%);
-
-    }
+.boton:hover {
+    background-color: #90F5A6;
+    text-decoration: none;
+}
 
 
-    #CuadroBotonesLogReg {
-        margin-top: 5%;
-        margin-left: 10%;
-    }
+.boton {
+    text-decoration: none;
+    padding: 12px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+    background-color: #C4C4C4;
+    border-radius: 3px;
+    margin-top: 200px;
+
+}
+
+form.FormularioRegistrarse {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr ; 
+    grid-template-rows: 0.7fr 1fr 1fr 1fr 1fr 1.5fr; 
+    grid-template-areas: 
+    "." "." "." "." "." "."; 
+    margin: 0 auto;
+    margin-left: 20%;
+    margin-top: auto;
+
+}
+
+
+.FormularioRegistrarse {
+
+    width: 631px;
+    height: 650px;
+    background: #F4E4E4;
+    border-radius: 32px;
+    
 }
 
 
 
 
+.camposRegistrarse {
+    margin-left: 16%;
+    width: 200px;
+    height: 20px;
+    background: #FFFFFF;
+
+}
+
+#botonRegistrarse{
+    width: 200px;
+    height: 40px;
+    background: #FFFFFF;
+    margin-left: 60%;
+    margin-bottom: 10%;
+    border-radius: 44px;    
+}
+
+
+#IconoLogIn {
+    
+    width: 60px;
+    height: 60px;
+    margin-left: 90%;
+    margin-top: 10px;
+
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+
+    background: linear-gradient(180deg, #E11E1E 0%, rgba(142, 51, 199, 0) 100%);
+
+}
+
+
+#CuadroBotonesLogReg {
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+
 /* 640 to 960 pixels */
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 60em) {
         
     section {
 
-        width: 860px; 
+        width: 100%;
+        overflow: hidden; 
+        
         display: grid;
         grid-template-columns: 1fr; 
         grid-template-rows: 0.5fr 2fr; 
@@ -179,7 +185,7 @@
 
     .FormularioRegistrarse {
 
-        width: 631px;
+        width: 590px;
         height: 650px;
         background: #F4E4E4;
         border-radius: 32px;
@@ -235,7 +241,8 @@
     
     section {
 
-        width: 540px; 
+        width: 100%;
+        overflow: hidden; 
         display: grid;
         grid-template-columns: 1fr; 
         grid-template-rows: 0.5fr 2fr; 
@@ -268,7 +275,7 @@
         text-decoration: none;
         padding: 12px;
         font-weight: 600;
-        font-size: 20px;
+        font-size: 16px;
         color: #000000;
         background-color: #C4C4C4;
         border-radius: 3px;
@@ -289,7 +296,7 @@
 
     .FormularioRegistrarse {
 
-        width: 60%;
+        width: 270px;
         height: 900px;
         background: #F4E4E4;
         border-radius: 32px;
@@ -305,7 +312,7 @@
     }
 
     #botonRegistrarse{
-        width: 180px;
+        width: 150px;
         height: 30px;
         background: #FFFFFF;
         margin-left: 22%;
@@ -317,7 +324,7 @@
         
         width: 60px;
         height: 60px;
-        margin-left: 43%;
+        margin-left: 39%;
         margin-top: 10px;
 
         -moz-border-radius: 50%;
@@ -335,5 +342,3 @@
 
 
 }
-
-

@@ -1,0 +1,410 @@
+
+section {
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    grid-template-areas: "."; 
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+h1 {
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 100px;
+    font-size:x-large;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #000000; 
+    margin: 0 auto;
+    margin-top: 180px;
+    width: 80%;
+}
+
+h2 {
+    margin-left: 16%;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 500;
+    font-size: large;
+    line-height: 16px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+
+}
+
+
+
+form.FormularioContactar1 {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr ; 
+    grid-template-rows: 1fr 1fr 1.3fr 0.7fr; 
+    grid-template-areas: 
+    ". ." ". ." ". ."; 
+    margin: 0 auto;
+
+}
+
+
+.FormularioContactar1 {
+
+    width: 900px;
+    height: 680px;
+    background: #FDF9F2;
+    border-radius: 32px;
+}
+
+
+
+
+.camposRegistrarse {
+    margin-left: 16%;
+    width: 300px;
+    height: 20px;
+    background: #FFFFFF;
+    
+}
+
+.TextoComentario {
+
+    width: 400px;
+    height: 191px;
+    margin-left: 15%;
+    margin-bottom: 7%;
+    resize: none;
+}
+
+
+.fotoimg1{
+    margin-top: 100px;
+    margin-left: 130px;
+    width:250px;
+    height:170px;
+
+}
+
+
+#BotonContactar1{
+    width: 200px;
+    height: 40px;
+    background: #FFFFFF;
+    margin-left: 75%;
+    margin-bottom: 10%;
+    border-radius: 44px;  
+    margin-top: 10px;  
+}
+
+form.FormularioContactar2 {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr ; 
+    grid-template-rows: 1fr 1fr 1.3fr 0.7fr; 
+    grid-template-areas: 
+    ". ." ". ." ". ."; 
+    margin: 0 auto;
+
+}
+
+
+.FormularioContactar2 {
+
+    width: 900px;
+    height: 450px;
+    background: #FDF9F2;
+    border-radius: 32px;
+}
+
+.fotoimg2{
+    width:300px;
+    height:250px;
+    margin-top: 50px;
+    margin-left: 80px;
+}
+
+#BotonContactar2{
+    width: 200px;
+    height: 40px;
+    background: #FFFFFF;
+    margin-left: 27%;
+    margin-bottom: 10%;
+    border-radius: 44px;  
+    margin-top: -100px;  
+}
+
+@media screen and (max-width: 60em) {
+
+    section {
+
+        width: 100%;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr; 
+        grid-template-areas: "."; 
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    
+    h1 {
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: 100px;
+        font-size:large;
+        padding-bottom: 10px;
+        text-align: center;
+        color: #000000; 
+        margin: 0 auto;
+        margin-top: 120px;
+        width: 80%;
+    }
+    
+    
+    h2 {
+        margin-left: 16%;
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 500;
+        font-size: medium;
+        line-height: 16px;
+        margin-bottom: 10px;
+        margin-top: 50px;
+    
+    }
+    
+    
+    
+    form.FormularioContactar1 {
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr ; 
+        grid-template-rows: 1fr 1fr 1.3fr 0.7fr; 
+        grid-template-areas: 
+        ". ." ". ." ". ."; 
+        margin: 0 auto;
+    
+    }
+    
+    
+    .FormularioContactar1 {
+    
+        width: 590px;
+        height: 680px;
+        background: #FDF9F2;
+        border-radius: 32px;
+    }
+    
+    
+    
+    
+    .camposRegistrarse {
+        margin-left: 16%;
+        width: 200px;
+        height: 20px;
+        background: #FFFFFF;
+        
+    }
+    
+    .TextoComentario {
+    
+        width: 300px;
+        height: 191px;
+        margin-left: 15%;
+        margin-bottom: 7%;
+        resize: none;
+    }
+    
+    .fotoimg1{
+        margin-top: 110px;
+        margin-left: 70px;
+        width:180px;
+        height:130px;
+    }
+    
+    #BotonContactar1{
+        width: 150px;
+        height: 30px;
+        background: #FFFFFF;
+        margin-left: 70%;
+        margin-bottom: 10%;
+        border-radius: 44px;  
+        margin-top: 10px;  
+    }
+    
+    form.FormularioContactar2 {
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr ; 
+        grid-template-rows: 1fr 1fr 1.3fr 0.7fr; 
+        grid-template-areas: 
+        ". ." ". ." ". ."; 
+        margin: 0 auto;
+    
+    }
+    
+    
+    .FormularioContactar2 {
+    
+        width: 590px;
+        height: 450px;
+        background: #FDF9F2;
+        border-radius: 32px;
+    }
+    
+    .fotoimg2{
+        width:250px;
+        height:250px;
+        margin-top: 50px;
+        margin-left: 10px;
+    }
+    
+    #BotonContactar2{
+        width: 150px;
+        height: 30px;
+        background: #FFFFFF;
+        margin-left: 25%;
+        margin-bottom: 10%;
+        border-radius: 44px;  
+        margin-top: -100px;  
+    }
+
+}
+
+@media screen and (max-width: 40em ) {
+
+    section {
+
+        width: 100%;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr; 
+        grid-template-areas: "."; 
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    
+    h1 {
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: 100px;
+        font-size:medium;
+        padding-bottom: 10px;
+        text-align: center;
+        color: #000000; 
+        margin: 0 auto;
+        margin-top: 80px;
+        width: 80%;
+    }
+
+    
+    h2 {
+        margin-left: 10%;
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 500;
+        font-size: small;
+        line-height: 16px;
+        margin-bottom: 10px;
+        margin-top: 50px;
+    
+    }
+    
+    
+    
+    form.FormularioContactar1 {
+    
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr; 
+        grid-template-areas: 
+        "." "." "." "." "." "."; 
+        margin: 0 auto;
+    
+    }
+    
+    
+    .FormularioContactar1 {
+    
+        width: 270px;
+        height: 1100px;
+        background: #FDF9F2;
+        border-radius: 32px;
+    }
+    
+    
+    
+    
+    .camposRegistrarse {
+        margin-left: 10%;
+        width: 210px;
+        height: 20px;
+        background: #FFFFFF;
+        
+    }
+    
+    .TextoComentario {
+    
+        width: 210px;
+        height: 191px;
+        margin-left: 10%;
+        margin-bottom: 7%;
+        resize: none;
+    }
+    
+    .fotoimg1{
+        margin-top: 20px;
+        margin-left: 30px;
+        width:215px;
+        height:170px;
+    }
+    
+    #BotonContactar1{
+        width: 100px;
+        height: 30px;
+        background: #FFFFFF;
+        margin-left: 33%;
+        margin-bottom: 10%;
+        border-radius: 44px;  
+        margin-top: 20px;  
+    }
+    
+    form.FormularioContactar2 {
+    
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        grid-template-areas: 
+        "." "." "." "."; 
+        margin: 0 auto;
+    
+    }
+    
+    
+    .FormularioContactar2 {
+    
+        width: 270px;
+        height: 500px;
+        background: #FDF9F2;
+        border-radius: 32px;
+    }
+    
+    .fotoimg2{
+        width:100px;
+        height:80px;
+        margin-top: 10px;
+        margin-left: 140px;
+    }
+    
+    #BotonContactar2{
+        width: 80px;
+        height: 25px;
+        background: #FFFFFF;
+        margin-left: 15%;
+        margin-bottom: 10%;
+        border-radius: 44px;  
+        margin-top: -90px;  
+    }
+}

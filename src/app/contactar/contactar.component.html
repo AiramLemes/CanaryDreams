@@ -1,1 +1,81 @@
-<p>contactar works!</p>
+<body style="padding-bottom: 10%;">
+
+    <div>
+        <h1> CONTÁCTANOS, ¡ NO TE QUEDES CON DUDAS !</h1>
+    </div>
+    <section>
+
+        <div>
+            <form id = "contactar1Form" class = "FormularioContactar1">
+
+                <div>
+                    <h2>Nombre</h2>
+                    <input type="text" id="nombre" required pattern="([A-Za-z]+)" class="camposRegistrarse">
+                </div>
+
+                <div>
+                    <h2>Apellidos:</h2>
+                    <input type="text" id="apellidos" required pattern="([A-Za-z]+)" class="camposRegistrarse">
+                </div>
+
+                <div>
+                    <h2>Teléfono:</h2>
+                    <input type="tel" id="telefono" required pattern="([0-9]{9})" title="Debe introducir un número de teléfono de 9 dígitos" class="camposRegistrarse">
+                </div>
+
+                <div>
+                    <h2>Correo Electrónico:</h2>
+                    <input type="email" id="email1" required class="camposRegistrarse">
+                </div>
+
+                <div>
+                    <h2>Comentarios:</h2>
+                    <textarea name="ComentariosFormularioContactar" class=TextoComentario maxlength="300"></textarea>
+                </div>
+
+                <div>
+                    <img src="assets/contactar1.png" alt="foto" class=fotoimg1>
+                </div>
+                
+                <input id = BotonContactar1 type="submit" value = "Enviar">
+                
+            </form>
+        </div>
+    </section>
+
+
+    <div>
+        <h1>¿ PREFIERES QUE TE LLAMEMOS NOSOTROS ?</h1>
+    </div>
+
+    <section>
+
+        <div>
+            <form id = "contactar2Form" class = "FormularioContactar2">
+
+                <div>
+                    <h2>Nombre</h2>
+                    <input type="text" id="nombre" required pattern="([A-Za-z]+)" class="camposRegistrarse">
+                </div>
+
+                <div>
+                    <h2>Apellidos:</h2>
+                    <input type="text" id="apellidos" required pattern="([A-Za-z]+)" class="camposRegistrarse">
+                </div>
+
+                <div>
+                    <h2>Teléfono de Contacto:</h2>
+                    <input type="tel" id="telefono" required pattern="([0-9]{9})" title="Debe introducir un número de teléfono de 9 dígitos" class="camposRegistrarse">
+                </div>
+
+                <div>
+                    <img src="assets/contactar2.png" alt="foto" class=fotoimg2>
+                </div>
+                
+                <input id = BotonContactar2 type="submit" value = "Contactar">
+                
+            </form>
+        </div>
+    </section>
+
+</body>

@@ -38,13 +38,14 @@ section.buscador {
 
 #buscador_home {
 
-    width: 672px;
-    height: 75px;
-    margin: auto;
+    width: 172px;
+    height: 55px;
+    margin-left: 290px;
     margin-top: 60px;
 
     background: #FFFFFF;
     border-radius: 9px;
+    font-size: 17px;
 }
 
 
@@ -294,10 +295,11 @@ a {
     
     #buscador_home {
     
-        width: 372px;
+        width: 142px;
         height: 45px;
-        margin: auto;
+        margin-left: 200px;
         margin-top: 60px;
+        font-size:16px;
     
         background: #FFFFFF;
         border-radius: 9px;
@@ -554,10 +556,11 @@ a {
     
     #buscador_home {
     
-        width: 172px;
+        width: 122px;
         height: 25px;
-        margin: auto;
+        margin-left: 55px;
         margin-top: 30px;
+        font-size: 12px;
     
         background: #FFFFFF;
         border-radius: 9px;

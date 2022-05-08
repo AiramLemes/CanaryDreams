@@ -1,17 +1,6 @@
 <body class = MJ>
 
-    <section class = recuadroIzq>
-        <!--RecuadroIzq-->
-        <p class = Texto1RecuadroIzq>INFORMACIÓN PERSONAL</p>
-        <hr class = lineaHorizontal1>  
-        <p class = Texto2RecuadroIzq>SEGURIDAD</p>
-        <hr class = lineaHorizontal2>  
-        <p class = Texto3RecuadroIzq>MIS RESERVAS</p>
-        <hr class = lineaHorizontal3> 
-        <p class = Texto4RecuadroIzq Style = "color: #000000;">GESTIONAR ALOJAMIENTOS</p>
-        <hr class = lineaHorizontal4>  
-        <p class = Texto5RecuadroIzq>CERRAR SESIÓN</p>
-    </section>
+    <app-menu></app-menu>
     
     <!--Imagen 1-->
 
@@ -32,29 +21,22 @@
                 
                 <div class = recuadroDatosMJ>
 
-                    <div class= FondoValApartMJ>
-
-                        <p class= ValApartMJ>  </p>
-
-                    </div>
-
                     <p class= NombreApartMJ> {{alojamiento.informacionGeneral.titulo}} </p>
 
                     <p class= DirApartMJ> {{alojamiento.direccion.ciudad}} </p>
 
                     <div class= derechaPrecioMJ>
 
-                        <p class= PrecioApartMJ> {{alojamiento.alquiler.precio}} </p>
-
-                        <p class= DesdeApartMJ> Desde </p>
+                        <p class= PrecioApartMJ> {{alojamiento.alquiler.precio}} €</p>
 
                     </div>
 
                 </div>
+                <div class = botones>
+                    <input class = boton1MJ type = button value = Retirar (click)="eliminar(alojamiento.id)">
 
-                <input class = boton1MJ type = button value = Retirar (click)="eliminar(alojamiento.id)">
-
-                <input class = boton2MJ type = button value = Gestionar>
+                    <input class = boton2MJ type = button value = Gestionar>
+                </div>
             
             </div>
         </a>

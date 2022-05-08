@@ -160,6 +160,7 @@ section.ApartamentosMJ {
     text-align: center;
 
     margin-top: 15px;
+    cursor: default;
 }
 
 .boton2MJ{
@@ -178,6 +179,7 @@ section.ApartamentosMJ {
     text-align: center;
 
     margin-top: 15px;
+    cursor: default;
 }
 
 
@@ -256,6 +258,7 @@ section.ApartamentosMJ {
         text-align: center;
     
         margin-top: 15px;
+        cursor: default;
     }
     
     .boton2MJ{
@@ -274,6 +277,7 @@ section.ApartamentosMJ {
         text-align: center;
     
         margin-top: 15px;
+        cursor: default;
     }
 }
 
@@ -351,6 +355,7 @@ section.ApartamentosMJ {
         text-align: center;
     
         margin-top: 15px;
+        cursor: default;
     }
     
     .boton2MJ{
@@ -369,5 +374,6 @@ section.ApartamentosMJ {
         text-align: center;
     
         margin-top: 18px;
+        cursor: default;
     }
 }

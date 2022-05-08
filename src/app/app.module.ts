@@ -35,6 +35,7 @@ import { ContactarComponent } from './contactar/contactar.component';
 import { BuscadorComponent } from './buscador/buscador.component';
 import { AlojamientoComponent } from './alojamiento/alojamiento.component';
 import { MisAlojamientosComponent } from './Cuenta/mis-alojamientos/mis-alojamientos.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -62,7 +63,8 @@ import { MisAlojamientosComponent } from './Cuenta/mis-alojamientos/mis-alojamie
     ContactarComponent,
     BuscadorComponent,
     AlojamientoComponent,
-    MisAlojamientosComponent
+    MisAlojamientosComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -20,7 +20,6 @@ export class MisAlojamientosComponent implements OnInit {
     async ngOnInit(): Promise<any> {
 
         this.misAlojamientos = await this.alojamientos.getMisAlojamientos(this.user.getUid());
-        this.almacenamiento.eliminarAlojamiento("w");
     }
 
     eliminar(id: string) {

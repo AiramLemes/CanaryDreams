@@ -18,7 +18,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
 import { AuthService } from './auth/services/auth.service';
 import { InformacionComponent } from './Cuenta/informacion/informacion.component';
-import { SeguridadComponent } from './Cuenta/seguridad/seguridad.component';
 import { MenuComponent } from './Cuenta/menu/menu.component';
 import { CondicionesComponent } from './condiciones/condiciones.component';
 import { PrivacidadComponent } from './privacidad/privacidad.component';
@@ -48,7 +47,6 @@ import { FooterComponent } from './footer/footer.component';
     IslaComponent,
     HeaderComponent,
     InformacionComponent,
-    SeguridadComponent,
     MenuComponent,
     CondicionesComponent,
     PrivacidadComponent,

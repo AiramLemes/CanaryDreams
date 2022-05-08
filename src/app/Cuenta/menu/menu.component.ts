@@ -25,25 +25,16 @@ export class MenuComponent implements OnInit {
       case "/cuenta/informacion":
         element1 = document.getElementsByClassName("informacion")[0];
         element1.style.fontWeight = "bold";
-        console.log(element1);
-        break;
-
-      case "/cuenta/seguridad":
-        element1 = document.getElementsByClassName("seguridad")[0];
-        element1.style.fontWeight = "bold";
-        console.log(element1);
         break;
 
       case "/cuenta/misReservas":
         element1 = document.getElementsByClassName("misReservas")[0];
         element1.style.fontWeight = "bold";
-        console.log(element1);
         break;
 
-      case "/cuenta/gestionarAlojamientos":
-        element1 = document.getElementsByClassName("gestionarAlojamientos")[0];
+      case "/cuenta/misAlojamientos":
+        element1 = document.getElementsByClassName("gestionar")[0];
         element1.style.fontWeight = "bold";
-        console.log(element1);
         break;
 
   }

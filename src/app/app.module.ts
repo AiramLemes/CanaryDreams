@@ -34,6 +34,7 @@ import { Paso7Component } from './anfitrion/paso7/paso7.component';
 import { ContactarComponent } from './contactar/contactar.component';
 import { BuscadorComponent } from './buscador/buscador.component';
 import { AlojamientoComponent } from './alojamiento/alojamiento.component';
+import { MisAlojamientosComponent } from './Cuenta/mis-alojamientos/mis-alojamientos.component';
 
 
 
@@ -60,7 +61,8 @@ import { AlojamientoComponent } from './alojamiento/alojamiento.component';
     Paso7Component,
     ContactarComponent,
     BuscadorComponent,
-    AlojamientoComponent
+    AlojamientoComponent,
+    MisAlojamientosComponent
   ],
   imports: [
     BrowserModule,

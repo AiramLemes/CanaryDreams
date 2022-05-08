@@ -38,7 +38,7 @@ export class Paso6Component implements OnInit {
   guardarInformacion() {
 
     const informacion = {
-      destacados:{
+      informacionGeneral:{
         titulo: this.informacion.get("titulo")!.value, 
         descripcion: this.informacion.get("descripcion")!.value, 
        

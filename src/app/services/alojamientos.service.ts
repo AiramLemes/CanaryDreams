@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
-import { Router } from '@angular/router';
 import { arrayUnion } from 'firebase/firestore';
 
 @Injectable({
@@ -39,7 +38,7 @@ export class AlojamientosService {
 
     getAllAlojamientos() {
         return new Promise<any>((resolve) => {
-            this.db.collection("apartamentos")
+            this.db.collection("alojamientos")
             .valueChanges({idField: 'id'})
             .subscribe(alojamiento =>  resolve(alojamiento));
         })
@@ -56,6 +55,27 @@ export class AlojamientosService {
         var r = this.db.collection("usuarios").doc(userId).update({
             alojamientos: arrayUnion(ref)
         })
+    }
+
+
+    getMisAlojamientos(uid: string) {
+        const alojamientos: any = [];
+
+        this.db.collection("usuarios").doc(uid).get().subscribe((e) => {
+            
+            e.get("alojamientos").forEach((element: any) => {
+
+                var parts = element.split("/");
+                this.db.collection(parts[0]).doc(parts[1]).valueChanges({idField: 'id'}).subscribe((alojamiento:any) => {
+                    alojamientos.push(alojamiento)
+                    console.log(alojamiento)
+                })
+
+            });
+
+        })
+
+        return alojamientos
     }
 
 }

@@ -10,13 +10,13 @@ export class StorageService {
 
   //Tarea para subir archivo
   public async tareaCloudStorage(nombreArchivo: string, datos: any, id: string) {
-    return await this.storage.ref("apartamentos").child(id + "/" + nombreArchivo).put(datos).percentageChanges()
+    return await this.storage.ref("alojamientos").child(id + "/" + nombreArchivo).put(datos)
     
   }
 
   //Referencia del archivo
   public async referenciaCloudStorage(nombreArchivo: string, id: string) {
     
-    return await this.storage.ref("apartamentos").child(id + "/" + nombreArchivo)
+    return await this.storage.ref("alojamientos").child(id + "/" + nombreArchivo)
   }
 }

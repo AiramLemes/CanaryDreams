@@ -18,8 +18,8 @@ export class BuscadorComponent implements OnInit {
         this.alojamientos = this.allAlojamientos
     }
 
-    alojamientos: Alojamiento[] = [];
-    allAlojamientos: Alojamiento[] = [];
+    alojamientos: any[] = [];
+    allAlojamientos: any[] = [];
 
     buscador = new FormGroup ({
         buscar: new FormControl("")
@@ -113,6 +113,7 @@ export class BuscadorComponent implements OnInit {
 
 }
 
+/*
 type Alojamiento = {
     id: string;
     imagen: string;
@@ -120,4 +121,4 @@ type Alojamiento = {
     localidad: string;
     precio: string;
     valoracion: string;
-}
+}*/

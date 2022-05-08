@@ -36,7 +36,6 @@
     width: 200px;
     height: 200px;
     margin-top: 50px;
-    background: red;
     margin-left: 220px;
 }
 
@@ -133,7 +132,6 @@ label {
         width: 150px;
         height: 150px;
         margin-top: 50px;
-        background: red;
         margin-left: 80px;
         margin-top: 30px;
     }
@@ -237,7 +235,6 @@ label {
         width: 100px;
         height: 100px;
         margin-top: 50px;
-        background: red;
         margin-left: 4px;
         margin-top: 30px;
     }

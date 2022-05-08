@@ -56,7 +56,7 @@ export class AuthService {
 		await this.afAuth.createUserWithEmailAndPassword(email, password)
 		.then((userCredential) => {
 
-			this.db.collection('users').
+			this.db.collection('usuarios').
 			doc(userCredential.user?.uid).
 			set({nombre: nombre, apellidos: apellidos, sexo: sexo, 
 			fechaDeNacimiento: fecha, telefono: telefono, dni: dni, correo: email});

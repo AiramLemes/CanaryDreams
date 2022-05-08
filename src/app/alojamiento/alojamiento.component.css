@@ -137,7 +137,7 @@
     margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
-    font-weight: 600px;
+    font-weight: 600;
 }
 
 .direc_text_cont{
@@ -197,7 +197,7 @@ h4 {
 
     font-family: 'Rokkitt';
     font-style: normal;
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 20px;
     line-height: 20px;
     margin-top: 10px;
@@ -232,7 +232,7 @@ iframe {
     height: 710px;
 
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 100;
 }
 
 /*Parte Alta Izquierda*/
@@ -273,6 +273,8 @@ iframe {
     font-size: 12px;
 }
 
+
+
 @media screen and (max-width: 60em) {
 
 
@@ -296,13 +298,10 @@ iframe {
 
         font-family: 'Rokkitt';
         font-style: normal;
-        font-weight: 400px;
-        font-size: 18px;
+        font-weight: 400;
+        font-size: 20px;
         margin: auto;
-        text-align: center;
-        width: 300px;
-        margin: 0 auto;
-        margin-top: -10px;
+        margin-top: 10px;
 
     }
       
@@ -577,7 +576,7 @@ iframe {
 
 
 
-@media screen and (min-width: 40em) {
+@media screen and (max-width: 40em) {
 
 
     .container {  
@@ -600,7 +599,7 @@ iframe {
 
         font-family: 'Rokkitt';
         font-style: normal;
-        font-weight: 300px;
+        font-weight: 400;
         font-size: 20px;
         margin: auto;
         margin-top: 10px;
@@ -839,6 +838,10 @@ iframe {
     }
     
     .valoraciones { grid-area: valoraciones; }
+      
+    
+    
+    
     
     
     .llegada {
@@ -866,13 +869,5 @@ iframe {
         font-size: 12px;
     }
     
-
-
-    
-    
-    
-    
-
-
 
 }

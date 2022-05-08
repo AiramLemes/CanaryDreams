@@ -32,25 +32,25 @@
         <section class="apartamentos">
 
 
-            <a href = "" class= CuadroApartAB *ngFor="let apartamento of apartamentos">
+            <a href = "" class= CuadroApartAB *ngFor="let alojamiento of alojamientos">
 
-                <img class= FotoCuadroApartAB src="{{apartamento.imagen}}" alt="">
+                <img class= FotoCuadroApartAB src="{{alojamiento.imagenes.imagen}}" alt="">
                 
                 <div class = recuadroDatosAB>
     
                     <div class= FondoValApartAB>
     
-                        <p class= ValApartAB> {{apartamento.valoracion}} </p>
+                        <p class= ValApartAB> {{alojamiento.valoracion}} </p>
     
                     </div>
     
-                    <p class= NombreApartAB> &nbsp; {{apartamento.nombre}} </p>
+                    <p class= NombreApartAB> &nbsp; {{alojamiento.informacionGeneral.titulo}} </p>
     
-                    <p class= DirApartAB> &nbsp; {{apartamento.localidad}} </p>
+                    <p class= DirApartAB> &nbsp; {{alojamiento.direccion.direccion}} </p>
     
                     <div class= derechaPrecioAB>
     
-                        <p class= PrecioApartAB> &nbsp; {{apartamento.precio}}€ </p>
+                        <p class= PrecioApartAB> &nbsp; {{alojamiento.alquiler.precio}}€ </p>
     
                     </div>
     

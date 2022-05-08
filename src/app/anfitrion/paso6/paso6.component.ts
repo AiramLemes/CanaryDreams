@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { AuthService } from 'src/app/auth/services/auth.service';
 import { AlojamientosService } from 'src/app/services/alojamientos.service';
 
 @Component({
@@ -12,9 +13,14 @@ export class Paso6Component implements OnInit {
 
   
   id!: any;
+  anfitrion: any;
 
-  constructor(private alojamiento: AlojamientosService, private route: ActivatedRoute, private path: Router)  {
+  constructor(private alojamiento: AlojamientosService, private route: ActivatedRoute, private path: Router,
+    private user: AuthService)  {
         this.id = this.route.snapshot.paramMap.get('id')
+        this.user.getUserData().then((data: any) => {
+          this.anfitrion = data.nombre;
+        })
      }
 
   ngOnInit(): void {
@@ -41,6 +47,7 @@ export class Paso6Component implements OnInit {
       informacionGeneral:{
         titulo: this.informacion.get("titulo")!.value, 
         descripcion: this.informacion.get("descripcion")!.value, 
+        anfitrion: this.anfitrion
        
       },
 

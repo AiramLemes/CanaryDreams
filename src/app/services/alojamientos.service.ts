@@ -16,7 +16,7 @@ export class AlojamientosService {
     getAlojamientosHome() {  
         return new Promise<any>((resolve) => {
             this.db.collection("alojamientos", ref =>
-            ref.orderBy("valoracion", "desc").limit(6))
+            ref.limit(6))
             .valueChanges({idField: 'id'})
             .subscribe(isla =>  resolve(isla));
         })
@@ -40,6 +40,15 @@ export class AlojamientosService {
     getAllAlojamientos() {
         return new Promise<any>((resolve) => {
             this.db.collection("alojamientos")
+            .valueChanges({idField: 'id'})
+            .subscribe(alojamiento =>  resolve(alojamiento));
+        })
+    }
+
+
+    async getAlojamiento(id: string) {
+        return await new Promise<any>((resolve) => {
+            this.db.collection("alojamientos").doc(id)
             .valueChanges({idField: 'id'})
             .subscribe(alojamiento =>  resolve(alojamiento));
         })

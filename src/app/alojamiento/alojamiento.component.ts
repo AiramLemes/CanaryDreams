@@ -9,13 +9,22 @@ import { AlojamientosService } from '../services/alojamientos.service';
 })
 export class AlojamientoComponent implements OnInit {
 
-  id!: any;
+    id!: any;
+    alojamiento: any;
 
-  constructor(private route: ActivatedRoute, private alojamiento: AlojamientosService, private path: Router) { 
-      this.id = this.route.snapshot.paramMap.get('id');
-  }
+    constructor(private route: ActivatedRoute, private alojamientoService: AlojamientosService, private path: Router) { 
+        this.id = this.route.snapshot.paramMap.get('id');
+    }
 
-  ngOnInit(): void {
-  }
+
+
+    ngOnInit(): void {
+
+        this.alojamientoService.getAlojamiento(this.id).then((alojamiento: any) => {
+            this.alojamiento = alojamiento;
+        })
+
+    }
+
 
 }

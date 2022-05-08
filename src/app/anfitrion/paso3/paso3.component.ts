@@ -43,7 +43,7 @@ export class Paso3Component implements OnInit {
     if (huespedes != "" && camas != "" && dormitorios != "" && baños != "") {
         const rooms = { espacios: {huespedes: huespedes, 
         camas: camas, 
-        baños: baños,
+        bathrooms: baños,
         dormitorios: dormitorios}}
 
         this.alojamiento.guardarDatosAlojamiento(this.id, rooms);
